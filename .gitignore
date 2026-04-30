@@ -4,3 +4,10 @@ tools/
 question-gen/
 serve.sh
 schema-spec.md
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
