@@ -17,28 +17,26 @@ The project is built as a static frontend with JSON question files, so it can ru
 
 ## Quick Start
 
-Because the app loads question files with `fetch`, open it through a local web server instead of opening `index.html` directly.
-
-```bash
-./serve.sh
-```
-
-Then open:
+This app is deployed as a static site on GitHub Pages:
 
 ```text
-http://127.0.0.1:8000/
+https://it-quiz.orboul.com/
 ```
 
-To use a different port:
+It must be hosted (not opened via `file://`) because it loads JSON question data using `fetch` and relies on relative paths. Some browsers will block or mis-resolve these requests when you open files directly from disk.
+
+If you want to run it locally, use any static file host. For example:
 
 ```bash
-./serve.sh 3000
+python3 -m http.server 8000
 ```
+
+Then open `http://127.0.0.1:8000/`.
 
 ## Requirements
 
 - A modern web browser
-- Python 3 or Python for the local server script
+- A static page host (GitHub Pages works)
 - `jq` only if you use the question merge helper
 
 There is no npm install, frontend build step, or backend service required.
@@ -72,7 +70,6 @@ There is no npm install, frontend build step, or backend service required.
 │   ├── question_maker.md
 │   └── question_templates.md
 ├── schema-spec.md
-└── serve.sh
 ```
 
 ## Question Data
@@ -135,11 +132,20 @@ question-gen/question-maker-output/data/questions/
 
 The script validates required fields, separates questions by category, and renumbers IDs using the correct category prefixes.
 
-## Progress Storage
+## ALSM (Advanced Local Session Management)
 
-User data is stored locally in the browser using `localStorage` under the `alsm` key. This includes profile information, session history, category averages, streaks, and weak-question tracking.
+This app uses **ALSM** to manage learning progress entirely in the browser.
 
-No data is sent to a server.
+What gets stored (client-side only):
+
+- Profile info and streaks
+- Session history
+- Category averages / breakdowns
+- Weak-question tracking
+
+ALSM writes to `localStorage` under the `alsm` key.
+
+On GitHub Pages, the only network usage is downloading the static site files (including the JSON question files). After the page loads, everything runs locally and nothing is uploaded or saved anywhere else.
 
 ## Development Notes
 
