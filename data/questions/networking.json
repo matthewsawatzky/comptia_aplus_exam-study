@@ -1,0 +1,1956 @@
+{
+  "schema_version": 1,
+  "category": "networking",
+  "questions": [
+    {
+      "id": "net-001",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "protocols",
+      "difficulty": "easy",
+      "question": "Which protocol automatically assigns IP addresses and network configuration to hosts?",
+      "options": [
+        "DNS",
+        "DHCP",
+        "NAT",
+        "APIPA"
+      ],
+      "answer": "DHCP",
+      "explanation": "DHCP automatically assigns IP address, subnet mask, default gateway, and DNS server settings to clients."
+    },
+    {
+      "id": "net-002",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "dns",
+      "difficulty": "easy",
+      "question": "A user can browse to 142.250.190.14 but not to www.google.com. Which service is most likely failing?",
+      "options": [
+        "DHCP",
+        "DNS",
+        "NTP",
+        "SNMP"
+      ],
+      "answer": "DNS",
+      "explanation": "DNS resolves host names to IP addresses. Reaching an IP address directly but not a name usually indicates a DNS issue."
+    },
+    {
+      "id": "net-003",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "ip-addressing",
+      "difficulty": "easy",
+      "question": "Which IPv4 address range is used by APIPA when a DHCP server is unavailable?",
+      "options": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "169.254.0.0/16",
+        "192.168.0.0/16"
+      ],
+      "answer": "169.254.0.0/16",
+      "explanation": "APIPA assigns addresses in the 169.254.0.0/16 range when a host cannot obtain an address from DHCP."
+    },
+    {
+      "id": "net-004",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "ports",
+      "difficulty": "easy",
+      "question": "Which default port is used by HTTPS?",
+      "options": [
+        "21",
+        "25",
+        "80",
+        "443"
+      ],
+      "answer": "443",
+      "explanation": "HTTPS uses TCP port 443 by default for encrypted web traffic."
+    },
+    {
+      "id": "net-005",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "osi-model",
+      "difficulty": "easy",
+      "question": "At which OSI layer do switches primarily operate when forwarding frames by MAC address?",
+      "options": [
+        "Layer 1",
+        "Layer 2",
+        "Layer 3",
+        "Layer 7"
+      ],
+      "answer": "Layer 2",
+      "explanation": "Switches commonly operate at OSI Layer 2 by forwarding Ethernet frames based on MAC addresses."
+    },
+    {
+      "id": "net-006",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "routing",
+      "difficulty": "easy",
+      "question": "A workstation needs to send traffic to another network. Which configured address does it use as the next hop?",
+      "options": [
+        "DNS server",
+        "Default gateway",
+        "Loopback address",
+        "Subnet mask"
+      ],
+      "answer": "Default gateway",
+      "explanation": "The default gateway is the router address a host uses to reach destinations outside the local subnet."
+    },
+    {
+      "id": "net-007",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "easy",
+      "question": "Which Wi-Fi security mode is generally recommended over WEP for modern networks?",
+      "options": [
+        "WPA2",
+        "Open authentication",
+        "Shared WEP",
+        "MAC filtering only"
+      ],
+      "answer": "WPA2",
+      "explanation": "WPA2 provides much stronger encryption than WEP and is a common baseline for secure Wi-Fi."
+    },
+    {
+      "id": "net-008",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "cabling",
+      "difficulty": "easy",
+      "question": "Which connector is commonly used for twisted-pair Ethernet cabling?",
+      "options": [
+        "RJ11",
+        "RJ45",
+        "F-type",
+        "LC"
+      ],
+      "answer": "RJ45",
+      "explanation": "RJ45 connectors are used with copper twisted-pair Ethernet cables such as Cat 5e and Cat 6."
+    },
+    {
+      "id": "net-009",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "network-tools",
+      "difficulty": "easy",
+      "question": "Which command is commonly used to test basic IP connectivity to another host?",
+      "options": [
+        "ping",
+        "nslookup",
+        "net use",
+        "ipconfig"
+      ],
+      "answer": "ping",
+      "explanation": "The ping command sends ICMP echo requests to test whether a host is reachable over IP."
+    },
+    {
+      "id": "net-010",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "nat",
+      "difficulty": "medium",
+      "question": "A home router allows many private devices to share one public IPv4 address. Which technology makes this possible?",
+      "options": [
+        "NAT",
+        "DNSSEC",
+        "VLAN tagging",
+        "SNMP"
+      ],
+      "answer": "NAT",
+      "explanation": "Network Address Translation maps private internal addresses to one or more public addresses for Internet access."
+    },
+    {
+      "id": "net-011",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "firewalls",
+      "difficulty": "medium",
+      "question": "A technician needs to block inbound Remote Desktop traffic from the Internet. Which TCP port should be filtered?",
+      "options": [
+        "22",
+        "53",
+        "3389",
+        "5900"
+      ],
+      "answer": "3389",
+      "explanation": "Microsoft Remote Desktop Protocol uses TCP port 3389 by default."
+    },
+    {
+      "id": "net-012",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "tcp-ip",
+      "difficulty": "medium",
+      "question": "Which transport protocol is connection-oriented and uses a three-way handshake?",
+      "options": [
+        "UDP",
+        "TCP",
+        "ICMP",
+        "ARP"
+      ],
+      "answer": "TCP",
+      "explanation": "TCP establishes sessions with a three-way handshake and provides reliable delivery features."
+    },
+    {
+      "id": "net-013",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "switching",
+      "difficulty": "medium",
+      "question": "A switch port is assigned to VLAN 20. What is the main purpose of this VLAN assignment?",
+      "options": [
+        "Increase cable length",
+        "Create a separate broadcast domain",
+        "Encrypt all frames",
+        "Replace IP addressing"
+      ],
+      "answer": "Create a separate broadcast domain",
+      "explanation": "VLANs logically separate Layer 2 broadcast domains on switches."
+    },
+    {
+      "id": "net-014",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "A 2.4 GHz Wi-Fi network has neighboring networks on channels 1 and 6. Which non-overlapping channel is the best first choice?",
+      "options": [
+        "2",
+        "4",
+        "9",
+        "11"
+      ],
+      "answer": "11",
+      "explanation": "In 2.4 GHz Wi-Fi, channels 1, 6, and 11 are the common non-overlapping channels."
+    },
+    {
+      "id": "net-015",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "network-devices",
+      "difficulty": "easy",
+      "question": "Which device connects multiple networks and forwards packets based on IP addresses?",
+      "options": [
+        "Hub",
+        "Router",
+        "Patch panel",
+        "Repeater"
+      ],
+      "answer": "Router",
+      "explanation": "Routers operate at Layer 3 and forward packets between different IP networks."
+    },
+    {
+      "id": "net-016",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "question": "A Windows PC has an address of 169.254.25.10. What should the technician check first?",
+      "options": [
+        "DHCP availability",
+        "DNS zone transfers",
+        "HTTPS certificate chain",
+        "Wireless channel width"
+      ],
+      "answer": "DHCP availability",
+      "explanation": "A 169.254.x.x APIPA address indicates the client could not obtain a DHCP lease."
+    },
+    {
+      "id": "net-017",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "vpn",
+      "difficulty": "medium",
+      "question": "A remote employee needs encrypted access to internal company resources over the Internet. Which solution is most appropriate?",
+      "options": [
+        "VPN",
+        "Hub",
+        "APIPA",
+        "Unmanaged switch"
+      ],
+      "answer": "VPN",
+      "explanation": "A VPN creates an encrypted tunnel for remote access to private network resources."
+    },
+    {
+      "id": "net-018",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "dns",
+      "difficulty": "medium",
+      "question": "Which DNS record maps a host name to an IPv4 address?",
+      "options": [
+        "AAAA",
+        "MX",
+        "A",
+        "PTR"
+      ],
+      "answer": "A",
+      "explanation": "An A record maps a DNS name to an IPv4 address."
+    },
+    {
+      "id": "net-019",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "cloud-networking",
+      "difficulty": "medium",
+      "question": "In a cloud environment, what does a virtual private cloud primarily provide?",
+      "options": [
+        "A dedicated physical switch",
+        "An isolated virtual network",
+        "A backup tape library",
+        "A replacement for DNS"
+      ],
+      "answer": "An isolated virtual network",
+      "explanation": "A virtual private cloud provides logically isolated networking for cloud resources."
+    },
+    {
+      "id": "net-020",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "security",
+      "difficulty": "medium",
+      "question": "Which principle limits users and systems to only the network access they need to perform their jobs?",
+      "options": [
+        "Least privilege",
+        "Full mesh",
+        "Broadcast forwarding",
+        "Port mirroring"
+      ],
+      "answer": "Least privilege",
+      "explanation": "Least privilege reduces risk by granting only the access necessary for a role or task."
+    },
+    {
+      "id": "net-021",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "subnetting",
+      "difficulty": "medium",
+      "question": "A host is configured as 192.168.10.25/24. Which address is on the same subnet?",
+      "options": [
+        "192.168.10.200",
+        "192.168.11.25",
+        "192.168.9.25",
+        "192.168.20.1"
+      ],
+      "answer": "192.168.10.200",
+      "explanation": "With a /24 mask, hosts from 192.168.10.1 through 192.168.10.254 are in the same subnet."
+    },
+    {
+      "id": "net-022",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "ports",
+      "difficulty": "medium",
+      "question": "A technician must allow secure file transfer using SSH. Which port should be opened for SFTP?",
+      "options": [
+        "20",
+        "21",
+        "22",
+        "69"
+      ],
+      "answer": "22",
+      "explanation": "SFTP runs over SSH, which uses TCP port 22 by default."
+    },
+    {
+      "id": "net-023",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "Users far from an access point report weak signal and intermittent drops. What is the most likely cause?",
+      "options": [
+        "Low received signal strength",
+        "Wrong subnet mask only",
+        "Duplicate MAC address on DNS",
+        "Expired DHCP scope only"
+      ],
+      "answer": "Low received signal strength",
+      "explanation": "Distance and obstructions reduce signal strength, causing unstable wireless connections."
+    },
+    {
+      "id": "net-024",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "network-tools",
+      "difficulty": "medium",
+      "question": "Which command would a Windows technician use to display the current IP address, subnet mask, and default gateway?",
+      "options": [
+        "ipconfig",
+        "chmod",
+        "dig -x",
+        "net use"
+      ],
+      "answer": "ipconfig",
+      "explanation": "On Windows, ipconfig displays current TCP/IP configuration details for network adapters."
+    },
+    {
+      "id": "net-025",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "cabling",
+      "difficulty": "medium",
+      "question": "A cable run must support 10 Gbps Ethernet up to 100 meters over copper. Which cable category is the best choice?",
+      "options": [
+        "Cat 3",
+        "Cat 5",
+        "Cat 5e",
+        "Cat 6a"
+      ],
+      "answer": "Cat 6a",
+      "explanation": "Cat 6a supports 10GBASE-T up to 100 meters under proper installation conditions."
+    },
+    {
+      "id": "net-026",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "dhcp",
+      "difficulty": "medium",
+      "question": "A DHCP scope is exhausted. What symptom will new clients most likely experience?",
+      "options": [
+        "They receive duplicate DNS zones",
+        "They fail to obtain valid leases",
+        "They automatically become routers",
+        "They switch to IPv6 only"
+      ],
+      "answer": "They fail to obtain valid leases",
+      "explanation": "If no addresses are available in the DHCP scope, new clients cannot receive leases."
+    },
+    {
+      "id": "net-027",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "osi-model",
+      "difficulty": "medium",
+      "question": "Which OSI layer is responsible for logical addressing and routing?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Session"
+      ],
+      "answer": "Network",
+      "explanation": "The Network layer, Layer 3, handles logical IP addressing and routing between networks."
+    },
+    {
+      "id": "net-028",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "troubleshooting",
+      "difficulty": "hard",
+      "question": "A user can ping the default gateway but cannot reach any Internet sites by IP address. What is the most likely next device or path to investigate?",
+      "options": [
+        "Local NIC loopback",
+        "Upstream router or ISP connection",
+        "Keyboard driver",
+        "Local hosts file only"
+      ],
+      "answer": "Upstream router or ISP connection",
+      "explanation": "Successful gateway pings show local connectivity, so the issue is likely beyond the gateway or with its WAN path."
+    },
+    {
+      "id": "net-029",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "routing",
+      "difficulty": "hard",
+      "question": "Two routers have static routes pointing to each other for an unknown destination, causing traffic to bounce until TTL expires. What problem is this?",
+      "options": [
+        "Routing loop",
+        "DNS recursion",
+        "Port security violation",
+        "Channel overlap"
+      ],
+      "answer": "Routing loop",
+      "explanation": "A routing loop occurs when packets are forwarded repeatedly between routers instead of reaching a valid destination."
+    },
+    {
+      "id": "net-030",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "hard",
+      "question": "A company wants each Wi-Fi user to authenticate with unique domain credentials instead of a shared passphrase. Which option best supports this?",
+      "options": [
+        "WPA2-Enterprise",
+        "WEP shared key",
+        "Hidden SSID only",
+        "Open network with captive DNS"
+      ],
+      "answer": "WPA2-Enterprise",
+      "explanation": "WPA2-Enterprise uses 802.1X authentication, commonly with RADIUS, for per-user credentials."
+    },
+    {
+      "id": "net-031",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "security",
+      "difficulty": "hard",
+      "question": "Which network security approach assumes no device or user is trusted by default, even inside the corporate network?",
+      "options": [
+        "Zero trust",
+        "Flat network",
+        "Implicit allow",
+        "Hub-and-spoke cabling"
+      ],
+      "answer": "Zero trust",
+      "explanation": "Zero trust requires verification and least-privilege access regardless of network location."
+    },
+    {
+      "id": "net-032",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "network-tools",
+      "difficulty": "medium",
+      "question": "Which command is used to trace the route packets take to a destination on Windows?",
+      "options": [
+        "tracert",
+        "ifconfig",
+        "net use",
+        "arp -d"
+      ],
+      "answer": "tracert",
+      "explanation": "The Windows tracert command displays the path and hops used to reach a destination."
+    },
+    {
+      "id": "net-033",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "firewalls",
+      "difficulty": "medium",
+      "question": "A firewall rule allows outbound TCP 443. What type of user traffic is primarily being allowed?",
+      "options": [
+        "Secure web browsing",
+        "DHCP lease requests",
+        "Plain FTP control",
+        "Telnet sessions"
+      ],
+      "answer": "Secure web browsing",
+      "explanation": "TCP 443 is the default port for HTTPS, which is secure web browsing."
+    },
+    {
+      "id": "net-034",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "network-devices",
+      "difficulty": "easy",
+      "question": "Which device broadcasts incoming traffic out all ports and does not learn MAC addresses?",
+      "options": [
+        "Hub",
+        "Layer 3 switch",
+        "Router",
+        "Firewall"
+      ],
+      "answer": "Hub",
+      "explanation": "A hub is a Layer 1 device that repeats signals to all ports without MAC address learning."
+    },
+    {
+      "id": "net-035",
+      "type": "single_choice",
+      "category": "networking",
+      "subcategory": "cloud-networking",
+      "difficulty": "hard",
+      "question": "A cloud administrator restricts inbound traffic to a virtual machine by source IP, protocol, and port. Which cloud control is most similar to this?",
+      "options": [
+        "Security group",
+        "Object lifecycle rule",
+        "Snapshot schedule",
+        "Auto-scaling image"
+      ],
+      "answer": "Security group",
+      "explanation": "Cloud security groups act like virtual firewalls that control allowed inbound and outbound traffic."
+    },
+    {
+      "id": "net-036",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "ip-addressing",
+      "difficulty": "medium",
+      "question": "Which THREE IPv4 ranges are private RFC 1918 address ranges? (Select all that apply)",
+      "options": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16",
+        "169.254.0.0/16",
+        "8.8.8.0/24"
+      ],
+      "answer": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16"
+      ],
+      "explanation": "RFC 1918 private IPv4 ranges are 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16."
+    },
+    {
+      "id": "net-037",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "ports",
+      "difficulty": "medium",
+      "question": "Which TWO protocols commonly use TCP port 25 or TCP port 587 for sending email? (Select all that apply)",
+      "options": [
+        "SMTP",
+        "Submission",
+        "POP3",
+        "IMAP",
+        "SNMP"
+      ],
+      "answer": [
+        "SMTP",
+        "Submission"
+      ],
+      "explanation": "SMTP uses TCP 25 for mail transfer, while TCP 587 is the message submission port for authenticated email clients."
+    },
+    {
+      "id": "net-038",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "network-tools",
+      "difficulty": "easy",
+      "question": "Which TWO commands can help troubleshoot DNS name resolution? (Select all that apply)",
+      "options": [
+        "nslookup",
+        "dig",
+        "net use",
+        "format",
+        "chkdsk"
+      ],
+      "answer": [
+        "nslookup",
+        "dig"
+      ],
+      "explanation": "nslookup and dig query DNS servers and help verify name resolution records."
+    },
+    {
+      "id": "net-039",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "A small office has unstable 2.4 GHz Wi-Fi. Which TWO changes can reduce interference? (Select all that apply)",
+      "options": [
+        "Use channel 1, 6, or 11",
+        "Move away from microwave ovens",
+        "Disable all encryption",
+        "Use duplicate SSIDs on every neighbor router",
+        "Replace DNS with APIPA"
+      ],
+      "answer": [
+        "Use channel 1, 6, or 11",
+        "Move away from microwave ovens"
+      ],
+      "explanation": "Non-overlapping channels and reducing sources of radio interference can improve 2.4 GHz reliability."
+    },
+    {
+      "id": "net-040",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "dhcp",
+      "difficulty": "medium",
+      "question": "Which THREE values are commonly provided to a client by DHCP? (Select all that apply)",
+      "options": [
+        "IP address",
+        "Subnet mask",
+        "Default gateway",
+        "CPU speed",
+        "Local administrator password"
+      ],
+      "answer": [
+        "IP address",
+        "Subnet mask",
+        "Default gateway"
+      ],
+      "explanation": "DHCP commonly supplies IP address, subnet mask, default gateway, DNS servers, and lease information."
+    },
+    {
+      "id": "net-041",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "osi-model",
+      "difficulty": "medium",
+      "question": "Which TWO items are associated with OSI Layer 2? (Select all that apply)",
+      "options": [
+        "MAC addresses",
+        "Ethernet frames",
+        "IP routing tables",
+        "TCP ports",
+        "Application encryption"
+      ],
+      "answer": [
+        "MAC addresses",
+        "Ethernet frames"
+      ],
+      "explanation": "Layer 2 uses MAC addresses and frames for local network delivery."
+    },
+    {
+      "id": "net-042",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "security",
+      "difficulty": "medium",
+      "question": "Which TWO practices improve network security for remote access? (Select all that apply)",
+      "options": [
+        "Require MFA",
+        "Use a VPN or secure access gateway",
+        "Expose RDP directly to the Internet",
+        "Use shared admin accounts",
+        "Disable logging"
+      ],
+      "answer": [
+        "Require MFA",
+        "Use a VPN or secure access gateway"
+      ],
+      "explanation": "MFA and encrypted remote access reduce the risk of unauthorized access."
+    },
+    {
+      "id": "net-043",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "cabling",
+      "difficulty": "easy",
+      "question": "Which TWO media types are commonly used for Ethernet networks? (Select all that apply)",
+      "options": [
+        "Twisted-pair copper",
+        "Fiber optic cable",
+        "HDMI cable",
+        "Molex cable",
+        "SATA cable"
+      ],
+      "answer": [
+        "Twisted-pair copper",
+        "Fiber optic cable"
+      ],
+      "explanation": "Ethernet commonly runs over twisted-pair copper and fiber optic cabling."
+    },
+    {
+      "id": "net-044",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "routing",
+      "difficulty": "hard",
+      "question": "A branch office cannot reach a new subnet at headquarters. Which TWO router items should be checked first? (Select all that apply)",
+      "options": [
+        "Route table entries",
+        "Default route or next hop",
+        "Monitor refresh rate",
+        "Printer toner level",
+        "Keyboard locale"
+      ],
+      "answer": [
+        "Route table entries",
+        "Default route or next hop"
+      ],
+      "explanation": "Missing route table entries or an incorrect next hop can prevent traffic from reaching a remote subnet."
+    },
+    {
+      "id": "net-045",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "dns",
+      "difficulty": "medium",
+      "question": "Which TWO DNS record types are used for mail delivery and reverse lookups? (Select all that apply)",
+      "options": [
+        "MX",
+        "PTR",
+        "TXT",
+        "SRV",
+        "CNAME"
+      ],
+      "answer": [
+        "MX",
+        "PTR"
+      ],
+      "explanation": "MX records identify mail exchangers, and PTR records map IP addresses back to names."
+    },
+    {
+      "id": "net-046",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "switching",
+      "difficulty": "medium",
+      "question": "Which TWO statements about VLANs are correct? (Select all that apply)",
+      "options": [
+        "They can separate broadcast domains",
+        "They can improve segmentation",
+        "They replace all routers",
+        "They require coaxial cable",
+        "They are the same as DNS zones"
+      ],
+      "answer": [
+        "They can separate broadcast domains",
+        "They can improve segmentation"
+      ],
+      "explanation": "VLANs logically segment switched networks and reduce broadcast scope."
+    },
+    {
+      "id": "net-047",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "firewalls",
+      "difficulty": "medium",
+      "question": "A firewall rule is being created for a secure web server. Which TWO settings are typically required? (Select all that apply)",
+      "options": [
+        "TCP protocol",
+        "Destination port 443",
+        "UDP protocol only",
+        "Destination port 23",
+        "Source MAC address on the Internet"
+      ],
+      "answer": [
+        "TCP protocol",
+        "Destination port 443"
+      ],
+      "explanation": "HTTPS web servers typically listen on TCP port 443."
+    },
+    {
+      "id": "net-048",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "Which TWO Wi-Fi standards commonly support the 5 GHz band? (Select all that apply)",
+      "options": [
+        "802.11a",
+        "802.11ac",
+        "802.11b",
+        "802.3af",
+        "1000BASE-T"
+      ],
+      "answer": [
+        "802.11a",
+        "802.11ac"
+      ],
+      "explanation": "802.11a and 802.11ac operate in the 5 GHz band; 802.11b is 2.4 GHz."
+    },
+    {
+      "id": "net-049",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "network-tools",
+      "difficulty": "medium",
+      "question": "Which TWO commands can show active network connections on a workstation? (Select all that apply)",
+      "options": [
+        "netstat",
+        "ss",
+        "mkdir",
+        "passwd",
+        "diskpart"
+      ],
+      "answer": [
+        "netstat",
+        "ss"
+      ],
+      "explanation": "netstat and ss can display active sockets, listening ports, and connection details."
+    },
+    {
+      "id": "net-050",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "network-devices",
+      "difficulty": "medium",
+      "question": "Which TWO devices can commonly provide Power over Ethernet to access points or IP phones? (Select all that apply)",
+      "options": [
+        "PoE switch",
+        "PoE injector",
+        "Passive hub",
+        "Cable modem only",
+        "Patch panel without power"
+      ],
+      "answer": [
+        "PoE switch",
+        "PoE injector"
+      ],
+      "explanation": "PoE switches and PoE injectors can deliver electrical power over Ethernet cabling."
+    },
+    {
+      "id": "net-051",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "troubleshooting",
+      "difficulty": "hard",
+      "question": "A user reports no network access after moving desks. Which THREE checks are most appropriate first? (Select all that apply)",
+      "options": [
+        "Verify link lights",
+        "Test or replace the patch cable",
+        "Confirm the wall jack is patched to a switch",
+        "Reinstall the operating system",
+        "Change the website certificate"
+      ],
+      "answer": [
+        "Verify link lights",
+        "Test or replace the patch cable",
+        "Confirm the wall jack is patched to a switch"
+      ],
+      "explanation": "After a move, physical connectivity issues such as cabling, patching, and link status are common."
+    },
+    {
+      "id": "net-052",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "tcp-ip",
+      "difficulty": "medium",
+      "question": "Which TWO protocols are part of the TCP/IP suite and operate at the transport layer? (Select all that apply)",
+      "options": [
+        "TCP",
+        "UDP",
+        "ARP",
+        "ICMP",
+        "DNS"
+      ],
+      "answer": [
+        "TCP",
+        "UDP"
+      ],
+      "explanation": "TCP and UDP are transport-layer protocols in the TCP/IP model."
+    },
+    {
+      "id": "net-053",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "vpn",
+      "difficulty": "hard",
+      "question": "Which TWO items are commonly needed for a client VPN connection? (Select all that apply)",
+      "options": [
+        "VPN server address",
+        "User authentication credentials",
+        "Local printer toner",
+        "Unlocked switch rack only",
+        "A public DNS zone transfer"
+      ],
+      "answer": [
+        "VPN server address",
+        "User authentication credentials"
+      ],
+      "explanation": "A client VPN typically requires the VPN endpoint address and valid authentication credentials."
+    },
+    {
+      "id": "net-054",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "subnetting",
+      "difficulty": "hard",
+      "question": "For the network 192.168.50.0/26, which TWO addresses are valid host addresses? (Select all that apply)",
+      "options": [
+        "192.168.50.1",
+        "192.168.50.62",
+        "192.168.50.0",
+        "192.168.50.63",
+        "192.168.50.64"
+      ],
+      "answer": [
+        "192.168.50.1",
+        "192.168.50.62"
+      ],
+      "explanation": "A /26 subnet has usable host addresses from .1 through .62; .0 is the network address and .63 is broadcast."
+    },
+    {
+      "id": "net-055",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "cloud-networking",
+      "difficulty": "medium",
+      "question": "Which TWO cloud features help control network traffic to workloads? (Select all that apply)",
+      "options": [
+        "Security groups",
+        "Network ACLs",
+        "Screen savers",
+        "Local USB hubs",
+        "Printer queues"
+      ],
+      "answer": [
+        "Security groups",
+        "Network ACLs"
+      ],
+      "explanation": "Security groups and network ACLs are common cloud controls for filtering traffic."
+    },
+    {
+      "id": "net-056",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "security",
+      "difficulty": "hard",
+      "question": "Which TWO controls best support network segmentation for sensitive systems? (Select all that apply)",
+      "options": [
+        "VLANs",
+        "Firewall rules between segments",
+        "Shared passwords",
+        "Flat switch design",
+        "Open guest access"
+      ],
+      "answer": [
+        "VLANs",
+        "Firewall rules between segments"
+      ],
+      "explanation": "VLANs separate traffic, and firewall rules control what is allowed between segments."
+    },
+    {
+      "id": "net-057",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "protocols",
+      "difficulty": "medium",
+      "question": "Which TWO protocols are commonly used to securely manage network devices? (Select all that apply)",
+      "options": [
+        "SSH",
+        "HTTPS",
+        "Telnet",
+        "TFTP",
+        "HTTP only"
+      ],
+      "answer": [
+        "SSH",
+        "HTTPS"
+      ],
+      "explanation": "SSH and HTTPS provide encrypted management access, unlike Telnet and plain HTTP."
+    },
+    {
+      "id": "net-058",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "hard",
+      "question": "A technician is designing guest Wi-Fi. Which TWO settings best separate guests from internal systems? (Select all that apply)",
+      "options": [
+        "Guest VLAN",
+        "Client isolation",
+        "Same subnet as servers",
+        "Shared domain admin login",
+        "Disable the firewall"
+      ],
+      "answer": [
+        "Guest VLAN",
+        "Client isolation"
+      ],
+      "explanation": "Guest VLANs and client isolation help prevent guests from reaching internal or peer devices."
+    },
+    {
+      "id": "net-059",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "nat",
+      "difficulty": "medium",
+      "question": "Which TWO statements describe NAT? (Select all that apply)",
+      "options": [
+        "It translates IP addresses between networks",
+        "It helps private hosts access public networks",
+        "It replaces all encryption",
+        "It assigns SSIDs",
+        "It is the same as a subnet mask"
+      ],
+      "answer": [
+        "It translates IP addresses between networks",
+        "It helps private hosts access public networks"
+      ],
+      "explanation": "NAT translates addresses, often allowing private internal hosts to communicate with public networks."
+    },
+    {
+      "id": "net-060",
+      "type": "multi_choice",
+      "category": "networking",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "question": "Which TWO symptoms commonly indicate a duplicate IP address? (Select all that apply)",
+      "options": [
+        "Intermittent connectivity",
+        "Operating system IP conflict warning",
+        "Brighter monitor display",
+        "Faster DNS lookups",
+        "Increased disk space"
+      ],
+      "answer": [
+        "Intermittent connectivity",
+        "Operating system IP conflict warning"
+      ],
+      "explanation": "Duplicate IP addresses can cause intermittent failures and may trigger IP conflict warnings."
+    },
+    {
+      "id": "net-061",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "networking",
+      "subcategory": "subnetting",
+      "difficulty": "easy",
+      "question": "The default subnet mask for a Class C IPv4 network is ___.",
+      "word_bank": [
+        "255.255.255.0",
+        "255.255.0.0",
+        "255.0.0.0"
+      ],
+      "answer": "255.255.255.0",
+      "explanation": "A traditional Class C network uses a /24 mask, which is 255.255.255.0."
+    },
+    {
+      "id": "net-062",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "networking",
+      "subcategory": "tcp-ip",
+      "difficulty": "medium",
+      "question": "In the TCP three-way handshake, the client sends SYN, the server responds with ___, and the client replies with ACK.",
+      "word_bank": [
+        "SYN-ACK",
+        "FIN",
+        "RST",
+        "NACK"
+      ],
+      "answer": "SYN-ACK",
+      "explanation": "The TCP three-way handshake is SYN, SYN-ACK, ACK."
+    },
+    {
+      "id": "net-063",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "networking",
+      "subcategory": "ports",
+      "difficulty": "easy",
+      "question": "The default TCP port for SSH is ___.",
+      "word_bank": [
+        "22",
+        "23",
+        "25",
+        "3389"
+      ],
+      "answer": "22",
+      "explanation": "SSH uses TCP port 22 by default for encrypted remote management."
+    },
+    {
+      "id": "net-064",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "networking",
+      "subcategory": "dns",
+      "difficulty": "easy",
+      "question": "A DNS ___ record maps a host name to an IPv6 address.",
+      "word_bank": [
+        "AAAA",
+        "A",
+        "MX",
+        "PTR"
+      ],
+      "answer": "AAAA",
+      "explanation": "AAAA records map DNS names to IPv6 addresses."
+    },
+    {
+      "id": "net-065",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "networking",
+      "subcategory": "ip-addressing",
+      "difficulty": "medium",
+      "question": "The IPv4 loopback address commonly used to test the local TCP/IP stack is ___.",
+      "word_bank": [
+        "127.0.0.1",
+        "0.0.0.0",
+        "169.254.1.1",
+        "255.255.255.255"
+      ],
+      "answer": "127.0.0.1",
+      "explanation": "127.0.0.1 is the standard IPv4 loopback address for testing the local host."
+    },
+    {
+      "id": "net-066",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "The network name broadcast by a Wi-Fi access point is the ___.",
+      "word_bank": [
+        "SSID",
+        "BSSID",
+        "VLAN",
+        "FQDN"
+      ],
+      "answer": "SSID",
+      "explanation": "The SSID is the wireless network name clients use to identify and join a WLAN."
+    },
+    {
+      "id": "net-067",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "networking",
+      "subcategory": "network-tools",
+      "difficulty": "easy",
+      "question": "On Windows, the command used to map or view SMB network shares is ___.",
+      "word_bank": [
+        "net use",
+        "ping",
+        "tracert",
+        "hostname"
+      ],
+      "answer": "net use",
+      "explanation": "The net use command connects to, removes, or displays SMB network connections."
+    },
+    {
+      "id": "net-068",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "networking",
+      "subcategory": "osi-model",
+      "difficulty": "easy",
+      "question": "The OSI layer that deals with cables, connectors, and signaling is the ___ layer.",
+      "word_bank": [
+        "Physical",
+        "Transport",
+        "Network",
+        "Application"
+      ],
+      "answer": "Physical",
+      "explanation": "The Physical layer defines transmission media, connectors, voltages, and signaling."
+    },
+    {
+      "id": "net-069",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "networking",
+      "subcategory": "ports",
+      "difficulty": "easy",
+      "question": "The default TCP port for HTTP is ___.",
+      "word_bank": [
+        "80",
+        "110",
+        "143",
+        "443"
+      ],
+      "answer": "80",
+      "explanation": "HTTP uses TCP port 80 by default."
+    },
+    {
+      "id": "net-070",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "networking",
+      "subcategory": "dhcp",
+      "difficulty": "medium",
+      "question": "A time-limited DHCP address assignment is called a ___.",
+      "word_bank": [
+        "lease",
+        "zone",
+        "trunk",
+        "route"
+      ],
+      "answer": "lease",
+      "explanation": "DHCP grants an address for a defined lease period before renewal is required."
+    },
+    {
+      "id": "net-071",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "networking",
+      "subcategory": "switching",
+      "difficulty": "medium",
+      "question": "A switch port that carries traffic for multiple VLANs is commonly called a ___ port.",
+      "word_bank": [
+        "trunk",
+        "access",
+        "loopback",
+        "console"
+      ],
+      "answer": "trunk",
+      "explanation": "A trunk port carries tagged traffic for multiple VLANs between switches or network devices."
+    },
+    {
+      "id": "net-072",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "networking",
+      "subcategory": "cabling",
+      "difficulty": "medium",
+      "question": "Power delivered to devices over Ethernet cabling is abbreviated ___.",
+      "word_bank": [
+        "PoE",
+        "NAT",
+        "DNS",
+        "SSID"
+      ],
+      "answer": "PoE",
+      "explanation": "PoE stands for Power over Ethernet and can power devices such as IP phones and access points."
+    },
+    {
+      "id": "net-073",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "networking",
+      "subcategory": "nat",
+      "difficulty": "medium",
+      "question": "The NAT method that maps many internal hosts to one public address by tracking port numbers is often called ___.",
+      "word_bank": [
+        "PAT",
+        "APIPA",
+        "STP",
+        "WEP"
+      ],
+      "answer": "PAT",
+      "explanation": "Port Address Translation allows multiple private hosts to share one public IP address by using unique port mappings."
+    },
+    {
+      "id": "net-074",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "networking",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "question": "A Linux or macOS command used to display interface IP configuration is ___.",
+      "word_bank": [
+        "ifconfig",
+        "net use",
+        "gpupdate",
+        "tasklist"
+      ],
+      "answer": "ifconfig",
+      "explanation": "ifconfig can display and configure network interface settings on many Unix-like systems."
+    },
+    {
+      "id": "net-075",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "The strongest common personal Wi-Fi security option listed here is ___.",
+      "word_bank": [
+        "WPA3-Personal",
+        "WEP",
+        "Open",
+        "WPA"
+      ],
+      "answer": "WPA3-Personal",
+      "explanation": "WPA3-Personal is stronger than WPA, WEP, and open networks for personal Wi-Fi security."
+    },
+    {
+      "id": "net-076",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "networking",
+      "subcategory": "security",
+      "difficulty": "hard",
+      "question": "A security model that continuously verifies identity, device posture, and access context is known as ___.",
+      "word_bank": [
+        "zero trust",
+        "bus topology",
+        "APIPA",
+        "CSMA/CD"
+      ],
+      "answer": "zero trust",
+      "explanation": "Zero trust avoids implicit trust and requires continuous validation of access requests."
+    },
+    {
+      "id": "net-077",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "networking",
+      "subcategory": "vpn",
+      "difficulty": "medium",
+      "question": "A VPN provides an encrypted ___ between endpoints over an untrusted network.",
+      "word_bank": [
+        "tunnel",
+        "broadcast",
+        "collision",
+        "patch"
+      ],
+      "answer": "tunnel",
+      "explanation": "VPNs create encrypted tunnels to protect traffic across public or untrusted networks."
+    },
+    {
+      "id": "net-078",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "networking",
+      "subcategory": "cloud-networking",
+      "difficulty": "medium",
+      "question": "In cloud networking, a private IP subnet inside an isolated virtual network is commonly part of a ___.",
+      "word_bank": [
+        "VPC",
+        "BIOS",
+        "RAID",
+        "KVM"
+      ],
+      "answer": "VPC",
+      "explanation": "A VPC is a logically isolated cloud network that can contain private subnets."
+    },
+    {
+      "id": "net-079",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "networking",
+      "subcategory": "protocols",
+      "difficulty": "hard",
+      "question": "The protocol used to discover a MAC address for a known IPv4 address on a local network is ___.",
+      "word_bank": [
+        "ARP",
+        "DNS",
+        "SMTP",
+        "NTP"
+      ],
+      "answer": "ARP",
+      "explanation": "ARP resolves IPv4 addresses to MAC addresses on the local network segment."
+    },
+    {
+      "id": "net-080",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "networking",
+      "subcategory": "firewalls",
+      "difficulty": "medium",
+      "question": "A firewall rule that denies traffic unless it is specifically permitted follows a default ___ approach.",
+      "word_bank": [
+        "deny",
+        "broadcast",
+        "resolve",
+        "repeat"
+      ],
+      "answer": "deny",
+      "explanation": "Default deny blocks traffic by default and only allows traffic that matches explicit permit rules."
+    },
+    {
+      "id": "net-081",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "ports",
+      "difficulty": "easy",
+      "question": "Match each protocol to its default port number.",
+      "items": [
+        "HTTP",
+        "HTTPS",
+        "DNS",
+        "SSH",
+        "RDP"
+      ],
+      "targets": [
+        "80",
+        "443",
+        "53",
+        "22",
+        "3389"
+      ],
+      "answer": {
+        "HTTP": "80",
+        "HTTPS": "443",
+        "DNS": "53",
+        "SSH": "22",
+        "RDP": "3389"
+      },
+      "explanation": "Common default ports include HTTP 80, HTTPS 443, DNS 53, SSH 22, and RDP 3389."
+    },
+    {
+      "id": "net-082",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "osi-model",
+      "difficulty": "medium",
+      "question": "Match each OSI layer to a common example.",
+      "items": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Transport",
+        "Application"
+      ],
+      "targets": [
+        "Cables and signals",
+        "MAC addresses",
+        "IP routing",
+        "TCP ports",
+        "HTTP service"
+      ],
+      "answer": {
+        "Physical": "Cables and signals",
+        "Data Link": "MAC addresses",
+        "Network": "IP routing",
+        "Transport": "TCP ports",
+        "Application": "HTTP service"
+      },
+      "explanation": "The OSI layers map physical media, local frames, routing, transport sessions, and application services."
+    },
+    {
+      "id": "net-083",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "network-tools",
+      "difficulty": "medium",
+      "question": "Match each troubleshooting command to its typical use.",
+      "items": [
+        "ping",
+        "tracert",
+        "nslookup",
+        "ipconfig",
+        "netstat"
+      ],
+      "targets": [
+        "Test reachability",
+        "Show packet path",
+        "Query DNS records",
+        "Show Windows IP settings",
+        "Show active connections"
+      ],
+      "answer": {
+        "ping": "Test reachability",
+        "tracert": "Show packet path",
+        "nslookup": "Query DNS records",
+        "ipconfig": "Show Windows IP settings",
+        "netstat": "Show active connections"
+      },
+      "explanation": "These commands are common first-line tools for connectivity, routing, DNS, interface, and connection checks."
+    },
+    {
+      "id": "net-084",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "Match each wireless term to its meaning.",
+      "items": [
+        "SSID",
+        "WPA3",
+        "2.4 GHz",
+        "5 GHz",
+        "Channel overlap"
+      ],
+      "targets": [
+        "Wireless network name",
+        "Modern Wi-Fi security",
+        "Longer range, more interference",
+        "Shorter range, more channels",
+        "Interference from nearby frequencies"
+      ],
+      "answer": {
+        "SSID": "Wireless network name",
+        "WPA3": "Modern Wi-Fi security",
+        "2.4 GHz": "Longer range, more interference",
+        "5 GHz": "Shorter range, more channels",
+        "Channel overlap": "Interference from nearby frequencies"
+      },
+      "explanation": "Wireless planning considers names, security, bands, range, available channels, and interference."
+    },
+    {
+      "id": "net-085",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "dns",
+      "difficulty": "medium",
+      "question": "Match each DNS record type to its purpose.",
+      "items": [
+        "A",
+        "AAAA",
+        "CNAME",
+        "MX",
+        "PTR"
+      ],
+      "targets": [
+        "Name to IPv4 address",
+        "Name to IPv6 address",
+        "Alias to another name",
+        "Mail exchanger",
+        "Reverse lookup"
+      ],
+      "answer": {
+        "A": "Name to IPv4 address",
+        "AAAA": "Name to IPv6 address",
+        "CNAME": "Alias to another name",
+        "MX": "Mail exchanger",
+        "PTR": "Reverse lookup"
+      },
+      "explanation": "DNS record types define how names, aliases, mail routing, and reverse lookups are resolved."
+    },
+    {
+      "id": "net-086",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "cabling",
+      "difficulty": "medium",
+      "question": "Match each cable or connector to a common use.",
+      "items": [
+        "RJ45",
+        "RJ11",
+        "LC",
+        "Coaxial",
+        "Cat 6a"
+      ],
+      "targets": [
+        "Ethernet copper connector",
+        "Telephone connector",
+        "Fiber connector",
+        "Cable modem feed",
+        "10GBASE-T copper cabling"
+      ],
+      "answer": {
+        "RJ45": "Ethernet copper connector",
+        "RJ11": "Telephone connector",
+        "LC": "Fiber connector",
+        "Coaxial": "Cable modem feed",
+        "Cat 6a": "10GBASE-T copper cabling"
+      },
+      "explanation": "Different media and connectors are used for Ethernet, telephone, fiber, broadband, and high-speed copper links."
+    },
+    {
+      "id": "net-087",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "network-devices",
+      "difficulty": "easy",
+      "question": "Match each network device to its primary function.",
+      "items": [
+        "Router",
+        "Switch",
+        "Firewall",
+        "Access point",
+        "Modem"
+      ],
+      "targets": [
+        "Forwards between networks",
+        "Connects LAN devices by MAC address",
+        "Filters traffic by rules",
+        "Provides Wi-Fi connectivity",
+        "Converts ISP signal for network use"
+      ],
+      "answer": {
+        "Router": "Forwards between networks",
+        "Switch": "Connects LAN devices by MAC address",
+        "Firewall": "Filters traffic by rules",
+        "Access point": "Provides Wi-Fi connectivity",
+        "Modem": "Converts ISP signal for network use"
+      },
+      "explanation": "Routers, switches, firewalls, access points, and modems each serve different connectivity and control roles."
+    },
+    {
+      "id": "net-088",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "ip-addressing",
+      "difficulty": "medium",
+      "question": "Match each address type to its description.",
+      "items": [
+        "Private IPv4",
+        "Public IPv4",
+        "APIPA",
+        "Loopback",
+        "Default gateway"
+      ],
+      "targets": [
+        "Used inside private networks",
+        "Routable on the Internet",
+        "Self-assigned 169.254.x.x address",
+        "Local host test address",
+        "Router address for off-subnet traffic"
+      ],
+      "answer": {
+        "Private IPv4": "Used inside private networks",
+        "Public IPv4": "Routable on the Internet",
+        "APIPA": "Self-assigned 169.254.x.x address",
+        "Loopback": "Local host test address",
+        "Default gateway": "Router address for off-subnet traffic"
+      },
+      "explanation": "Address types indicate scope, reachability, fallback addressing, local testing, or the next hop."
+    },
+    {
+      "id": "net-089",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "firewalls",
+      "difficulty": "hard",
+      "question": "Match each firewall concept to its description.",
+      "items": [
+        "Implicit deny",
+        "Allow rule",
+        "Stateful inspection",
+        "DMZ",
+        "Port forwarding"
+      ],
+      "targets": [
+        "Blocks unmatched traffic",
+        "Permits matching traffic",
+        "Tracks connection state",
+        "Segment for public-facing services",
+        "Maps inbound traffic to an internal host"
+      ],
+      "answer": {
+        "Implicit deny": "Blocks unmatched traffic",
+        "Allow rule": "Permits matching traffic",
+        "Stateful inspection": "Tracks connection state",
+        "DMZ": "Segment for public-facing services",
+        "Port forwarding": "Maps inbound traffic to an internal host"
+      },
+      "explanation": "Firewall designs use rule logic, state tracking, segmentation, and NAT forwarding to control traffic."
+    },
+    {
+      "id": "net-090",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "protocols",
+      "difficulty": "medium",
+      "question": "Match each protocol to its common purpose.",
+      "items": [
+        "DHCP",
+        "DNS",
+        "NTP",
+        "SNMP",
+        "ICMP"
+      ],
+      "targets": [
+        "Assigns IP configuration",
+        "Resolves names",
+        "Synchronizes time",
+        "Monitors network devices",
+        "Sends control and error messages"
+      ],
+      "answer": {
+        "DHCP": "Assigns IP configuration",
+        "DNS": "Resolves names",
+        "NTP": "Synchronizes time",
+        "SNMP": "Monitors network devices",
+        "ICMP": "Sends control and error messages"
+      },
+      "explanation": "These protocols support addressing, naming, time, monitoring, and IP diagnostics."
+    },
+    {
+      "id": "net-091",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "cloud-networking",
+      "difficulty": "medium",
+      "question": "Match each cloud networking term to its meaning.",
+      "items": [
+        "VPC",
+        "Subnet",
+        "Internet gateway",
+        "Security group",
+        "Load balancer"
+      ],
+      "targets": [
+        "Isolated virtual network",
+        "Address range within a network",
+        "Path to public Internet",
+        "Virtual firewall rules",
+        "Distributes traffic to back-end systems"
+      ],
+      "answer": {
+        "VPC": "Isolated virtual network",
+        "Subnet": "Address range within a network",
+        "Internet gateway": "Path to public Internet",
+        "Security group": "Virtual firewall rules",
+        "Load balancer": "Distributes traffic to back-end systems"
+      },
+      "explanation": "Cloud networks use virtual networks, subnets, gateways, security controls, and load balancers."
+    },
+    {
+      "id": "net-092",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "networking",
+      "subcategory": "routing",
+      "difficulty": "hard",
+      "question": "Match each routing term to its meaning.",
+      "items": [
+        "Default route",
+        "Metric",
+        "Next hop",
+        "Static route",
+        "Dynamic routing"
+      ],
+      "targets": [
+        "Fallback path for unknown destinations",
+        "Cost used to select a path",
+        "Neighbor router to forward to",
+        "Manually configured path",
+        "Routes learned by protocol"
+      ],
+      "answer": {
+        "Default route": "Fallback path for unknown destinations",
+        "Metric": "Cost used to select a path",
+        "Next hop": "Neighbor router to forward to",
+        "Static route": "Manually configured path",
+        "Dynamic routing": "Routes learned by protocol"
+      },
+      "explanation": "Routing decisions rely on destination matches, path costs, next hops, and how routes are learned."
+    },
+    {
+      "id": "net-093",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "networking",
+      "subcategory": "tcp-ip",
+      "difficulty": "medium",
+      "question": "Arrange the TCP connection process in the correct order.",
+      "items": [
+        "Client sends ACK",
+        "Server sends SYN-ACK",
+        "Client sends SYN",
+        "Connection is established"
+      ],
+      "answer": [
+        "Client sends SYN",
+        "Server sends SYN-ACK",
+        "Client sends ACK",
+        "Connection is established"
+      ],
+      "explanation": "TCP establishes a connection with SYN, SYN-ACK, and ACK before data transfer begins."
+    },
+    {
+      "id": "net-094",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "networking",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "question": "A single PC cannot access the Internet. Arrange these troubleshooting steps from local to external.",
+      "items": [
+        "Ping a public IP address",
+        "Check link light and cable",
+        "Ping the default gateway",
+        "Check DNS name resolution"
+      ],
+      "answer": [
+        "Check link light and cable",
+        "Ping the default gateway",
+        "Ping a public IP address",
+        "Check DNS name resolution"
+      ],
+      "explanation": "A practical sequence checks physical link, local gateway reachability, Internet reachability, and then DNS."
+    },
+    {
+      "id": "net-095",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "networking",
+      "subcategory": "dhcp",
+      "difficulty": "medium",
+      "question": "Arrange the DHCP lease process in the correct order.",
+      "items": [
+        "DHCPACK",
+        "DHCPOFFER",
+        "DHCPDISCOVER",
+        "DHCPREQUEST"
+      ],
+      "answer": [
+        "DHCPDISCOVER",
+        "DHCPOFFER",
+        "DHCPREQUEST",
+        "DHCPACK"
+      ],
+      "explanation": "The standard DHCP DORA process is Discover, Offer, Request, Acknowledge."
+    },
+    {
+      "id": "net-096",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "networking",
+      "subcategory": "dns",
+      "difficulty": "hard",
+      "question": "Arrange a simplified DNS lookup flow in the correct order.",
+      "items": [
+        "Resolver queries an authoritative server",
+        "Client checks local cache",
+        "Resolver queries a root server if needed",
+        "Client receives the resolved IP address"
+      ],
+      "answer": [
+        "Client checks local cache",
+        "Resolver queries a root server if needed",
+        "Resolver queries an authoritative server",
+        "Client receives the resolved IP address"
+      ],
+      "explanation": "DNS resolution commonly checks cache first, then uses recursive queries through the DNS hierarchy to return an address."
+    },
+    {
+      "id": "net-097",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "networking",
+      "subcategory": "routing",
+      "difficulty": "hard",
+      "question": "A router receives a packet. Arrange the forwarding decision process in order.",
+      "items": [
+        "Forward packet out selected interface",
+        "Read destination IP address",
+        "Find best matching route",
+        "Decrement TTL"
+      ],
+      "answer": [
+        "Read destination IP address",
+        "Find best matching route",
+        "Decrement TTL",
+        "Forward packet out selected interface"
+      ],
+      "explanation": "Routers inspect the destination IP, select the best route, update TTL, and forward the packet."
+    },
+    {
+      "id": "net-098",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "networking",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "Arrange the basic process of a client joining a secured Wi-Fi network.",
+      "items": [
+        "Client authenticates with the passphrase or 802.1X",
+        "Client scans for SSIDs",
+        "Client associates with the access point",
+        "Client obtains IP settings"
+      ],
+      "answer": [
+        "Client scans for SSIDs",
+        "Client authenticates with the passphrase or 802.1X",
+        "Client associates with the access point",
+        "Client obtains IP settings"
+      ],
+      "explanation": "A wireless client discovers a network, authenticates, associates, and then obtains network configuration such as DHCP."
+    },
+    {
+      "id": "net-099",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "networking",
+      "subcategory": "subnetting",
+      "difficulty": "hard",
+      "question": "Arrange these steps to determine whether two IPv4 hosts are on the same subnet.",
+      "items": [
+        "Compare the resulting network IDs",
+        "Identify each IP address and subnet mask",
+        "Apply the mask to each IP address",
+        "Decide whether traffic stays local or uses the gateway"
+      ],
+      "answer": [
+        "Identify each IP address and subnet mask",
+        "Apply the mask to each IP address",
+        "Compare the resulting network IDs",
+        "Decide whether traffic stays local or uses the gateway"
+      ],
+      "explanation": "Subnet membership is determined by masking each address and comparing the resulting network IDs."
+    },
+    {
+      "id": "net-100",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "networking",
+      "subcategory": "security",
+      "difficulty": "hard",
+      "question": "Arrange these steps for safely enabling remote access to an internal server.",
+      "items": [
+        "Monitor logs and failed attempts",
+        "Require VPN or secure gateway access",
+        "Limit access with firewall rules",
+        "Enable MFA for remote users"
+      ],
+      "answer": [
+        "Require VPN or secure gateway access",
+        "Enable MFA for remote users",
+        "Limit access with firewall rules",
+        "Monitor logs and failed attempts"
+      ],
+      "explanation": "Secure remote access should use protected access paths, strong authentication, restrictive rules, and ongoing monitoring."
+    }
+  ]
+}

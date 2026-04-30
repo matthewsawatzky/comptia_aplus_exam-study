@@ -1,0 +1,1922 @@
+{
+  "schema_version": 1,
+  "category": "troubleshooting",
+  "questions": [
+    {
+      "id": "ts-001",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "hardware",
+      "difficulty": "medium",
+      "question": "A desktop powers on, but there is no display and the system emits repeated beep codes. What should the technician check first?",
+      "options": [
+        "Reseat the RAM",
+        "Replace the hard drive",
+        "Reinstall the operating system",
+        "Change the monitor resolution"
+      ],
+      "answer": "Reseat the RAM",
+      "explanation": "POST beep codes often indicate a hardware initialization problem, commonly RAM or GPU seating. Reseating RAM is a safe first step before replacing components."
+    },
+    {
+      "id": "ts-002",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "power",
+      "difficulty": "easy",
+      "question": "A PC does not turn on after being moved to a new desk. What should be checked first?",
+      "options": [
+        "Verify the power cable and outlet",
+        "Replace the motherboard",
+        "Flash the BIOS",
+        "Reinstall device drivers"
+      ],
+      "answer": "Verify the power cable and outlet",
+      "explanation": "Start with the simplest and most likely external causes. A loose power cable or inactive outlet can prevent any startup."
+    },
+    {
+      "id": "ts-003",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "boot-issues",
+      "difficulty": "medium",
+      "question": "A workstation displays 'No bootable device found' after a user added a second drive. What is the best next step?",
+      "options": [
+        "Check the boot order in firmware settings",
+        "Replace the CPU",
+        "Disable the network adapter",
+        "Install more RAM"
+      ],
+      "answer": "Check the boot order in firmware settings",
+      "explanation": "Adding storage can change boot priority. Verifying the firmware boot order is a safe first step before replacing hardware."
+    },
+    {
+      "id": "ts-004",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "storage",
+      "difficulty": "medium",
+      "question": "A user reports clicking noises from a desktop and intermittent file access errors. What is the most likely failing component?",
+      "options": [
+        "Hard disk drive",
+        "Power button",
+        "Keyboard controller",
+        "Wireless adapter"
+      ],
+      "answer": "Hard disk drive",
+      "explanation": "Mechanical clicking and file access errors commonly indicate a failing hard disk. Data should be backed up before further testing."
+    },
+    {
+      "id": "ts-005",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "display-issues",
+      "difficulty": "easy",
+      "question": "A monitor shows 'No signal' while the computer appears to be running. What should the technician verify first?",
+      "options": [
+        "The video cable connection and selected input",
+        "The system page file size",
+        "The printer driver version",
+        "The DHCP lease duration"
+      ],
+      "answer": "The video cable connection and selected input",
+      "explanation": "No signal is often caused by a loose cable or wrong monitor input. These checks are quick and noninvasive."
+    },
+    {
+      "id": "ts-006",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "networking",
+      "difficulty": "easy",
+      "question": "A single wired workstation cannot reach the network, and the NIC link light is off. What is the best first action?",
+      "options": [
+        "Check the Ethernet cable and switch port",
+        "Replace the domain controller",
+        "Clear the browser cache",
+        "Reimage the workstation"
+      ],
+      "answer": "Check the Ethernet cable and switch port",
+      "explanation": "An absent link light points to a physical layer issue. Cable and port checks should happen before software changes."
+    },
+    {
+      "id": "ts-007",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "Users can connect to Wi-Fi near the access point but lose connection in a conference room. What is the most likely cause?",
+      "options": [
+        "Weak signal or interference",
+        "Incorrect system time",
+        "Damaged print spooler",
+        "Failed CMOS battery"
+      ],
+      "answer": "Weak signal or interference",
+      "explanation": "Location-specific wireless drops usually indicate signal strength problems, attenuation, or interference."
+    },
+    {
+      "id": "ts-008",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "connectivity",
+      "difficulty": "medium",
+      "question": "A client can ping 8.8.8.8 but cannot browse to www.example.com. Which service should be checked first?",
+      "options": [
+        "DNS",
+        "DHCP",
+        "NTP",
+        "SMB"
+      ],
+      "answer": "DNS",
+      "explanation": "Successful access by IP but not by name indicates name resolution failure, so DNS should be checked first."
+    },
+    {
+      "id": "ts-009",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "windows",
+      "difficulty": "medium",
+      "question": "A Windows user receives 'The trust relationship between this workstation and the primary domain failed.' What is the typical remediation?",
+      "options": [
+        "Rejoin the computer to the domain",
+        "Replace the display adapter",
+        "Format the USB drive",
+        "Disable DNS on the client"
+      ],
+      "answer": "Rejoin the computer to the domain",
+      "explanation": "This error commonly occurs when the computer account secure channel is broken. Rejoining the domain restores trust."
+    },
+    {
+      "id": "ts-010",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "linux",
+      "difficulty": "medium",
+      "question": "A Linux service fails to start after a configuration edit. Which command is most useful to view recent service errors on a systemd-based system?",
+      "options": [
+        "journalctl -u service_name",
+        "ipconfig /all",
+        "sfc /scannow",
+        "diskpart"
+      ],
+      "answer": "journalctl -u service_name",
+      "explanation": "journalctl displays systemd journal entries, including service-specific startup errors and logs."
+    },
+    {
+      "id": "ts-011",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "medium",
+      "question": "A laser printer produces pages with ghosted images repeating down the page. Which component is most likely responsible?",
+      "options": [
+        "Fuser or imaging drum",
+        "Keyboard",
+        "Wireless antenna",
+        "CMOS battery"
+      ],
+      "answer": "Fuser or imaging drum",
+      "explanation": "Repeating ghost images on laser output are commonly caused by a worn drum or fuser that fails to properly transfer or bond toner."
+    },
+    {
+      "id": "ts-012",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "easy",
+      "question": "An inkjet printer produces streaked pages after sitting unused for several weeks. What should be tried first?",
+      "options": [
+        "Run the printhead cleaning utility",
+        "Replace the motherboard",
+        "Change the network subnet",
+        "Defragment the hard drive"
+      ],
+      "answer": "Run the printhead cleaning utility",
+      "explanation": "Inkjet nozzles can dry or clog when unused. The built-in cleaning cycle is the safest first remediation."
+    },
+    {
+      "id": "ts-013",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "laptops",
+      "difficulty": "medium",
+      "question": "A laptop shuts down suddenly during video rendering but works for basic web browsing. What is the most likely cause?",
+      "options": [
+        "Overheating under load",
+        "Incorrect DNS suffix",
+        "Expired user password",
+        "Disabled print spooler"
+      ],
+      "answer": "Overheating under load",
+      "explanation": "Demanding workloads increase heat output. Sudden shutdowns under load often indicate thermal protection due to dust, fan failure, or blocked vents."
+    },
+    {
+      "id": "ts-014",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "mobile-devices",
+      "difficulty": "medium",
+      "question": "A smartphone battery drains rapidly after a new app was installed. What should the technician check first?",
+      "options": [
+        "Battery usage statistics by app",
+        "The desktop BIOS version",
+        "The printer toner level",
+        "The monitor refresh rate"
+      ],
+      "answer": "Battery usage statistics by app",
+      "explanation": "Battery usage data can confirm whether the newly installed app is consuming excessive CPU, network, or background resources."
+    },
+    {
+      "id": "ts-015",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "peripherals",
+      "difficulty": "easy",
+      "question": "A USB keyboard works on one computer but not another. What should be checked first on the affected computer?",
+      "options": [
+        "Try a different USB port",
+        "Replace the keyboard immediately",
+        "Rebuild the mail profile",
+        "Change the Wi-Fi channel"
+      ],
+      "answer": "Try a different USB port",
+      "explanation": "Because the keyboard works elsewhere, the affected computer's port or controller should be checked before replacing the device."
+    },
+    {
+      "id": "ts-016",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "security-symptoms",
+      "difficulty": "medium",
+      "question": "A user reports browser pop-ups, changed homepage settings, and unknown extensions. What is the best next step?",
+      "options": [
+        "Disconnect from the network and scan for malware",
+        "Increase monitor brightness",
+        "Replace the power supply",
+        "Flush the printer queue"
+      ],
+      "answer": "Disconnect from the network and scan for malware",
+      "explanation": "Browser hijacking symptoms suggest malware or unwanted software. Isolating the system helps limit spread while remediation begins."
+    },
+    {
+      "id": "ts-017",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "application-issues",
+      "difficulty": "medium",
+      "question": "An application crashes immediately after an update, but other applications work normally. What is the best first step?",
+      "options": [
+        "Check the application logs and known issues for the update",
+        "Replace all system memory",
+        "Disable the default gateway",
+        "Clear the CMOS"
+      ],
+      "answer": "Check the application logs and known issues for the update",
+      "explanation": "When one app fails after an update, application-specific logs and release notes help identify compatibility or update defects."
+    },
+    {
+      "id": "ts-018",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "performance",
+      "difficulty": "easy",
+      "question": "A Windows computer is very slow, and Task Manager shows disk usage at 100 percent. What should be investigated first?",
+      "options": [
+        "Processes causing heavy disk activity",
+        "The monitor color profile",
+        "The Wi-Fi SSID name",
+        "The printer paper size"
+      ],
+      "answer": "Processes causing heavy disk activity",
+      "explanation": "Task Manager can identify which process is saturating the disk, allowing targeted remediation rather than guessing."
+    },
+    {
+      "id": "ts-019",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "troubleshooting-methodology",
+      "difficulty": "easy",
+      "question": "During troubleshooting, what should a technician do immediately after identifying the problem?",
+      "options": [
+        "Establish a theory of probable cause",
+        "Document findings and close the ticket",
+        "Implement the most expensive repair",
+        "Verify full system functionality"
+      ],
+      "answer": "Establish a theory of probable cause",
+      "explanation": "After identifying the problem, the next methodology step is to form a theory based on symptoms and available information."
+    },
+    {
+      "id": "ts-020",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "hardware",
+      "difficulty": "hard",
+      "question": "A newly built PC powers on for one second and then shuts off repeatedly. Which issue is most likely?",
+      "options": [
+        "CPU power connector is not seated",
+        "DNS server is unreachable",
+        "User profile is corrupted",
+        "Printer duplexer is jammed"
+      ],
+      "answer": "CPU power connector is not seated",
+      "explanation": "Rapid power cycling on a new build often occurs when required motherboard or CPU power connectors are missing or loose."
+    },
+    {
+      "id": "ts-021",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "storage",
+      "difficulty": "hard",
+      "question": "A system with RAID 1 reports one degraded disk but continues running. What should be done first?",
+      "options": [
+        "Verify backups and replace the failed disk according to procedure",
+        "Delete the RAID array immediately",
+        "Disable all monitoring alerts",
+        "Convert the array to RAID 0"
+      ],
+      "answer": "Verify backups and replace the failed disk according to procedure",
+      "explanation": "RAID 1 can tolerate one failed disk, but data remains at risk. Confirm backups and replace the failed drive using approved steps."
+    },
+    {
+      "id": "ts-022",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "windows",
+      "difficulty": "hard",
+      "question": "After a driver update, Windows blue screens during startup. What recovery option is most appropriate to try first?",
+      "options": [
+        "Boot into Safe Mode and roll back the driver",
+        "Replace the monitor",
+        "Change the DHCP scope",
+        "Clean the printer rollers"
+      ],
+      "answer": "Boot into Safe Mode and roll back the driver",
+      "explanation": "Safe Mode loads minimal drivers, allowing removal or rollback of a faulty driver that causes startup crashes."
+    },
+    {
+      "id": "ts-023",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "linux",
+      "difficulty": "hard",
+      "question": "A Linux server cannot write new files, but CPU and memory usage are normal. Which condition should be checked first?",
+      "options": [
+        "Disk space or inode exhaustion",
+        "Monitor refresh rate",
+        "Printer toner level",
+        "Bluetooth pairing status"
+      ],
+      "answer": "Disk space or inode exhaustion",
+      "explanation": "If writes fail while the system otherwise runs, a full filesystem or exhausted inodes are common causes."
+    },
+    {
+      "id": "ts-024",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "medium",
+      "question": "A network printer shows online, but jobs remain stuck in the Windows queue. What should be restarted first?",
+      "options": [
+        "Print Spooler service",
+        "DHCP server service",
+        "Windows Time service",
+        "Bluetooth support service"
+      ],
+      "answer": "Print Spooler service",
+      "explanation": "Stuck print jobs often result from a spooler problem. Restarting the Print Spooler is a common safe remediation."
+    },
+    {
+      "id": "ts-025",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "wireless",
+      "difficulty": "hard",
+      "question": "Several users report intermittent Wi-Fi drops only when the microwave in the break room is running. What should be adjusted?",
+      "options": [
+        "Move clients to 5 GHz or change the affected 2.4 GHz channel",
+        "Replace the file server CPU",
+        "Enable printer sharing",
+        "Increase the DHCP lease time to one year"
+      ],
+      "answer": "Move clients to 5 GHz or change the affected 2.4 GHz channel",
+      "explanation": "Microwaves can interfere with 2.4 GHz Wi-Fi. Using 5 GHz or changing channels can reduce interference."
+    },
+    {
+      "id": "ts-026",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "mobile-devices",
+      "difficulty": "easy",
+      "question": "A user's phone will not charge with one cable but charges with another. What is the most likely cause?",
+      "options": [
+        "Faulty charging cable",
+        "Failed DNS lookup",
+        "Corrupt boot sector",
+        "Low printer toner"
+      ],
+      "answer": "Faulty charging cable",
+      "explanation": "If the device charges with another cable, the original cable is the likely fault."
+    },
+    {
+      "id": "ts-027",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "laptops",
+      "difficulty": "medium",
+      "question": "A laptop works on AC power but shuts off immediately when unplugged. What should be checked first?",
+      "options": [
+        "Battery health and connection",
+        "DNS cache contents",
+        "Printer fuser temperature",
+        "Monitor input source"
+      ],
+      "answer": "Battery health and connection",
+      "explanation": "Running only on AC indicates the battery may be failed, disconnected, or unable to hold charge."
+    },
+    {
+      "id": "ts-028",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "security-symptoms",
+      "difficulty": "medium",
+      "question": "A user's account locks out repeatedly even after the password is changed. What is the likely cause?",
+      "options": [
+        "An old password saved on another device or service",
+        "A failing monitor cable",
+        "A depleted toner cartridge",
+        "An incorrect screen resolution"
+      ],
+      "answer": "An old password saved on another device or service",
+      "explanation": "Repeated lockouts after a password change are often caused by cached credentials on phones, mapped drives, or services."
+    },
+    {
+      "id": "ts-029",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "application-issues",
+      "difficulty": "easy",
+      "question": "A web application fails only in one browser on one PC. What should be tried first?",
+      "options": [
+        "Clear the browser cache and cookies",
+        "Replace the network switch",
+        "Reinstall the operating system",
+        "Replace the computer power supply"
+      ],
+      "answer": "Clear the browser cache and cookies",
+      "explanation": "A problem isolated to one browser often involves cached data, cookies, extensions, or browser settings."
+    },
+    {
+      "id": "ts-030",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "preventive-maintenance",
+      "difficulty": "medium",
+      "question": "Which maintenance action best reduces overheating in desktop systems located in dusty offices?",
+      "options": [
+        "Regularly clean vents, fans, and heat sinks",
+        "Disable automatic updates",
+        "Increase screen brightness",
+        "Use shorter passwords"
+      ],
+      "answer": "Regularly clean vents, fans, and heat sinks",
+      "explanation": "Dust restricts airflow and insulates components. Cleaning cooling paths helps prevent thermal problems."
+    },
+    {
+      "id": "ts-031",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "display-issues",
+      "difficulty": "hard",
+      "question": "A laptop's internal display is dim, but an external monitor works normally. Which component is most likely involved?",
+      "options": [
+        "Internal display backlight or display assembly",
+        "External router antenna",
+        "Printer pickup roller",
+        "Desktop power supply fan"
+      ],
+      "answer": "Internal display backlight or display assembly",
+      "explanation": "A normal external display points away from the GPU and toward the laptop panel, backlight, cable, or display assembly."
+    },
+    {
+      "id": "ts-032",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "networking",
+      "difficulty": "medium",
+      "question": "Two computers on the same LAN report the same IP address conflict message. What should be checked first?",
+      "options": [
+        "Static IP assignments and DHCP reservations",
+        "The printer paper tray",
+        "The GPU temperature",
+        "The browser homepage"
+      ],
+      "answer": "Static IP assignments and DHCP reservations",
+      "explanation": "IP conflicts often happen when static addresses overlap with DHCP leases or reservations."
+    },
+    {
+      "id": "ts-033",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "hard",
+      "question": "A printer pulls multiple sheets at once from the paper tray. What component is most likely worn?",
+      "options": [
+        "Separation pad or pickup rollers",
+        "Toner cartridge chip",
+        "Wireless access point",
+        "Laptop battery cells"
+      ],
+      "answer": "Separation pad or pickup rollers",
+      "explanation": "Worn feed rollers or separation pads can fail to separate pages correctly, causing multi-sheet feeds."
+    },
+    {
+      "id": "ts-034",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "security-symptoms",
+      "difficulty": "hard",
+      "question": "A workstation begins encrypting files and displays a payment demand. What should the technician do first?",
+      "options": [
+        "Isolate the workstation from the network",
+        "Pay the demand immediately",
+        "Run disk defragmentation",
+        "Clear the print queue"
+      ],
+      "answer": "Isolate the workstation from the network",
+      "explanation": "Ransomware indicators require immediate isolation to prevent spread before preserving evidence and beginning response procedures."
+    },
+    {
+      "id": "ts-035",
+      "type": "single_choice",
+      "category": "troubleshooting",
+      "subcategory": "troubleshooting-methodology",
+      "difficulty": "medium",
+      "question": "After fixing an intermittent issue, what should a technician do before documenting the outcome?",
+      "options": [
+        "Verify full system functionality and implement preventive measures if applicable",
+        "Delete all event logs",
+        "Close the ticket without user confirmation",
+        "Replace unrelated hardware"
+      ],
+      "answer": "Verify full system functionality and implement preventive measures if applicable",
+      "explanation": "The troubleshooting process requires verification after the fix and before final documentation."
+    },
+    {
+      "id": "ts-036",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "networking",
+      "difficulty": "medium",
+      "question": "A user cannot access the internet, but other users on the same network can. Which TWO checks should be performed first? (Select all that apply)",
+      "options": [
+        "Verify the network cable or Wi-Fi connection",
+        "Check the device IP configuration",
+        "Replace the router",
+        "Reinstall the operating system",
+        "Disable all firewall rules on the network"
+      ],
+      "answer": [
+        "Verify the network cable or Wi-Fi connection",
+        "Check the device IP configuration"
+      ],
+      "explanation": "When only one device is affected, start with local connectivity and IP configuration. Replacing shared infrastructure is not the first step."
+    },
+    {
+      "id": "ts-037",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "hardware",
+      "difficulty": "medium",
+      "question": "A desktop randomly reboots under heavy load. Which TWO causes are most likely? (Select all that apply)",
+      "options": [
+        "Overheating CPU or GPU",
+        "Failing or undersized power supply",
+        "Incorrect printer driver",
+        "Expired browser certificate",
+        "Disabled Bluetooth"
+      ],
+      "answer": [
+        "Overheating CPU or GPU",
+        "Failing or undersized power supply"
+      ],
+      "explanation": "Reboots during high load commonly come from thermal shutdowns or unstable power delivery."
+    },
+    {
+      "id": "ts-038",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "boot-issues",
+      "difficulty": "medium",
+      "question": "A computer fails POST after RAM was upgraded. Which TWO actions should be taken first? (Select all that apply)",
+      "options": [
+        "Reseat the memory modules",
+        "Verify the RAM is compatible with the motherboard",
+        "Reinstall the operating system",
+        "Replace the printer cable",
+        "Change the DNS server"
+      ],
+      "answer": [
+        "Reseat the memory modules",
+        "Verify the RAM is compatible with the motherboard"
+      ],
+      "explanation": "After a memory upgrade, seating and compatibility are the most relevant initial checks for POST failure."
+    },
+    {
+      "id": "ts-039",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "storage",
+      "difficulty": "hard",
+      "question": "A user reports that files are disappearing and SMART status warns of impending failure. Which TWO actions are safest? (Select all that apply)",
+      "options": [
+        "Back up critical data immediately",
+        "Replace the failing drive",
+        "Run repeated full stress tests first",
+        "Ignore the warning until the drive stops",
+        "Disable backups to reduce load"
+      ],
+      "answer": [
+        "Back up critical data immediately",
+        "Replace the failing drive"
+      ],
+      "explanation": "SMART failure warnings require protecting data and replacing the disk. Heavy stress testing may accelerate failure."
+    },
+    {
+      "id": "ts-040",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "display-issues",
+      "difficulty": "medium",
+      "question": "A projector shows a tinted or distorted image from a laptop. Which TWO items should be checked first? (Select all that apply)",
+      "options": [
+        "Video cable and adapter connections",
+        "Display resolution and refresh rate",
+        "DHCP lease duration",
+        "Printer toner level",
+        "User account lockout policy"
+      ],
+      "answer": [
+        "Video cable and adapter connections",
+        "Display resolution and refresh rate"
+      ],
+      "explanation": "Color distortion and display problems often come from bad cabling, adapters, or unsupported display settings."
+    },
+    {
+      "id": "ts-041",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "A wireless client has weak signal and slow throughput in one office. Which TWO factors should be investigated? (Select all that apply)",
+      "options": [
+        "Distance from the access point",
+        "Physical obstructions or interference",
+        "Local printer paper size",
+        "CPU socket type",
+        "BIOS boot password"
+      ],
+      "answer": [
+        "Distance from the access point",
+        "Physical obstructions or interference"
+      ],
+      "explanation": "Weak wireless performance is commonly caused by range, walls, metal, or RF interference."
+    },
+    {
+      "id": "ts-042",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "connectivity",
+      "difficulty": "medium",
+      "question": "A laptop receives a 169.254.x.x address. Which TWO items should be checked? (Select all that apply)",
+      "options": [
+        "DHCP server availability",
+        "Network connection to the DHCP scope",
+        "Monitor brightness",
+        "Printer fuser condition",
+        "Application theme setting"
+      ],
+      "answer": [
+        "DHCP server availability",
+        "Network connection to the DHCP scope"
+      ],
+      "explanation": "A 169.254 address is APIPA and usually means the client could not contact DHCP."
+    },
+    {
+      "id": "ts-043",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "windows",
+      "difficulty": "medium",
+      "question": "A Windows PC is slow after startup. Which TWO built-in tools can help identify the cause? (Select all that apply)",
+      "options": [
+        "Task Manager",
+        "Event Viewer",
+        "Crimper",
+        "Toner sensor",
+        "Cable tester for coax only"
+      ],
+      "answer": [
+        "Task Manager",
+        "Event Viewer"
+      ],
+      "explanation": "Task Manager shows resource usage and startup impact, while Event Viewer can reveal service, driver, or application errors."
+    },
+    {
+      "id": "ts-044",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "linux",
+      "difficulty": "medium",
+      "question": "A Linux server cannot reach another subnet. Which TWO commands are useful first checks? (Select all that apply)",
+      "options": [
+        "ip addr",
+        "ip route",
+        "sfc /scannow",
+        "gpupdate /force",
+        "winver"
+      ],
+      "answer": [
+        "ip addr",
+        "ip route"
+      ],
+      "explanation": "IP addressing and routing are foundational checks when a Linux system cannot reach another network."
+    },
+    {
+      "id": "ts-045",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "medium",
+      "question": "A laser printer output has vertical white streaks. Which TWO causes are likely? (Select all that apply)",
+      "options": [
+        "Low or uneven toner distribution",
+        "Dirty or damaged drum",
+        "Failed DHCP lease",
+        "Bad keyboard switch",
+        "Incorrect monitor input"
+      ],
+      "answer": [
+        "Low or uneven toner distribution",
+        "Dirty or damaged drum"
+      ],
+      "explanation": "White streaks on laser prints are often caused by toner problems or drum contamination and wear."
+    },
+    {
+      "id": "ts-046",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "hard",
+      "question": "A network printer receives an IP address but users cannot print to it. Which TWO checks are most relevant? (Select all that apply)",
+      "options": [
+        "Confirm the printer port uses the correct IP address",
+        "Verify firewall or print service access",
+        "Replace all client monitors",
+        "Increase laptop battery capacity",
+        "Disable DNS for the subnet"
+      ],
+      "answer": [
+        "Confirm the printer port uses the correct IP address",
+        "Verify firewall or print service access"
+      ],
+      "explanation": "Printing can fail if clients point to an old IP or if host firewalls and print services block access."
+    },
+    {
+      "id": "ts-047",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "laptops",
+      "difficulty": "medium",
+      "question": "A laptop connected to a docking station has no external display or network. Which TWO actions should be tried first? (Select all that apply)",
+      "options": [
+        "Reseat the laptop on the dock or reconnect the dock cable",
+        "Verify dock power and firmware or driver status",
+        "Replace the office router",
+        "Clear the printer queue",
+        "Disable user MFA"
+      ],
+      "answer": [
+        "Reseat the laptop on the dock or reconnect the dock cable",
+        "Verify dock power and firmware or driver status"
+      ],
+      "explanation": "Multiple dock-attached functions failing suggests a dock connection, power, firmware, or driver issue."
+    },
+    {
+      "id": "ts-048",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "mobile-devices",
+      "difficulty": "medium",
+      "question": "A mobile device cannot sync corporate email. Which TWO checks are appropriate first? (Select all that apply)",
+      "options": [
+        "Verify network connectivity",
+        "Confirm account credentials or device management compliance",
+        "Replace the desktop CPU",
+        "Clean the laser printer drum",
+        "Change the monitor cable"
+      ],
+      "answer": [
+        "Verify network connectivity",
+        "Confirm account credentials or device management compliance"
+      ],
+      "explanation": "Email sync depends on connectivity and valid, compliant account access. These checks should precede hardware assumptions."
+    },
+    {
+      "id": "ts-049",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "peripherals",
+      "difficulty": "easy",
+      "question": "A Bluetooth mouse disconnects frequently. Which TWO steps should be tried first? (Select all that apply)",
+      "options": [
+        "Replace or recharge the batteries",
+        "Remove and re-pair the device",
+        "Reinstall the file server OS",
+        "Change the printer paper type",
+        "Disable all network switches"
+      ],
+      "answer": [
+        "Replace or recharge the batteries",
+        "Remove and re-pair the device"
+      ],
+      "explanation": "Low battery and pairing issues are common causes of intermittent Bluetooth peripheral problems."
+    },
+    {
+      "id": "ts-050",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "security-symptoms",
+      "difficulty": "medium",
+      "question": "A PC shows unexpected antivirus alerts and unknown startup programs. Which TWO steps are appropriate? (Select all that apply)",
+      "options": [
+        "Disconnect or isolate the computer if compromise is suspected",
+        "Run an approved malware scan",
+        "Ignore the alerts if the PC still works",
+        "Share the user's password with support",
+        "Disable all logs before scanning"
+      ],
+      "answer": [
+        "Disconnect or isolate the computer if compromise is suspected",
+        "Run an approved malware scan"
+      ],
+      "explanation": "Potential malware should be contained and scanned using approved tools while preserving evidence and following policy."
+    },
+    {
+      "id": "ts-051",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "security-symptoms",
+      "difficulty": "hard",
+      "question": "Several users receive MFA prompts they did not initiate. Which TWO actions should be taken? (Select all that apply)",
+      "options": [
+        "Instruct users to deny unexpected prompts",
+        "Report and investigate possible credential compromise",
+        "Approve prompts to stop notifications",
+        "Disable screen locks organization-wide",
+        "Clear printer errors"
+      ],
+      "answer": [
+        "Instruct users to deny unexpected prompts",
+        "Report and investigate possible credential compromise"
+      ],
+      "explanation": "Unsolicited MFA prompts may indicate credential theft or push fatigue attacks. Users should deny them and security teams should investigate."
+    },
+    {
+      "id": "ts-052",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "application-issues",
+      "difficulty": "medium",
+      "question": "An application fails for all users after a server certificate renewal. Which TWO items should be checked? (Select all that apply)",
+      "options": [
+        "Certificate chain and expiration dates",
+        "Application binding or service configuration",
+        "Laptop hinge tightness",
+        "Printer tray alignment",
+        "Local screen saver timeout"
+      ],
+      "answer": [
+        "Certificate chain and expiration dates",
+        "Application binding or service configuration"
+      ],
+      "explanation": "Certificate renewals can fail if the chain is incomplete, the certificate is invalid, or the app is still bound to the old certificate."
+    },
+    {
+      "id": "ts-053",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "performance",
+      "difficulty": "medium",
+      "question": "A computer becomes slow only when many browser tabs are open. Which TWO resources should be reviewed first? (Select all that apply)",
+      "options": [
+        "Memory usage",
+        "CPU usage",
+        "Printer fuser life",
+        "Ethernet cable color",
+        "BIOS splash image"
+      ],
+      "answer": [
+        "Memory usage",
+        "CPU usage"
+      ],
+      "explanation": "Browsers with many tabs can consume significant RAM and CPU, causing system-wide slowness."
+    },
+    {
+      "id": "ts-054",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "power",
+      "difficulty": "medium",
+      "question": "A desktop turns off when a space heater is plugged into the same power strip. Which TWO actions are appropriate? (Select all that apply)",
+      "options": [
+        "Move the heater to a separate circuit",
+        "Use a properly rated UPS or surge protector for the computer",
+        "Disable Windows Update",
+        "Replace the keyboard",
+        "Change the DNS suffix"
+      ],
+      "answer": [
+        "Move the heater to a separate circuit",
+        "Use a properly rated UPS or surge protector for the computer"
+      ],
+      "explanation": "High-current appliances can overload circuits or cause voltage drops. Computers should use properly rated power protection."
+    },
+    {
+      "id": "ts-055",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "preventive-maintenance",
+      "difficulty": "easy",
+      "question": "Which TWO practices help prevent data loss before troubleshooting storage problems? (Select all that apply)",
+      "options": [
+        "Verify recent backups",
+        "Avoid unnecessary write operations to a suspect drive",
+        "Run random file deletion tests",
+        "Disable all restore points",
+        "Remove all labels from drives"
+      ],
+      "answer": [
+        "Verify recent backups",
+        "Avoid unnecessary write operations to a suspect drive"
+      ],
+      "explanation": "Backups and minimizing writes reduce the risk of permanent data loss during storage troubleshooting."
+    },
+    {
+      "id": "ts-056",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "troubleshooting-methodology",
+      "difficulty": "medium",
+      "question": "When identifying a problem, which TWO actions should a technician take? (Select all that apply)",
+      "options": [
+        "Question the user and identify changes",
+        "Back up data before making changes when appropriate",
+        "Implement the first guess immediately",
+        "Delete all logs to save space",
+        "Skip documentation"
+      ],
+      "answer": [
+        "Question the user and identify changes",
+        "Back up data before making changes when appropriate"
+      ],
+      "explanation": "The initial step includes gathering information, identifying changes, and protecting data before risky remediation."
+    },
+    {
+      "id": "ts-057",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "windows",
+      "difficulty": "hard",
+      "question": "A Windows update fails repeatedly with disk space warnings. Which TWO actions are appropriate? (Select all that apply)",
+      "options": [
+        "Free disk space using approved cleanup tools",
+        "Review update logs or error codes",
+        "Replace the monitor",
+        "Disable the network gateway permanently",
+        "Delete random system files"
+      ],
+      "answer": [
+        "Free disk space using approved cleanup tools",
+        "Review update logs or error codes"
+      ],
+      "explanation": "Insufficient disk space blocks updates. Cleanup tools and update error logs provide safe remediation and diagnosis."
+    },
+    {
+      "id": "ts-058",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "networking",
+      "difficulty": "hard",
+      "question": "Users can access internal resources but not the internet. Which TWO shared network components should be checked? (Select all that apply)",
+      "options": [
+        "Default gateway or edge router",
+        "Firewall or proxy rules",
+        "Individual laptop batteries",
+        "Printer separation pads",
+        "Monitor refresh rates"
+      ],
+      "answer": [
+        "Default gateway or edge router",
+        "Firewall or proxy rules"
+      ],
+      "explanation": "Internal access with no internet points to routing, gateway, firewall, or proxy issues at the network edge."
+    },
+    {
+      "id": "ts-059",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "medium",
+      "question": "A printer reports frequent paper jams. Which TWO items should be inspected? (Select all that apply)",
+      "options": [
+        "Paper path for debris",
+        "Pickup rollers for wear",
+        "DNS forwarders",
+        "Laptop keyboard backlight",
+        "User browser history"
+      ],
+      "answer": [
+        "Paper path for debris",
+        "Pickup rollers for wear"
+      ],
+      "explanation": "Paper jams commonly come from debris in the path, incorrect paper, or worn feed rollers."
+    },
+    {
+      "id": "ts-060",
+      "type": "multi_choice",
+      "category": "troubleshooting",
+      "subcategory": "security-symptoms",
+      "difficulty": "medium",
+      "question": "A user clicked a phishing link and entered credentials. Which TWO actions should happen promptly? (Select all that apply)",
+      "options": [
+        "Reset the user's password according to policy",
+        "Report the incident to the security team",
+        "Ignore it if no files changed",
+        "Disable antivirus permanently",
+        "Replace the monitor cable"
+      ],
+      "answer": [
+        "Reset the user's password according to policy",
+        "Report the incident to the security team"
+      ],
+      "explanation": "Credential exposure requires password reset, incident reporting, and investigation for unauthorized access."
+    },
+    {
+      "id": "ts-061",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "troubleshooting",
+      "subcategory": "networking",
+      "difficulty": "easy",
+      "question": "An IPv4 address beginning with 169.254 usually indicates the device assigned itself an ___ address because DHCP was unavailable.",
+      "word_bank": [
+        "APIPA",
+        "DNS",
+        "NAT",
+        "loopback"
+      ],
+      "answer": "APIPA",
+      "explanation": "APIPA addresses in the 169.254.0.0/16 range are self-assigned when a client cannot obtain an address from DHCP."
+    },
+    {
+      "id": "ts-062",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "medium",
+      "question": "A laser printer repeatedly produces faded output even after replacing toner. The next component to check is the ___.",
+      "word_bank": [
+        "drum",
+        "keyboard",
+        "DNS server",
+        "bootloader"
+      ],
+      "answer": "drum",
+      "explanation": "A worn drum can cause faded or poor-quality laser print output even when toner is available."
+    },
+    {
+      "id": "ts-063",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "troubleshooting",
+      "subcategory": "windows",
+      "difficulty": "easy",
+      "question": "In Windows, the ___ utility shows running processes, startup impact, and resource usage.",
+      "word_bank": [
+        "Task Manager",
+        "DiskPart",
+        "Notepad",
+        "Paint"
+      ],
+      "answer": "Task Manager",
+      "explanation": "Task Manager is the primary built-in tool for reviewing processes, performance, and startup applications."
+    },
+    {
+      "id": "ts-064",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "troubleshooting",
+      "subcategory": "linux",
+      "difficulty": "medium",
+      "question": "On many Linux systems, service logs managed by systemd can be viewed with ___.",
+      "word_bank": [
+        "journalctl",
+        "winver",
+        "diskpart",
+        "nslookup.exe"
+      ],
+      "answer": "journalctl",
+      "explanation": "journalctl queries the systemd journal and is commonly used to inspect Linux service logs."
+    },
+    {
+      "id": "ts-065",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "troubleshooting",
+      "subcategory": "boot-issues",
+      "difficulty": "medium",
+      "question": "A firmware setting that determines which device starts the operating system is the boot ___.",
+      "word_bank": [
+        "order",
+        "toner",
+        "spooler",
+        "gateway"
+      ],
+      "answer": "order",
+      "explanation": "Boot order controls which storage, network, or removable device the firmware attempts to boot first."
+    },
+    {
+      "id": "ts-066",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "troubleshooting",
+      "subcategory": "storage",
+      "difficulty": "medium",
+      "question": "Before repairing a failing drive, a technician should verify a recent ___ exists.",
+      "word_bank": [
+        "backup",
+        "wallpaper",
+        "SSID",
+        "bezel"
+      ],
+      "answer": "backup",
+      "explanation": "Storage remediation can risk data loss, so backups should be verified before repairs or replacement."
+    },
+    {
+      "id": "ts-067",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "troubleshooting",
+      "subcategory": "wireless",
+      "difficulty": "medium",
+      "question": "Intermittent Wi-Fi caused by nearby devices or overlapping channels is commonly called radio frequency ___.",
+      "word_bank": [
+        "interference",
+        "partitioning",
+        "spooling",
+        "formatting"
+      ],
+      "answer": "interference",
+      "explanation": "RF interference disrupts wireless signals and can cause slow speeds, drops, or inconsistent connectivity."
+    },
+    {
+      "id": "ts-068",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "troubleshooting",
+      "subcategory": "connectivity",
+      "difficulty": "easy",
+      "question": "If a user can reach a website by IP address but not by name, the likely failed service is ___.",
+      "word_bank": [
+        "DNS",
+        "USB",
+        "POST",
+        "RAID"
+      ],
+      "answer": "DNS",
+      "explanation": "DNS translates hostnames to IP addresses. Name failures with working IP connectivity point to DNS."
+    },
+    {
+      "id": "ts-069",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "troubleshooting",
+      "subcategory": "hardware",
+      "difficulty": "easy",
+      "question": "The startup diagnostic process that checks hardware before loading the operating system is called ___.",
+      "word_bank": [
+        "POST",
+        "NAT",
+        "SMB",
+        "SMTP"
+      ],
+      "answer": "POST",
+      "explanation": "POST, or Power-On Self-Test, checks essential hardware during startup before booting the OS."
+    },
+    {
+      "id": "ts-070",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "troubleshooting",
+      "subcategory": "security-symptoms",
+      "difficulty": "medium",
+      "question": "Repeated unexpected MFA prompts may indicate a credential compromise or ___ attack.",
+      "word_bank": [
+        "push fatigue",
+        "paper jam",
+        "screen burn",
+        "disk cleanup"
+      ],
+      "answer": "push fatigue",
+      "explanation": "Push fatigue attacks attempt to trick users into approving repeated authentication prompts."
+    },
+    {
+      "id": "ts-071",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "easy",
+      "question": "In Windows, stuck print jobs are often resolved by restarting the Print ___ service.",
+      "word_bank": [
+        "Spooler",
+        "Gateway",
+        "Resolver",
+        "Compositor"
+      ],
+      "answer": "Spooler",
+      "explanation": "The Print Spooler manages print jobs. Restarting it can clear stuck or stalled queues."
+    },
+    {
+      "id": "ts-072",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "troubleshooting",
+      "subcategory": "power",
+      "difficulty": "medium",
+      "question": "A device that provides temporary battery power and surge protection during outages is a ___.",
+      "word_bank": [
+        "UPS",
+        "GPU",
+        "SSID",
+        "FQDN"
+      ],
+      "answer": "UPS",
+      "explanation": "A UPS, or uninterruptible power supply, protects equipment from outages and some power quality issues."
+    },
+    {
+      "id": "ts-073",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "troubleshooting",
+      "subcategory": "mobile-devices",
+      "difficulty": "medium",
+      "question": "For corporate phones, remote lock, wipe, and compliance settings are commonly managed by ___.",
+      "word_bank": [
+        "MDM",
+        "RAID",
+        "BIOS",
+        "POST"
+      ],
+      "answer": "MDM",
+      "explanation": "Mobile device management platforms enforce policy and provide remote management features for phones and tablets."
+    },
+    {
+      "id": "ts-074",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "troubleshooting",
+      "subcategory": "performance",
+      "difficulty": "easy",
+      "question": "When a system is slow, CPU, memory, disk, and network utilization are examples of resource ___.",
+      "word_bank": [
+        "usage",
+        "toner",
+        "latency",
+        "pairing"
+      ],
+      "answer": "usage",
+      "explanation": "Resource usage metrics help identify which subsystem is causing performance bottlenecks."
+    },
+    {
+      "id": "ts-075",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "troubleshooting",
+      "subcategory": "application-issues",
+      "difficulty": "medium",
+      "question": "After an application update causes failures, reviewing release notes and application ___ can reveal known errors.",
+      "word_bank": [
+        "logs",
+        "hinges",
+        "rollers",
+        "ports"
+      ],
+      "answer": "logs",
+      "explanation": "Application logs and release notes can identify update-related errors, compatibility problems, and known defects."
+    },
+    {
+      "id": "ts-076",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "troubleshooting",
+      "subcategory": "laptops",
+      "difficulty": "medium",
+      "question": "A laptop that overheats should be checked for blocked vents, dust buildup, and failed cooling ___.",
+      "word_bank": [
+        "fans",
+        "bookmarks",
+        "certificates",
+        "shares"
+      ],
+      "answer": "fans",
+      "explanation": "Laptop cooling relies on clear airflow and working fans. Dust and failed fans commonly cause overheating."
+    },
+    {
+      "id": "ts-077",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "troubleshooting",
+      "subcategory": "display-issues",
+      "difficulty": "easy",
+      "question": "A monitor showing 'No signal' should first have its cable and input ___ checked.",
+      "word_bank": [
+        "source",
+        "lease",
+        "queue",
+        "drum"
+      ],
+      "answer": "source",
+      "explanation": "The selected input source must match the connected video cable and computer output."
+    },
+    {
+      "id": "ts-078",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "troubleshooting",
+      "subcategory": "peripherals",
+      "difficulty": "easy",
+      "question": "A Bluetooth keyboard that stops responding should have its batteries checked and then be re-___.",
+      "word_bank": [
+        "paired",
+        "partitioned",
+        "imaged",
+        "spooled"
+      ],
+      "answer": "paired",
+      "explanation": "Bluetooth peripherals may require fresh batteries and re-pairing when connections become unreliable."
+    },
+    {
+      "id": "ts-079",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "troubleshooting",
+      "subcategory": "troubleshooting-methodology",
+      "difficulty": "easy",
+      "question": "The final troubleshooting step is to ___ findings, actions, and outcomes.",
+      "word_bank": [
+        "document",
+        "erase",
+        "guess",
+        "hide"
+      ],
+      "answer": "document",
+      "explanation": "Documentation preserves what was found, what was changed, and the verified result for future reference."
+    },
+    {
+      "id": "ts-080",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "troubleshooting",
+      "subcategory": "security-symptoms",
+      "difficulty": "hard",
+      "question": "A workstation suspected of ransomware should be immediately ___ from the network to reduce spread.",
+      "word_bank": [
+        "isolated",
+        "defragmented",
+        "brightened",
+        "laminated"
+      ],
+      "answer": "isolated",
+      "explanation": "Network isolation helps contain malware activity while incident response procedures begin."
+    },
+    {
+      "id": "ts-081",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "hardware",
+      "difficulty": "medium",
+      "question": "Match each hardware symptom to the most likely cause.",
+      "items": [
+        "Repeated POST beep codes",
+        "Clicking from internal drive",
+        "Random shutdowns under load",
+        "System time resets after power loss"
+      ],
+      "targets": [
+        "RAM or GPU initialization issue",
+        "Failing mechanical hard drive",
+        "Overheating or power instability",
+        "Failed CMOS battery"
+      ],
+      "answer": {
+        "Repeated POST beep codes": "RAM or GPU initialization issue",
+        "Clicking from internal drive": "Failing mechanical hard drive",
+        "Random shutdowns under load": "Overheating or power instability",
+        "System time resets after power loss": "Failed CMOS battery"
+      },
+      "explanation": "These symptoms map to common hardware faults involving POST, storage, thermal or power stability, and CMOS battery failure."
+    },
+    {
+      "id": "ts-082",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "networking",
+      "difficulty": "medium",
+      "question": "Match each network symptom to the most likely issue.",
+      "items": [
+        "169.254.x.x address",
+        "Can ping IP but not hostname",
+        "Duplicate IP warning",
+        "No link light"
+      ],
+      "targets": [
+        "DHCP unavailable",
+        "DNS resolution failure",
+        "IP address conflict",
+        "Physical layer problem"
+      ],
+      "answer": {
+        "169.254.x.x address": "DHCP unavailable",
+        "Can ping IP but not hostname": "DNS resolution failure",
+        "Duplicate IP warning": "IP address conflict",
+        "No link light": "Physical layer problem"
+      },
+      "explanation": "IP assignment, name resolution, address conflicts, and link indicators each point to different network layers."
+    },
+    {
+      "id": "ts-083",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "medium",
+      "question": "Match each printer symptom to the most likely cause.",
+      "items": [
+        "Ghosted laser output",
+        "Inkjet streaking after inactivity",
+        "Multiple sheets feed at once",
+        "Jobs stuck in Windows queue"
+      ],
+      "targets": [
+        "Faulty drum or fuser",
+        "Clogged printhead",
+        "Worn separation pad or rollers",
+        "Print Spooler problem"
+      ],
+      "answer": {
+        "Ghosted laser output": "Faulty drum or fuser",
+        "Inkjet streaking after inactivity": "Clogged printhead",
+        "Multiple sheets feed at once": "Worn separation pad or rollers",
+        "Jobs stuck in Windows queue": "Print Spooler problem"
+      },
+      "explanation": "Print quality and feed symptoms often map to specific printer subsystems such as imaging, ink delivery, rollers, and spooling."
+    },
+    {
+      "id": "ts-084",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "windows",
+      "difficulty": "medium",
+      "question": "Match each Windows symptom to the best troubleshooting tool or action.",
+      "items": [
+        "Slow startup apps",
+        "Driver causes startup crash",
+        "Service errors after boot",
+        "Corrupted system files suspected"
+      ],
+      "targets": [
+        "Task Manager",
+        "Safe Mode driver rollback",
+        "Event Viewer",
+        "sfc /scannow"
+      ],
+      "answer": {
+        "Slow startup apps": "Task Manager",
+        "Driver causes startup crash": "Safe Mode driver rollback",
+        "Service errors after boot": "Event Viewer",
+        "Corrupted system files suspected": "sfc /scannow"
+      },
+      "explanation": "Windows includes built-in tools for startup impact, driver recovery, event logs, and system file repair."
+    },
+    {
+      "id": "ts-085",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "linux",
+      "difficulty": "hard",
+      "question": "Match each Linux issue to the most useful initial command.",
+      "items": [
+        "View systemd service logs",
+        "Check IP addresses",
+        "Check routing table",
+        "Check filesystem free space"
+      ],
+      "targets": [
+        "journalctl -u service_name",
+        "ip addr",
+        "ip route",
+        "df -h"
+      ],
+      "answer": {
+        "View systemd service logs": "journalctl -u service_name",
+        "Check IP addresses": "ip addr",
+        "Check routing table": "ip route",
+        "Check filesystem free space": "df -h"
+      },
+      "explanation": "These commands provide quick visibility into Linux services, addressing, routing, and disk capacity."
+    },
+    {
+      "id": "ts-086",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "mobile-devices",
+      "difficulty": "medium",
+      "question": "Match each mobile symptom to the best first troubleshooting focus.",
+      "items": [
+        "Battery drains after new app",
+        "Cannot sync corporate email",
+        "Device lost by user",
+        "Will not charge with one cable"
+      ],
+      "targets": [
+        "App battery usage",
+        "Connectivity and account compliance",
+        "MDM lock or wipe procedure",
+        "Charging cable fault"
+      ],
+      "answer": {
+        "Battery drains after new app": "App battery usage",
+        "Cannot sync corporate email": "Connectivity and account compliance",
+        "Device lost by user": "MDM lock or wipe procedure",
+        "Will not charge with one cable": "Charging cable fault"
+      },
+      "explanation": "Mobile troubleshooting should target recent app behavior, access requirements, device management controls, and simple charging components."
+    },
+    {
+      "id": "ts-087",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "security-symptoms",
+      "difficulty": "hard",
+      "question": "Match each security symptom to the safest initial response.",
+      "items": [
+        "Ransomware note appears",
+        "Unexpected MFA prompts",
+        "User entered password on phishing site",
+        "Browser homepage changed with unknown extensions"
+      ],
+      "targets": [
+        "Isolate the host",
+        "Deny prompts and report",
+        "Reset credentials and investigate",
+        "Scan for malware or unwanted software"
+      ],
+      "answer": {
+        "Ransomware note appears": "Isolate the host",
+        "Unexpected MFA prompts": "Deny prompts and report",
+        "User entered password on phishing site": "Reset credentials and investigate",
+        "Browser homepage changed with unknown extensions": "Scan for malware or unwanted software"
+      },
+      "explanation": "Security symptoms require containment, reporting, credential protection, and approved scanning based on the specific indicator."
+    },
+    {
+      "id": "ts-088",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "application-issues",
+      "difficulty": "medium",
+      "question": "Match each application symptom to the most likely troubleshooting focus.",
+      "items": [
+        "Fails after certificate renewal",
+        "Crashes after update",
+        "Fails only in one browser",
+        "All users receive database timeout errors"
+      ],
+      "targets": [
+        "Certificate binding or chain",
+        "Release notes and application logs",
+        "Browser cache, cookies, or extensions",
+        "Backend service or database availability"
+      ],
+      "answer": {
+        "Fails after certificate renewal": "Certificate binding or chain",
+        "Crashes after update": "Release notes and application logs",
+        "Fails only in one browser": "Browser cache, cookies, or extensions",
+        "All users receive database timeout errors": "Backend service or database availability"
+      },
+      "explanation": "Application scope and timing help narrow whether the issue is local, update-related, certificate-related, or backend-wide."
+    },
+    {
+      "id": "ts-089",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "laptops",
+      "difficulty": "medium",
+      "question": "Match each laptop symptom to the likely cause.",
+      "items": [
+        "Works on AC but not battery",
+        "External display works but internal display is dim",
+        "No dock network or video",
+        "Shuts down during rendering"
+      ],
+      "targets": [
+        "Failed or disconnected battery",
+        "Backlight or display assembly issue",
+        "Dock connection, power, or driver issue",
+        "Thermal problem under load"
+      ],
+      "answer": {
+        "Works on AC but not battery": "Failed or disconnected battery",
+        "External display works but internal display is dim": "Backlight or display assembly issue",
+        "No dock network or video": "Dock connection, power, or driver issue",
+        "Shuts down during rendering": "Thermal problem under load"
+      },
+      "explanation": "Laptop symptoms often isolate to battery, display assembly, docking subsystem, or cooling under load."
+    },
+    {
+      "id": "ts-090",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "performance",
+      "difficulty": "medium",
+      "question": "Match each performance symptom to the first resource to investigate.",
+      "items": [
+        "100 percent active time on storage",
+        "Many browser tabs slow the system",
+        "Video calls freeze while downloads run",
+        "Fans loud and CPU clock drops"
+      ],
+      "targets": [
+        "Disk utilization",
+        "Memory and CPU usage",
+        "Network bandwidth usage",
+        "Thermal throttling"
+      ],
+      "answer": {
+        "100 percent active time on storage": "Disk utilization",
+        "Many browser tabs slow the system": "Memory and CPU usage",
+        "Video calls freeze while downloads run": "Network bandwidth usage",
+        "Fans loud and CPU clock drops": "Thermal throttling"
+      },
+      "explanation": "Performance troubleshooting starts by matching the symptom to the saturated or constrained resource."
+    },
+    {
+      "id": "ts-091",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "preventive-maintenance",
+      "difficulty": "easy",
+      "question": "Match each preventive maintenance task to the problem it helps prevent.",
+      "items": [
+        "Clean vents and fans",
+        "Verify backups",
+        "Apply tested security updates",
+        "Inspect printer rollers"
+      ],
+      "targets": [
+        "Overheating",
+        "Data loss",
+        "Known vulnerabilities",
+        "Paper feed problems"
+      ],
+      "answer": {
+        "Clean vents and fans": "Overheating",
+        "Verify backups": "Data loss",
+        "Apply tested security updates": "Known vulnerabilities",
+        "Inspect printer rollers": "Paper feed problems"
+      },
+      "explanation": "Preventive maintenance reduces the likelihood of common failures before they disrupt users."
+    },
+    {
+      "id": "ts-092",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "troubleshooting",
+      "subcategory": "troubleshooting-methodology",
+      "difficulty": "medium",
+      "question": "Match each troubleshooting activity to the methodology step it best represents.",
+      "items": [
+        "Ask the user what changed",
+        "Decide the NIC driver is likely faulty",
+        "Install a tested driver rollback",
+        "Record symptoms, fix, and results"
+      ],
+      "targets": [
+        "Identify the problem",
+        "Establish a theory",
+        "Implement a plan of action",
+        "Document findings"
+      ],
+      "answer": {
+        "Ask the user what changed": "Identify the problem",
+        "Decide the NIC driver is likely faulty": "Establish a theory",
+        "Install a tested driver rollback": "Implement a plan of action",
+        "Record symptoms, fix, and results": "Document findings"
+      },
+      "explanation": "Each activity corresponds to a specific phase of structured troubleshooting."
+    },
+    {
+      "id": "ts-093",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "troubleshooting",
+      "subcategory": "troubleshooting-methodology",
+      "difficulty": "medium",
+      "question": "Arrange the troubleshooting methodology steps in the correct order.",
+      "items": [
+        "Establish a theory of probable cause",
+        "Document findings and outcomes",
+        "Identify the problem",
+        "Verify full system functionality",
+        "Test the theory",
+        "Establish and implement a plan of action"
+      ],
+      "answer": [
+        "Identify the problem",
+        "Establish a theory of probable cause",
+        "Test the theory",
+        "Establish and implement a plan of action",
+        "Verify full system functionality",
+        "Document findings and outcomes"
+      ],
+      "explanation": "A structured troubleshooting process starts by identifying the issue, forming and testing a theory, applying a fix, verifying functionality, and documenting the result."
+    },
+    {
+      "id": "ts-094",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "troubleshooting",
+      "subcategory": "security-symptoms",
+      "difficulty": "hard",
+      "question": "Order the safest response steps for a workstation showing ransomware behavior.",
+      "items": [
+        "Preserve details and report according to policy",
+        "Isolate the workstation from the network",
+        "Restore data from known-good backups after cleanup approval",
+        "Confirm the scope of affected systems"
+      ],
+      "answer": [
+        "Isolate the workstation from the network",
+        "Preserve details and report according to policy",
+        "Confirm the scope of affected systems",
+        "Restore data from known-good backups after cleanup approval"
+      ],
+      "explanation": "Containment comes first, followed by reporting, scoping, and approved recovery from trusted backups."
+    },
+    {
+      "id": "ts-095",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "troubleshooting",
+      "subcategory": "storage",
+      "difficulty": "hard",
+      "question": "Order the steps for handling a workstation drive with clicking sounds and file errors.",
+      "items": [
+        "Replace the failing drive",
+        "Stop unnecessary writes and heavy tests",
+        "Verify or create a backup if possible",
+        "Restore data and verify functionality"
+      ],
+      "answer": [
+        "Stop unnecessary writes and heavy tests",
+        "Verify or create a backup if possible",
+        "Replace the failing drive",
+        "Restore data and verify functionality"
+      ],
+      "explanation": "A failing drive should be protected from unnecessary activity, backed up, replaced, and then restored and verified."
+    },
+    {
+      "id": "ts-096",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "troubleshooting",
+      "subcategory": "networking",
+      "difficulty": "medium",
+      "question": "Order the checks for a single wired PC with no network connectivity.",
+      "items": [
+        "Check IP configuration",
+        "Verify cable, link light, and switch port",
+        "Test name resolution if IP connectivity works",
+        "Ping the default gateway"
+      ],
+      "answer": [
+        "Verify cable, link light, and switch port",
+        "Check IP configuration",
+        "Ping the default gateway",
+        "Test name resolution if IP connectivity works"
+      ],
+      "explanation": "Start at the physical layer, then validate addressing, local gateway reachability, and finally DNS."
+    },
+    {
+      "id": "ts-097",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "troubleshooting",
+      "subcategory": "printers",
+      "difficulty": "medium",
+      "question": "Order the steps for troubleshooting a network printer that users cannot print to.",
+      "items": [
+        "Verify the printer is powered on and online",
+        "Print a test page and document the result",
+        "Check network address and client printer port",
+        "Restart or clear the print queue if jobs are stuck"
+      ],
+      "answer": [
+        "Verify the printer is powered on and online",
+        "Check network address and client printer port",
+        "Restart or clear the print queue if jobs are stuck",
+        "Print a test page and document the result"
+      ],
+      "explanation": "Printer troubleshooting begins with device state, then connectivity and port settings, queue handling, and final verification."
+    },
+    {
+      "id": "ts-098",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "troubleshooting",
+      "subcategory": "windows",
+      "difficulty": "medium",
+      "question": "Order the recovery steps for Windows blue screening after a new driver installation.",
+      "items": [
+        "Boot into Safe Mode or recovery options",
+        "Roll back or uninstall the suspect driver",
+        "Identify the recent driver change",
+        "Restart and verify normal operation"
+      ],
+      "answer": [
+        "Identify the recent driver change",
+        "Boot into Safe Mode or recovery options",
+        "Roll back or uninstall the suspect driver",
+        "Restart and verify normal operation"
+      ],
+      "explanation": "Knowing the recent change guides recovery. Safe Mode allows the bad driver to be removed before normal startup is verified."
+    },
+    {
+      "id": "ts-099",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "troubleshooting",
+      "subcategory": "mobile-devices",
+      "difficulty": "medium",
+      "question": "Order the steps for responding to a lost corporate smartphone.",
+      "items": [
+        "Document the incident and outcome",
+        "Confirm the device and user identity",
+        "Use MDM to lock or wipe according to policy",
+        "Report the loss through the required process"
+      ],
+      "answer": [
+        "Confirm the device and user identity",
+        "Report the loss through the required process",
+        "Use MDM to lock or wipe according to policy",
+        "Document the incident and outcome"
+      ],
+      "explanation": "Lost device response should verify details, follow reporting policy, use management controls, and document actions."
+    },
+    {
+      "id": "ts-100",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "troubleshooting",
+      "subcategory": "application-issues",
+      "difficulty": "medium",
+      "question": "Order the steps for troubleshooting an application that fails only for one user after a settings change.",
+      "items": [
+        "Test the application with the user's account",
+        "Gather symptoms and identify the recent change",
+        "Revert or correct the user-specific setting",
+        "Verify functionality and document the fix"
+      ],
+      "answer": [
+        "Gather symptoms and identify the recent change",
+        "Test the application with the user's account",
+        "Revert or correct the user-specific setting",
+        "Verify functionality and document the fix"
+      ],
+      "explanation": "For a single-user application issue, identify the change, reproduce with that account, correct the setting, and verify the result."
+    }
+  ]
+}

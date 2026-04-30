@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Quiz</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="nav-logo">IT&#x2011;QUIZ</span>
+
+  <div id="nav-normal" class="nav-tabs">
+    <button class="nav-tab active" data-view="home"     onclick="navTo('home')">Home</button>
+    <button class="nav-tab"        data-view="progress" onclick="navTo('progress')">Progress</button>
+    <button class="nav-tab"        data-view="settings" onclick="navTo('settings')">Settings</button>
+  </div>
+
+  <div id="nav-sess">
+    <span id="sn-q"     class="sn-q">Q 1/?</span>
+    <span class="sn-dot">·</span>
+    <span id="sn-cat"   class="sn-cat">—</span>
+    <span class="sn-dot">·</span>
+    <span id="sn-score" class="sn-score c-dim">—</span>
+    <span class="sn-dot">·</span>
+    <span id="sn-timer" class="sn-timer">00:00</span>
+    <span class="sn-spacer"></span>
+    <button class="btn btn-danger btn-sm" onclick="confirmStop()">■ Stop</button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ── SETUP ──────────────────────────────────────── -->
+<div id="view-setup" class="view hidden">
+  <div class="setup-wrap">
+    <div style="font-size:32px;margin-bottom:12px">💻</div>
+    <h1 class="mb-8">IT Quiz</h1>
+    <p class="c-muted mb-24">Enter your name to get started</p>
+    <div class="flex fc g-8" style="text-align:left">
+      <label class="xs c-dim fw6" style="text-transform:uppercase;letter-spacing:.06em">Your name</label>
+      <input id="setup-name" class="setup-input" type="text" placeholder="e.g. Matthew" maxlength="32"
+             onkeydown="if(event.key==='Enter')createProfile()">
+      <button class="btn btn-primary" onclick="createProfile()">Get Started →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── HOME ──────────────────────────────────────── -->
+<div id="view-home" class="view hidden">
+  <div id="home-body"></div>
+</div>
+
+<!-- ── CATEGORIES ────────────────────────────────── -->
+<div id="view-categories" class="view hidden">
+  <div class="flex ai-c jb mb-20">
+    <div>
+      <h2 class="mb-4">Select Categories</h2>
+      <p class="c-muted sm">Toggle one or more, then start</p>
+    </div>
+    <button class="btn btn-primary" onclick="startSession()">Start Session →</button>
+  </div>
+  <div class="cat-grid" id="cat-grid"></div>
+</div>
+
+<!-- ── SESSION ────────────────────────────────────── -->
+<div id="view-session" class="view hidden">
+  <div id="sess-q"></div>
+  <div id="sess-done" class="hidden"></div>
+</div>
+
+<!-- ── PROGRESS ──────────────────────────────────── -->
+<div id="view-progress" class="view hidden">
+  <div id="prog-body"></div>
+</div>
+
+<!-- ── SETTINGS ──────────────────────────────────── -->
+<div id="view-settings" class="view hidden">
+  <div id="settings-body"></div>
+</div>
+
+</main>
+
+<!-- Load order matters: each file depends on the ones above it -->
+<script src="js/utils.js"></script>
+<script src="js/data.js"></script>
+<script src="js/question-repo.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/scoring.js"></script>
+<script src="js/session.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

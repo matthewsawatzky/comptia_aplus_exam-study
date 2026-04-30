@@ -1,0 +1,1924 @@
+{
+  "schema_version": 1,
+  "category": "security",
+  "questions": [
+    {
+      "id": "sec-001",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "fundamentals",
+      "difficulty": "easy",
+      "question": "Which CIA triad component ensures data is only accessible to authorized users?",
+      "options": [
+        "Integrity",
+        "Availability",
+        "Confidentiality",
+        "Authentication"
+      ],
+      "answer": "Confidentiality",
+      "explanation": "Confidentiality protects data from unauthorized access. Integrity protects accuracy, and availability ensures systems are accessible when needed."
+    },
+    {
+      "id": "sec-002",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "fundamentals",
+      "difficulty": "easy",
+      "question": "A user reports that a critical file was changed without approval. Which CIA triad component was most directly affected?",
+      "options": [
+        "Integrity",
+        "Availability",
+        "Confidentiality",
+        "Non-repudiation"
+      ],
+      "answer": "Integrity",
+      "explanation": "Integrity means data remains accurate and unaltered except by authorized changes. Unauthorized modification is an integrity issue."
+    },
+    {
+      "id": "sec-003",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "authentication",
+      "difficulty": "easy",
+      "question": "Which item is an example of something you have for authentication?",
+      "options": [
+        "Password",
+        "Security question answer",
+        "Hardware security key",
+        "Fingerprint"
+      ],
+      "answer": "Hardware security key",
+      "explanation": "A hardware security key is a possession factor, also called something you have."
+    },
+    {
+      "id": "sec-004",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "authorization",
+      "difficulty": "easy",
+      "question": "After a user signs in, what process determines which files and applications the user may access?",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Accounting",
+        "Encryption"
+      ],
+      "answer": "Authorization",
+      "explanation": "Authorization determines what an authenticated user is permitted to access or perform."
+    },
+    {
+      "id": "sec-005",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "encryption",
+      "difficulty": "easy",
+      "question": "Which protocol should be used to securely browse a website?",
+      "options": [
+        "HTTP",
+        "FTP",
+        "HTTPS",
+        "Telnet"
+      ],
+      "answer": "HTTPS",
+      "explanation": "HTTPS uses TLS to encrypt web traffic and helps verify the server identity with a certificate."
+    },
+    {
+      "id": "sec-006",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "malware",
+      "difficulty": "easy",
+      "question": "A user's files are encrypted and a message demands payment to restore access. What type of malware is this?",
+      "options": [
+        "Spyware",
+        "Ransomware",
+        "Rootkit",
+        "Worm"
+      ],
+      "answer": "Ransomware",
+      "explanation": "Ransomware encrypts or locks data and demands payment for recovery."
+    },
+    {
+      "id": "sec-007",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "social-engineering",
+      "difficulty": "easy",
+      "question": "An attacker calls the help desk pretending to be an executive and asks for a password reset. What attack technique is being used?",
+      "options": [
+        "Tailgating",
+        "Pretexting",
+        "Shoulder surfing",
+        "Dumpster diving"
+      ],
+      "answer": "Pretexting",
+      "explanation": "Pretexting uses a fabricated identity or story to trick someone into revealing information or performing an action."
+    },
+    {
+      "id": "sec-008",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "wireless-security",
+      "difficulty": "easy",
+      "question": "Which wireless security standard is generally recommended for modern home and small office networks?",
+      "options": [
+        "WEP",
+        "WPA",
+        "WPA2 or WPA3",
+        "Open authentication"
+      ],
+      "answer": "WPA2 or WPA3",
+      "explanation": "WPA2 and WPA3 provide stronger encryption and authentication than WEP or original WPA."
+    },
+    {
+      "id": "sec-009",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "physical-security",
+      "difficulty": "easy",
+      "question": "Which control helps prevent someone from walking into a secure office behind an authorized employee?",
+      "options": [
+        "Cable lock",
+        "Mantrap",
+        "Screen filter",
+        "Surge protector"
+      ],
+      "answer": "Mantrap",
+      "explanation": "A mantrap uses controlled entry doors to prevent tailgating into secure areas."
+    },
+    {
+      "id": "sec-010",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "network-security",
+      "difficulty": "medium",
+      "question": "A technician wants to isolate guest Wi-Fi traffic from internal company servers. Which solution is most appropriate?",
+      "options": [
+        "Disable DHCP",
+        "Use a separate VLAN",
+        "Enable file sharing",
+        "Install a stronger CPU"
+      ],
+      "answer": "Use a separate VLAN",
+      "explanation": "A VLAN can segment guest traffic from trusted internal systems, reducing lateral movement risk."
+    },
+    {
+      "id": "sec-011",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "firewalls",
+      "difficulty": "easy",
+      "question": "What is the primary purpose of a firewall?",
+      "options": [
+        "Encrypt all files on a computer",
+        "Filter network traffic based on rules",
+        "Replace antivirus software",
+        "Create user passwords"
+      ],
+      "answer": "Filter network traffic based on rules",
+      "explanation": "A firewall permits or blocks traffic according to configured security rules."
+    },
+    {
+      "id": "sec-012",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "incident-response",
+      "difficulty": "medium",
+      "question": "A workstation shows signs of active malware infection. What should a technician do first to limit spread?",
+      "options": [
+        "Wipe the drive immediately",
+        "Disconnect the workstation from the network",
+        "Delete all user files",
+        "Install a new printer driver"
+      ],
+      "answer": "Disconnect the workstation from the network",
+      "explanation": "Isolating the system helps contain the incident before eradication and recovery steps begin."
+    },
+    {
+      "id": "sec-013",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "vulnerabilities",
+      "difficulty": "medium",
+      "question": "A vendor releases a security update for a flaw that attackers are actively exploiting. What should an administrator prioritize?",
+      "options": [
+        "Postpone the update indefinitely",
+        "Apply the patch after appropriate testing",
+        "Disable all user accounts",
+        "Replace every workstation"
+      ],
+      "answer": "Apply the patch after appropriate testing",
+      "explanation": "Actively exploited vulnerabilities should be patched quickly while still following change and testing procedures."
+    },
+    {
+      "id": "sec-014",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "best-practices",
+      "difficulty": "easy",
+      "question": "Which practice best follows the principle of least privilege?",
+      "options": [
+        "Give all users local administrator rights",
+        "Grant only the access needed to perform a job",
+        "Share one administrator account",
+        "Disable all password requirements"
+      ],
+      "answer": "Grant only the access needed to perform a job",
+      "explanation": "Least privilege limits users and services to only the permissions required for their duties."
+    },
+    {
+      "id": "sec-015",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "data-protection",
+      "difficulty": "easy",
+      "question": "Which action best protects a lost laptop from exposing stored data?",
+      "options": [
+        "Full-disk encryption",
+        "A larger hard drive",
+        "A desktop wallpaper policy",
+        "Disabling automatic updates"
+      ],
+      "answer": "Full-disk encryption",
+      "explanation": "Full-disk encryption protects data at rest if the device is lost or stolen."
+    },
+    {
+      "id": "sec-016",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "mobile-security",
+      "difficulty": "medium",
+      "question": "A company-owned phone is reported stolen. Which MDM action should be taken if recovery is unlikely?",
+      "options": [
+        "Remote wipe",
+        "Increase screen brightness",
+        "Install a game update",
+        "Disable airplane mode"
+      ],
+      "answer": "Remote wipe",
+      "explanation": "Remote wipe removes corporate data from a lost or stolen mobile device to reduce exposure."
+    },
+    {
+      "id": "sec-017",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "account-security",
+      "difficulty": "easy",
+      "question": "Which password is the strongest choice?",
+      "options": [
+        "Password123",
+        "CompanyName2024",
+        "Tr0ub4dor",
+        "river-lamp-silver-forest-92"
+      ],
+      "answer": "river-lamp-silver-forest-92",
+      "explanation": "A long passphrase is generally stronger and easier to remember than short predictable passwords."
+    },
+    {
+      "id": "sec-018",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "authentication",
+      "difficulty": "medium",
+      "question": "A user signs in with a password and then approves a prompt in an authenticator app. What security control is being used?",
+      "options": [
+        "Single sign-on only",
+        "Multifactor authentication",
+        "Password spraying",
+        "Role-based access control"
+      ],
+      "answer": "Multifactor authentication",
+      "explanation": "MFA uses two or more authentication factors, such as something you know and something you have."
+    },
+    {
+      "id": "sec-019",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "encryption",
+      "difficulty": "medium",
+      "question": "Which technology verifies a website's identity and supports encrypted TLS connections?",
+      "options": [
+        "Digital certificate",
+        "MAC address",
+        "SSID broadcast",
+        "File extension"
+      ],
+      "answer": "Digital certificate",
+      "explanation": "A digital certificate binds a public key to an identity and is used during TLS authentication."
+    },
+    {
+      "id": "sec-020",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "malware",
+      "difficulty": "medium",
+      "question": "A program appears legitimate but secretly opens a backdoor after installation. What type of malware is this?",
+      "options": [
+        "Trojan",
+        "Logic bomb",
+        "Botnet",
+        "Adware"
+      ],
+      "answer": "Trojan",
+      "explanation": "A Trojan disguises itself as legitimate software while performing malicious actions."
+    },
+    {
+      "id": "sec-021",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "threat-types",
+      "difficulty": "medium",
+      "question": "An attacker secretly relays traffic between a user and a website to capture login data. Which attack is occurring?",
+      "options": [
+        "Brute force",
+        "Man-in-the-middle",
+        "Tailgating",
+        "Evil twin"
+      ],
+      "answer": "Man-in-the-middle",
+      "explanation": "A man-in-the-middle attack intercepts or relays communication between two parties."
+    },
+    {
+      "id": "sec-022",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "social-engineering",
+      "difficulty": "easy",
+      "question": "Which attack uses a fraudulent email that appears to come from a trusted company to steal credentials?",
+      "options": [
+        "Phishing",
+        "Bluesnarfing",
+        "War driving",
+        "Rooting"
+      ],
+      "answer": "Phishing",
+      "explanation": "Phishing uses deceptive messages to trick users into revealing sensitive information or visiting malicious sites."
+    },
+    {
+      "id": "sec-023",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "access-control",
+      "difficulty": "medium",
+      "question": "A company assigns permissions based on job titles such as Accounting, Sales, and IT Support. Which access model is this?",
+      "options": [
+        "Role-based access control",
+        "Mandatory access control",
+        "Discretionary access control",
+        "Open access control"
+      ],
+      "answer": "Role-based access control",
+      "explanation": "Role-based access control grants permissions according to defined roles or job functions."
+    },
+    {
+      "id": "sec-024",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "network-security",
+      "difficulty": "medium",
+      "question": "Which tool is commonly used to detect suspicious network traffic patterns and alert administrators?",
+      "options": [
+        "IDS",
+        "Disk defragmenter",
+        "Text editor",
+        "Screen reader"
+      ],
+      "answer": "IDS",
+      "explanation": "An intrusion detection system monitors traffic or hosts and alerts on suspicious activity."
+    },
+    {
+      "id": "sec-025",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "wireless-security",
+      "difficulty": "medium",
+      "question": "A user connects to a coffee shop Wi-Fi network with the same name as the legitimate hotspot, but it is controlled by an attacker. What is this called?",
+      "options": [
+        "Evil twin",
+        "Bluejacking",
+        "DNS poisoning",
+        "MAC filtering"
+      ],
+      "answer": "Evil twin",
+      "explanation": "An evil twin is a rogue wireless access point made to look like a trusted network."
+    },
+    {
+      "id": "sec-026",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "data-protection",
+      "difficulty": "medium",
+      "question": "Before donating old company drives, which process should be used to prevent recovery of sensitive data?",
+      "options": [
+        "Rename the drive",
+        "Secure wipe or destruction",
+        "Create a shortcut",
+        "Change the wallpaper"
+      ],
+      "answer": "Secure wipe or destruction",
+      "explanation": "Secure wiping or physical destruction prevents sensitive data from being recovered from retired media."
+    },
+    {
+      "id": "sec-027",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "firewalls",
+      "difficulty": "medium",
+      "question": "A firewall rule allows inbound TCP traffic only to port 443 on a web server. What service is most likely being permitted?",
+      "options": [
+        "HTTP",
+        "HTTPS",
+        "DNS",
+        "SMTP"
+      ],
+      "answer": "HTTPS",
+      "explanation": "TCP port 443 is the standard port for HTTPS traffic."
+    },
+    {
+      "id": "sec-028",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "vulnerabilities",
+      "difficulty": "medium",
+      "question": "A scanner reports that a server accepts outdated TLS versions. What is the best remediation?",
+      "options": [
+        "Disable secure protocols",
+        "Enable only current supported TLS versions",
+        "Open all firewall ports",
+        "Turn off certificate validation"
+      ],
+      "answer": "Enable only current supported TLS versions",
+      "explanation": "Disabling weak protocols and allowing current TLS versions reduces exposure to known cryptographic attacks."
+    },
+    {
+      "id": "sec-029",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "account-security",
+      "difficulty": "medium",
+      "question": "A user receives repeated MFA prompts they did not initiate. What should the user do?",
+      "options": [
+        "Approve one prompt to stop the alerts",
+        "Ignore and continue working",
+        "Deny the prompt and report it",
+        "Share the password with IT by email"
+      ],
+      "answer": "Deny the prompt and report it",
+      "explanation": "Unexpected MFA prompts may indicate credential compromise or MFA fatigue attacks and should be denied and reported."
+    },
+    {
+      "id": "sec-030",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "encryption",
+      "difficulty": "hard",
+      "question": "Which hashing property makes it infeasible to find two different inputs with the same hash value?",
+      "options": [
+        "Collision resistance",
+        "Compression",
+        "Symmetry",
+        "Key exchange"
+      ],
+      "answer": "Collision resistance",
+      "explanation": "Collision resistance means it should be computationally infeasible to find two different inputs that produce the same hash."
+    },
+    {
+      "id": "sec-031",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "incident-response",
+      "difficulty": "hard",
+      "question": "During malware analysis, why should a technician preserve a disk image before making changes to an infected system?",
+      "options": [
+        "To increase available storage",
+        "To maintain evidence integrity",
+        "To speed up the malware",
+        "To bypass authentication"
+      ],
+      "answer": "To maintain evidence integrity",
+      "explanation": "Preserving an image supports forensic analysis and helps maintain the integrity of potential evidence."
+    },
+    {
+      "id": "sec-032",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "best-practices",
+      "difficulty": "medium",
+      "question": "Which user training topic most directly reduces the risk of credential theft from fake login pages?",
+      "options": [
+        "Recognizing phishing links",
+        "Installing extra RAM",
+        "Changing monitor resolution",
+        "Defragmenting disks"
+      ],
+      "answer": "Recognizing phishing links",
+      "explanation": "Training users to identify suspicious links and fake login pages helps prevent credential theft."
+    },
+    {
+      "id": "sec-033",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "physical-security",
+      "difficulty": "medium",
+      "question": "A visitor without a badge is standing near a locked server room door waiting for someone to enter. Which risk is most likely?",
+      "options": [
+        "Tailgating",
+        "SQL injection",
+        "Password spraying",
+        "DNS spoofing"
+      ],
+      "answer": "Tailgating",
+      "explanation": "Tailgating occurs when an unauthorized person follows an authorized person into a restricted area."
+    },
+    {
+      "id": "sec-034",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "mobile-security",
+      "difficulty": "medium",
+      "question": "Why should users avoid sideloading apps from untrusted websites onto mobile devices?",
+      "options": [
+        "It always improves battery life",
+        "It may install malicious or unreviewed software",
+        "It disables all wireless networks",
+        "It prevents app permissions"
+      ],
+      "answer": "It may install malicious or unreviewed software",
+      "explanation": "Apps from untrusted sources may bypass store review processes and contain malware or privacy risks."
+    },
+    {
+      "id": "sec-035",
+      "type": "single_choice",
+      "category": "security",
+      "subcategory": "threat-types",
+      "difficulty": "hard",
+      "question": "A web form allows user input to alter a database query and reveal records. Which vulnerability is being exploited?",
+      "options": [
+        "SQL injection",
+        "Buffer underrun",
+        "Bluejacking",
+        "Shoulder surfing"
+      ],
+      "answer": "SQL injection",
+      "explanation": "SQL injection occurs when unsanitized input changes database queries and can expose or modify data."
+    },
+    {
+      "id": "sec-036",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "authentication",
+      "difficulty": "medium",
+      "question": "Which TWO examples represent different authentication factors? (Select all that apply)",
+      "options": [
+        "A password",
+        "A PIN",
+        "A fingerprint scan",
+        "A hardware token code",
+        "A username"
+      ],
+      "answer": [
+        "A fingerprint scan",
+        "A hardware token code"
+      ],
+      "explanation": "A fingerprint is something you are, while a hardware token is something you have. Passwords and PINs are both something you know."
+    },
+    {
+      "id": "sec-037",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "account-security",
+      "difficulty": "medium",
+      "question": "Which TWO practices help protect user accounts from password attacks? (Select all that apply)",
+      "options": [
+        "Use unique passwords for each service",
+        "Disable account lockout policies",
+        "Enable MFA",
+        "Share passwords with coworkers",
+        "Store passwords in plain text"
+      ],
+      "answer": [
+        "Use unique passwords for each service",
+        "Enable MFA"
+      ],
+      "explanation": "Unique passwords limit credential reuse, and MFA adds protection if a password is compromised."
+    },
+    {
+      "id": "sec-038",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "encryption",
+      "difficulty": "medium",
+      "question": "Which TWO statements about asymmetric encryption are correct? (Select all that apply)",
+      "options": [
+        "It uses a public and private key pair",
+        "It uses the same shared key for encryption and decryption only",
+        "It can support digital signatures",
+        "It requires passwords to be stored in plain text",
+        "It is the same as hashing"
+      ],
+      "answer": [
+        "It uses a public and private key pair",
+        "It can support digital signatures"
+      ],
+      "explanation": "Asymmetric cryptography uses key pairs and can provide encryption, key exchange, and digital signatures."
+    },
+    {
+      "id": "sec-039",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "malware",
+      "difficulty": "medium",
+      "question": "A workstation displays pop-up ads and changes the browser homepage without permission. Which TWO malware types are most likely? (Select all that apply)",
+      "options": [
+        "Adware",
+        "Browser hijacker",
+        "Worm",
+        "Ransomware",
+        "Logic bomb"
+      ],
+      "answer": [
+        "Adware",
+        "Browser hijacker"
+      ],
+      "explanation": "Adware displays unwanted ads, and browser hijackers modify browser behavior such as homepages or search engines."
+    },
+    {
+      "id": "sec-040",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "social-engineering",
+      "difficulty": "medium",
+      "question": "Which TWO details are common signs of a phishing email? (Select all that apply)",
+      "options": [
+        "Unexpected attachment",
+        "Urgent request for credentials",
+        "Correct company logo",
+        "Normal business hours",
+        "Encrypted hard drive"
+      ],
+      "answer": [
+        "Unexpected attachment",
+        "Urgent request for credentials"
+      ],
+      "explanation": "Unexpected attachments and urgent credential requests are common phishing indicators even when branding appears legitimate."
+    },
+    {
+      "id": "sec-041",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "wireless-security",
+      "difficulty": "medium",
+      "question": "Which TWO actions improve wireless network security? (Select all that apply)",
+      "options": [
+        "Use WPA3 where supported",
+        "Keep the default router administrator password",
+        "Disable encryption for compatibility",
+        "Use a strong Wi-Fi passphrase",
+        "Publish the passphrase on a public website"
+      ],
+      "answer": [
+        "Use WPA3 where supported",
+        "Use a strong Wi-Fi passphrase"
+      ],
+      "explanation": "Modern encryption and strong passphrases reduce the chance of unauthorized wireless access."
+    },
+    {
+      "id": "sec-042",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "physical-security",
+      "difficulty": "easy",
+      "question": "Which TWO controls help protect a laptop in a public area? (Select all that apply)",
+      "options": [
+        "Cable lock",
+        "Privacy screen",
+        "Shared local administrator account",
+        "Open Wi-Fi hotspot",
+        "Plain text password file"
+      ],
+      "answer": [
+        "Cable lock",
+        "Privacy screen"
+      ],
+      "explanation": "A cable lock deters theft, and a privacy screen reduces shoulder surfing in public spaces."
+    },
+    {
+      "id": "sec-043",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "network-security",
+      "difficulty": "hard",
+      "question": "A small business wants to reduce lateral movement if a guest device is compromised. Which TWO controls should be implemented? (Select all that apply)",
+      "options": [
+        "Guest VLAN",
+        "Network access control",
+        "Shared admin password",
+        "Disable firewall logging",
+        "Open file shares to everyone"
+      ],
+      "answer": [
+        "Guest VLAN",
+        "Network access control"
+      ],
+      "explanation": "Segmentation and network access control restrict where untrusted devices can communicate."
+    },
+    {
+      "id": "sec-044",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "firewalls",
+      "difficulty": "medium",
+      "question": "Which TWO firewall rules follow a least-permissive approach for an internal web server? (Select all that apply)",
+      "options": [
+        "Allow TCP 443 from required networks",
+        "Deny all traffic by default",
+        "Allow any inbound port from the internet",
+        "Permit Telnet management from anywhere",
+        "Disable logging for denied traffic"
+      ],
+      "answer": [
+        "Allow TCP 443 from required networks",
+        "Deny all traffic by default"
+      ],
+      "explanation": "Least-permissive rules deny by default and allow only the specific traffic required for business needs."
+    },
+    {
+      "id": "sec-045",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "incident-response",
+      "difficulty": "medium",
+      "question": "A technician finds ransomware on a shared workstation. Which TWO actions are appropriate early response steps? (Select all that apply)",
+      "options": [
+        "Disconnect the system from the network",
+        "Notify the incident response contact",
+        "Pay the ransom immediately",
+        "Delete all backups",
+        "Reconnect mapped drives"
+      ],
+      "answer": [
+        "Disconnect the system from the network",
+        "Notify the incident response contact"
+      ],
+      "explanation": "Early response should contain the infection and escalate according to the incident response process."
+    },
+    {
+      "id": "sec-046",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "vulnerabilities",
+      "difficulty": "medium",
+      "question": "Which TWO actions reduce exposure from known software vulnerabilities? (Select all that apply)",
+      "options": [
+        "Apply security patches",
+        "Remove unsupported software",
+        "Ignore vendor advisories",
+        "Use default credentials",
+        "Disable audit logs"
+      ],
+      "answer": [
+        "Apply security patches",
+        "Remove unsupported software"
+      ],
+      "explanation": "Patching and removing unsupported software reduce the number of known exploitable weaknesses."
+    },
+    {
+      "id": "sec-047",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "data-protection",
+      "difficulty": "medium",
+      "question": "Which TWO controls help protect sensitive customer data at rest? (Select all that apply)",
+      "options": [
+        "Full-disk encryption",
+        "File permissions",
+        "Open guest network",
+        "Unencrypted USB copies",
+        "Shared public folder"
+      ],
+      "answer": [
+        "Full-disk encryption",
+        "File permissions"
+      ],
+      "explanation": "Encryption protects stored data, and file permissions limit who can access it."
+    },
+    {
+      "id": "sec-048",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "best-practices",
+      "difficulty": "easy",
+      "question": "Which TWO practices are safe when handling suspicious email attachments? (Select all that apply)",
+      "options": [
+        "Verify the sender through another channel",
+        "Report the message according to policy",
+        "Enable macros to view the file",
+        "Forward it to all coworkers",
+        "Open it on a production server"
+      ],
+      "answer": [
+        "Verify the sender through another channel",
+        "Report the message according to policy"
+      ],
+      "explanation": "Suspicious attachments should be verified and reported, not opened or widely forwarded."
+    },
+    {
+      "id": "sec-049",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "mobile-security",
+      "difficulty": "medium",
+      "question": "Which TWO mobile device settings help protect corporate data? (Select all that apply)",
+      "options": [
+        "Screen lock with strong passcode",
+        "Device encryption",
+        "Automatic connection to any open Wi-Fi",
+        "Disabled OS updates",
+        "Jailbroken operating system"
+      ],
+      "answer": [
+        "Screen lock with strong passcode",
+        "Device encryption"
+      ],
+      "explanation": "A strong lock screen and encryption reduce exposure if a mobile device is lost or stolen."
+    },
+    {
+      "id": "sec-050",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "access-control",
+      "difficulty": "medium",
+      "question": "Which TWO actions should be taken when an employee changes departments? (Select all that apply)",
+      "options": [
+        "Review group memberships",
+        "Remove access no longer required",
+        "Keep all previous permissions forever",
+        "Share the new manager's password",
+        "Disable audit trails"
+      ],
+      "answer": [
+        "Review group memberships",
+        "Remove access no longer required"
+      ],
+      "explanation": "Access should be reviewed and adjusted to match the employee's current role."
+    },
+    {
+      "id": "sec-051",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "encryption",
+      "difficulty": "hard",
+      "question": "Which TWO statements describe hashing? (Select all that apply)",
+      "options": [
+        "It produces a fixed-length digest",
+        "It is commonly used to verify integrity",
+        "It can always be decrypted with a private key",
+        "It requires both users to share a password",
+        "It is designed for wireless signal boosting"
+      ],
+      "answer": [
+        "It produces a fixed-length digest",
+        "It is commonly used to verify integrity"
+      ],
+      "explanation": "Hashes create fixed-length digests and are used for integrity checks, but they are not encryption and cannot be decrypted."
+    },
+    {
+      "id": "sec-052",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "authentication",
+      "difficulty": "hard",
+      "question": "Which TWO controls are best for reducing successful password spraying attacks? (Select all that apply)",
+      "options": [
+        "MFA",
+        "Account lockout or throttling",
+        "Shared passwords",
+        "Disable logging",
+        "Use common seasonal passwords"
+      ],
+      "answer": [
+        "MFA",
+        "Account lockout or throttling"
+      ],
+      "explanation": "MFA limits value of stolen passwords, and lockout or throttling slows repeated login attempts."
+    },
+    {
+      "id": "sec-053",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "malware",
+      "difficulty": "hard",
+      "question": "Which TWO behaviors are commonly associated with a worm infection? (Select all that apply)",
+      "options": [
+        "Self-replicates across networks",
+        "Consumes unusual network bandwidth",
+        "Requires manual installation on each host",
+        "Only displays advertisements",
+        "Improves endpoint performance"
+      ],
+      "answer": [
+        "Self-replicates across networks",
+        "Consumes unusual network bandwidth"
+      ],
+      "explanation": "Worms spread automatically, often creating abnormal network activity as they scan and replicate."
+    },
+    {
+      "id": "sec-054",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "social-engineering",
+      "difficulty": "medium",
+      "question": "A caller asks an employee to read a one-time MFA code over the phone. Which TWO responses are appropriate? (Select all that apply)",
+      "options": [
+        "Refuse to share the code",
+        "Report the call to security",
+        "Read the code if the caller sounds official",
+        "Approve all pending prompts",
+        "Send the code by text message"
+      ],
+      "answer": [
+        "Refuse to share the code",
+        "Report the call to security"
+      ],
+      "explanation": "MFA codes should never be shared. The attempt should be reported as potential social engineering."
+    },
+    {
+      "id": "sec-055",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "network-security",
+      "difficulty": "medium",
+      "question": "Which TWO protocols are secure replacements for insecure remote or file transfer protocols? (Select all that apply)",
+      "options": [
+        "SSH",
+        "SFTP",
+        "Telnet",
+        "FTP",
+        "HTTP"
+      ],
+      "answer": [
+        "SSH",
+        "SFTP"
+      ],
+      "explanation": "SSH secures remote shell access, and SFTP secures file transfer over SSH. Telnet and FTP transmit data insecurely."
+    },
+    {
+      "id": "sec-056",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "data-protection",
+      "difficulty": "hard",
+      "question": "Which TWO practices help maintain backup resilience against ransomware? (Select all that apply)",
+      "options": [
+        "Keep offline or immutable backups",
+        "Regularly test restores",
+        "Store all backups on mapped drives",
+        "Use the same admin password everywhere",
+        "Delete older clean backups immediately"
+      ],
+      "answer": [
+        "Keep offline or immutable backups",
+        "Regularly test restores"
+      ],
+      "explanation": "Offline or immutable backups resist encryption by ransomware, and restore testing confirms backups are usable."
+    },
+    {
+      "id": "sec-057",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "incident-response",
+      "difficulty": "hard",
+      "question": "Which TWO items should be documented during an incident investigation? (Select all that apply)",
+      "options": [
+        "Timeline of observed events",
+        "Actions taken by responders",
+        "Personal opinions not tied to evidence",
+        "Passwords for unrelated users",
+        "Unapproved changes to evidence"
+      ],
+      "answer": [
+        "Timeline of observed events",
+        "Actions taken by responders"
+      ],
+      "explanation": "Accurate timelines and responder actions support analysis, reporting, and chain-of-custody expectations."
+    },
+    {
+      "id": "sec-058",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "vulnerabilities",
+      "difficulty": "medium",
+      "question": "Which TWO findings should be prioritized in a vulnerability remediation plan? (Select all that apply)",
+      "options": [
+        "Internet-facing critical vulnerability",
+        "Actively exploited vulnerability",
+        "Low-risk issue on an isolated test system",
+        "Cosmetic website typo",
+        "Unused monitor cable"
+      ],
+      "answer": [
+        "Internet-facing critical vulnerability",
+        "Actively exploited vulnerability"
+      ],
+      "explanation": "Exposure, severity, and active exploitation are key factors when prioritizing vulnerability remediation."
+    },
+    {
+      "id": "sec-059",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "authorization",
+      "difficulty": "medium",
+      "question": "Which TWO permissions changes are appropriate after a contractor's project ends? (Select all that apply)",
+      "options": [
+        "Disable the contractor account",
+        "Revoke project resource access",
+        "Keep VPN access active for convenience",
+        "Transfer the account to another contractor",
+        "Remove all audit records"
+      ],
+      "answer": [
+        "Disable the contractor account",
+        "Revoke project resource access"
+      ],
+      "explanation": "Accounts and access should be removed when no longer needed to reduce unauthorized access risk."
+    },
+    {
+      "id": "sec-060",
+      "type": "multi_choice",
+      "category": "security",
+      "subcategory": "encryption",
+      "difficulty": "medium",
+      "question": "Which TWO protocols commonly provide encrypted communication? (Select all that apply)",
+      "options": [
+        "HTTPS",
+        "SSH",
+        "Telnet",
+        "FTP",
+        "POP3 without TLS"
+      ],
+      "answer": [
+        "HTTPS",
+        "SSH"
+      ],
+      "explanation": "HTTPS and SSH provide encrypted communication. Telnet and FTP are insecure by default."
+    },
+    {
+      "id": "sec-061",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "security",
+      "subcategory": "encryption",
+      "difficulty": "medium",
+      "question": "In asymmetric encryption, a message encrypted with the recipient's ___ key can only be decrypted with their private key.",
+      "word_bank": [
+        "public",
+        "private",
+        "symmetric"
+      ],
+      "answer": "public",
+      "explanation": "The recipient's public key is used to encrypt data, and only the matching private key can decrypt it."
+    },
+    {
+      "id": "sec-062",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "security",
+      "subcategory": "malware",
+      "difficulty": "medium",
+      "question": "Malware that encrypts user files and demands payment is called ___.",
+      "word_bank": [
+        "ransomware",
+        "spyware",
+        "adware",
+        "rootkit"
+      ],
+      "answer": "ransomware",
+      "explanation": "Ransomware encrypts files and demands payment for the decryption key."
+    },
+    {
+      "id": "sec-063",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "security",
+      "subcategory": "authentication",
+      "difficulty": "easy",
+      "question": "Using two or more different authentication factors is called ___.",
+      "word_bank": [
+        "mfa",
+        "sso",
+        "rbac"
+      ],
+      "answer": "mfa",
+      "explanation": "MFA, or multifactor authentication, requires two or more factor types to verify identity."
+    },
+    {
+      "id": "sec-064",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "security",
+      "subcategory": "social-engineering",
+      "difficulty": "easy",
+      "question": "Following someone through a secure door without authorization is called ___.",
+      "word_bank": [
+        "tailgating",
+        "phishing",
+        "spoofing",
+        "hashing"
+      ],
+      "answer": "tailgating",
+      "explanation": "Tailgating is unauthorized physical entry by following an authorized person."
+    },
+    {
+      "id": "sec-065",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "security",
+      "subcategory": "wireless-security",
+      "difficulty": "medium",
+      "question": "A fake wireless access point that imitates a legitimate hotspot is known as an ___ twin.",
+      "word_bank": [
+        "evil",
+        "open",
+        "hidden"
+      ],
+      "answer": "evil",
+      "explanation": "An evil twin access point tricks users into connecting to an attacker-controlled network."
+    },
+    {
+      "id": "sec-066",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "security",
+      "subcategory": "network-security",
+      "difficulty": "medium",
+      "question": "Separating networks into logical segments is commonly done with a ___.",
+      "word_bank": [
+        "vlan",
+        "cookie",
+        "pixel",
+        "macro"
+      ],
+      "answer": "vlan",
+      "explanation": "A VLAN logically separates network traffic to improve organization and security."
+    },
+    {
+      "id": "sec-067",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "security",
+      "subcategory": "encryption",
+      "difficulty": "hard",
+      "question": "A one-way function that produces a fixed-length digest for integrity checking is a ___.",
+      "word_bank": [
+        "hash",
+        "cipher",
+        "certificate"
+      ],
+      "answer": "hash",
+      "explanation": "A hash produces a fixed-length digest and is commonly used to verify data integrity."
+    },
+    {
+      "id": "sec-068",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "security",
+      "subcategory": "firewalls",
+      "difficulty": "easy",
+      "question": "A firewall primarily filters network traffic based on configured ___.",
+      "word_bank": [
+        "rules",
+        "wallpaper",
+        "fonts",
+        "batteries"
+      ],
+      "answer": "rules",
+      "explanation": "Firewall rules define which traffic is allowed or denied."
+    },
+    {
+      "id": "sec-069",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "security",
+      "subcategory": "account-security",
+      "difficulty": "easy",
+      "question": "A longer memorable password made of multiple words is often called a ___.",
+      "word_bank": [
+        "passphrase",
+        "token",
+        "certificate"
+      ],
+      "answer": "passphrase",
+      "explanation": "A passphrase uses length and memorability to improve password strength."
+    },
+    {
+      "id": "sec-070",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "security",
+      "subcategory": "data-protection",
+      "difficulty": "medium",
+      "question": "Information such as Social Security numbers and customer records is commonly classified as ___.",
+      "word_bank": [
+        "pii",
+        "ssid",
+        "dhcp",
+        "nat"
+      ],
+      "answer": "pii",
+      "explanation": "PII is personally identifiable information that can identify or relate to an individual."
+    },
+    {
+      "id": "sec-071",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "security",
+      "subcategory": "incident-response",
+      "difficulty": "medium",
+      "question": "The incident response step that limits an attacker's ability to spread is ___.",
+      "word_bank": [
+        "containment",
+        "preparation",
+        "lessons learned"
+      ],
+      "answer": "containment",
+      "explanation": "Containment limits the scope and impact of an incident before eradication and recovery."
+    },
+    {
+      "id": "sec-072",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "security",
+      "subcategory": "vulnerabilities",
+      "difficulty": "medium",
+      "question": "A software update that fixes a security flaw is commonly called a ___.",
+      "word_bank": [
+        "patch",
+        "token",
+        "honeypot",
+        "proxy"
+      ],
+      "answer": "patch",
+      "explanation": "A patch updates software to correct bugs, security flaws, or compatibility issues."
+    },
+    {
+      "id": "sec-073",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "security",
+      "subcategory": "access-control",
+      "difficulty": "medium",
+      "question": "Granting users only the permissions needed for their job follows the principle of least ___.",
+      "word_bank": [
+        "privilege",
+        "bandwidth",
+        "latency"
+      ],
+      "answer": "privilege",
+      "explanation": "Least privilege limits access rights to what is required for authorized tasks."
+    },
+    {
+      "id": "sec-074",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "security",
+      "subcategory": "malware",
+      "difficulty": "hard",
+      "question": "Malware designed to hide its presence and provide privileged access is a ___.",
+      "word_bank": [
+        "rootkit",
+        "cookie",
+        "macro",
+        "beacon"
+      ],
+      "answer": "rootkit",
+      "explanation": "A rootkit hides malicious activity and may provide unauthorized privileged access."
+    },
+    {
+      "id": "sec-075",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "security",
+      "subcategory": "social-engineering",
+      "difficulty": "medium",
+      "question": "A targeted phishing attack aimed at a high-ranking executive is often called ___.",
+      "word_bank": [
+        "whaling",
+        "smishing",
+        "vishing"
+      ],
+      "answer": "whaling",
+      "explanation": "Whaling is a phishing attack that targets executives or other high-value individuals."
+    },
+    {
+      "id": "sec-076",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "security",
+      "subcategory": "encryption",
+      "difficulty": "medium",
+      "question": "The protocol that secures modern HTTPS connections is ___.",
+      "word_bank": [
+        "tls",
+        "ftp",
+        "telnet",
+        "snmp"
+      ],
+      "answer": "tls",
+      "explanation": "TLS encrypts HTTPS traffic and helps authenticate the server."
+    },
+    {
+      "id": "sec-077",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "security",
+      "subcategory": "mobile-security",
+      "difficulty": "medium",
+      "question": "Removing manufacturer restrictions on an iOS device is commonly called ___.",
+      "word_bank": [
+        "jailbreaking",
+        "hashing",
+        "pairing"
+      ],
+      "answer": "jailbreaking",
+      "explanation": "Jailbreaking bypasses platform restrictions and can weaken device security."
+    },
+    {
+      "id": "sec-078",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "security",
+      "subcategory": "physical-security",
+      "difficulty": "easy",
+      "question": "Looking over someone's shoulder to steal information is called ___.",
+      "word_bank": [
+        "shoulder surfing",
+        "spoofing",
+        "hashing",
+        "sandboxing"
+      ],
+      "answer": "shoulder surfing",
+      "explanation": "Shoulder surfing is observing a user's screen, keyboard, or documents to steal information."
+    },
+    {
+      "id": "sec-079",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "security",
+      "subcategory": "threat-types",
+      "difficulty": "hard",
+      "question": "An attack that overwhelms a service with traffic to make it unavailable is a ___ attack.",
+      "word_bank": [
+        "dos",
+        "mitm",
+        "rbac"
+      ],
+      "answer": "dos",
+      "explanation": "A denial-of-service attack attempts to make a service unavailable to legitimate users."
+    },
+    {
+      "id": "sec-080",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "security",
+      "subcategory": "best-practices",
+      "difficulty": "medium",
+      "question": "The process of turning off unnecessary services and settings to reduce attack surface is system ___.",
+      "word_bank": [
+        "hardening",
+        "bridging",
+        "mirroring",
+        "spooling"
+      ],
+      "answer": "hardening",
+      "explanation": "System hardening reduces risk by disabling unnecessary features and applying secure configurations."
+    },
+    {
+      "id": "sec-081",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "threat-types",
+      "difficulty": "easy",
+      "question": "Match each attack type to its description.",
+      "items": [
+        "Phishing",
+        "SQL Injection",
+        "Man-in-the-Middle",
+        "Ransomware"
+      ],
+      "targets": [
+        "Credential theft",
+        "Database manipulation",
+        "Traffic interception",
+        "File encryption"
+      ],
+      "answer": {
+        "Phishing": "Credential theft",
+        "SQL Injection": "Database manipulation",
+        "Man-in-the-Middle": "Traffic interception",
+        "Ransomware": "File encryption"
+      },
+      "explanation": "Each attack has a distinct goal: phishing steals credentials, SQL injection targets databases, MITM intercepts traffic, and ransomware encrypts files."
+    },
+    {
+      "id": "sec-082",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "authentication",
+      "difficulty": "easy",
+      "question": "Match each authentication factor to its example.",
+      "items": [
+        "Something you know",
+        "Something you have",
+        "Something you are",
+        "Somewhere you are"
+      ],
+      "targets": [
+        "Password",
+        "Smart card",
+        "Fingerprint",
+        "Location"
+      ],
+      "answer": {
+        "Something you know": "Password",
+        "Something you have": "Smart card",
+        "Something you are": "Fingerprint",
+        "Somewhere you are": "Location"
+      },
+      "explanation": "Authentication factors include knowledge, possession, inherence, and sometimes location-based context."
+    },
+    {
+      "id": "sec-083",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "encryption",
+      "difficulty": "medium",
+      "question": "Match each cryptographic term to its purpose.",
+      "items": [
+        "Hash",
+        "Digital certificate",
+        "Symmetric key",
+        "Digital signature"
+      ],
+      "targets": [
+        "Integrity digest",
+        "Identity binding",
+        "Shared secret encryption",
+        "Authenticity and non-repudiation"
+      ],
+      "answer": {
+        "Hash": "Integrity digest",
+        "Digital certificate": "Identity binding",
+        "Symmetric key": "Shared secret encryption",
+        "Digital signature": "Authenticity and non-repudiation"
+      },
+      "explanation": "Hashes verify integrity, certificates bind identities, symmetric keys encrypt with a shared secret, and signatures prove origin."
+    },
+    {
+      "id": "sec-084",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "malware",
+      "difficulty": "medium",
+      "question": "Match each malware type to its behavior.",
+      "items": [
+        "Worm",
+        "Trojan",
+        "Spyware",
+        "Rootkit"
+      ],
+      "targets": [
+        "Self-replicates across networks",
+        "Disguises itself as legitimate software",
+        "Secretly monitors user activity",
+        "Hides privileged malicious access"
+      ],
+      "answer": {
+        "Worm": "Self-replicates across networks",
+        "Trojan": "Disguises itself as legitimate software",
+        "Spyware": "Secretly monitors user activity",
+        "Rootkit": "Hides privileged malicious access"
+      },
+      "explanation": "These malware types differ by propagation, disguise, monitoring, and stealth capabilities."
+    },
+    {
+      "id": "sec-085",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "social-engineering",
+      "difficulty": "medium",
+      "question": "Match each social engineering method to its example.",
+      "items": [
+        "Vishing",
+        "Smishing",
+        "Pretexting",
+        "Dumpster diving"
+      ],
+      "targets": [
+        "Fraudulent phone call",
+        "Fraudulent text message",
+        "False identity or story",
+        "Searching discarded materials"
+      ],
+      "answer": {
+        "Vishing": "Fraudulent phone call",
+        "Smishing": "Fraudulent text message",
+        "Pretexting": "False identity or story",
+        "Dumpster diving": "Searching discarded materials"
+      },
+      "explanation": "Social engineering attacks use different channels and deception techniques to obtain access or information."
+    },
+    {
+      "id": "sec-086",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "wireless-security",
+      "difficulty": "medium",
+      "question": "Match each wireless term to its description.",
+      "items": [
+        "WPA3",
+        "WEP",
+        "Evil twin",
+        "SSID"
+      ],
+      "targets": [
+        "Modern wireless security standard",
+        "Deprecated weak wireless security",
+        "Rogue access point impersonation",
+        "Wireless network name"
+      ],
+      "answer": {
+        "WPA3": "Modern wireless security standard",
+        "WEP": "Deprecated weak wireless security",
+        "Evil twin": "Rogue access point impersonation",
+        "SSID": "Wireless network name"
+      },
+      "explanation": "WPA3 is modern, WEP is obsolete, evil twins impersonate networks, and SSID identifies a wireless network."
+    },
+    {
+      "id": "sec-087",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "physical-security",
+      "difficulty": "easy",
+      "question": "Match each physical security control to its purpose.",
+      "items": [
+        "Badge reader",
+        "Privacy screen",
+        "Cable lock",
+        "Mantrap"
+      ],
+      "targets": [
+        "Controls door access",
+        "Limits side viewing",
+        "Deters device theft",
+        "Prevents tailgating"
+      ],
+      "answer": {
+        "Badge reader": "Controls door access",
+        "Privacy screen": "Limits side viewing",
+        "Cable lock": "Deters device theft",
+        "Mantrap": "Prevents tailgating"
+      },
+      "explanation": "Physical controls protect facilities and devices from unauthorized access, viewing, and theft."
+    },
+    {
+      "id": "sec-088",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "network-security",
+      "difficulty": "medium",
+      "question": "Match each network security device or feature to its role.",
+      "items": [
+        "Firewall",
+        "IDS",
+        "IPS",
+        "VPN"
+      ],
+      "targets": [
+        "Filters traffic by rule",
+        "Detects suspicious activity",
+        "Blocks suspicious activity",
+        "Creates encrypted tunnel"
+      ],
+      "answer": {
+        "Firewall": "Filters traffic by rule",
+        "IDS": "Detects suspicious activity",
+        "IPS": "Blocks suspicious activity",
+        "VPN": "Creates encrypted tunnel"
+      },
+      "explanation": "Firewalls filter, IDS alerts, IPS can block, and VPNs protect traffic over untrusted networks."
+    },
+    {
+      "id": "sec-089",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "data-protection",
+      "difficulty": "medium",
+      "question": "Match each data protection concept to its example.",
+      "items": [
+        "Encryption at rest",
+        "Encryption in transit",
+        "Data minimization",
+        "Secure disposal"
+      ],
+      "targets": [
+        "Full-disk encryption",
+        "TLS for web traffic",
+        "Collecting only needed data",
+        "Shredding retired drives"
+      ],
+      "answer": {
+        "Encryption at rest": "Full-disk encryption",
+        "Encryption in transit": "TLS for web traffic",
+        "Data minimization": "Collecting only needed data",
+        "Secure disposal": "Shredding retired drives"
+      },
+      "explanation": "Data protection includes securing stored data, securing transmitted data, limiting collection, and disposing of media safely."
+    },
+    {
+      "id": "sec-090",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "account-security",
+      "difficulty": "medium",
+      "question": "Match each account security control to the risk it reduces.",
+      "items": [
+        "MFA",
+        "Account lockout",
+        "Password manager",
+        "Disable stale accounts"
+      ],
+      "targets": [
+        "Stolen password reuse",
+        "Brute-force attempts",
+        "Weak reused passwords",
+        "Unauthorized use of old access"
+      ],
+      "answer": {
+        "MFA": "Stolen password reuse",
+        "Account lockout": "Brute-force attempts",
+        "Password manager": "Weak reused passwords",
+        "Disable stale accounts": "Unauthorized use of old access"
+      },
+      "explanation": "Each control reduces a different account risk, from compromised passwords to forgotten active accounts."
+    },
+    {
+      "id": "sec-091",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "vulnerabilities",
+      "difficulty": "hard",
+      "question": "Match each vulnerability term to its meaning.",
+      "items": [
+        "Zero-day",
+        "Misconfiguration",
+        "End-of-life software",
+        "Default credentials"
+      ],
+      "targets": [
+        "No vendor patch available yet",
+        "Insecure setting or setup",
+        "Unsupported and no longer updated",
+        "Known initial username and password"
+      ],
+      "answer": {
+        "Zero-day": "No vendor patch available yet",
+        "Misconfiguration": "Insecure setting or setup",
+        "End-of-life software": "Unsupported and no longer updated",
+        "Default credentials": "Known initial username and password"
+      },
+      "explanation": "These vulnerability types require different remediation approaches, such as patching, hardening, replacement, or credential changes."
+    },
+    {
+      "id": "sec-092",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "security",
+      "subcategory": "best-practices",
+      "difficulty": "medium",
+      "question": "Match each security best practice to its benefit.",
+      "items": [
+        "Patch management",
+        "User awareness training",
+        "Change management",
+        "Logging"
+      ],
+      "targets": [
+        "Fixes known flaws",
+        "Reduces human-targeted attacks",
+        "Controls production modifications",
+        "Supports detection and investigation"
+      ],
+      "answer": {
+        "Patch management": "Fixes known flaws",
+        "User awareness training": "Reduces human-targeted attacks",
+        "Change management": "Controls production modifications",
+        "Logging": "Supports detection and investigation"
+      },
+      "explanation": "Operational best practices reduce risk by addressing software flaws, user behavior, system changes, and visibility."
+    },
+    {
+      "id": "sec-093",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "security",
+      "subcategory": "incident-response",
+      "difficulty": "medium",
+      "question": "Arrange the basic incident response steps in the correct order.",
+      "items": [
+        "Eradication",
+        "Preparation",
+        "Recovery",
+        "Identification",
+        "Containment"
+      ],
+      "answer": [
+        "Preparation",
+        "Identification",
+        "Containment",
+        "Eradication",
+        "Recovery"
+      ],
+      "explanation": "Incident response begins with preparation, then identifying the issue, containing it, removing the cause, and restoring normal operations."
+    },
+    {
+      "id": "sec-094",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "security",
+      "subcategory": "vulnerabilities",
+      "difficulty": "medium",
+      "question": "Order the typical vulnerability remediation workflow.",
+      "items": [
+        "Deploy the approved fix",
+        "Identify the vulnerability",
+        "Verify remediation",
+        "Prioritize based on risk",
+        "Test the fix"
+      ],
+      "answer": [
+        "Identify the vulnerability",
+        "Prioritize based on risk",
+        "Test the fix",
+        "Deploy the approved fix",
+        "Verify remediation"
+      ],
+      "explanation": "Remediation starts with identification and risk prioritization, then testing, deployment, and verification."
+    },
+    {
+      "id": "sec-095",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "security",
+      "subcategory": "account-security",
+      "difficulty": "medium",
+      "question": "Order the steps for safely handling a suspected compromised user account.",
+      "items": [
+        "Reset credentials",
+        "Review recent account activity",
+        "Verify the user's identity",
+        "Re-enable access if clean",
+        "Temporarily disable or restrict the account"
+      ],
+      "answer": [
+        "Verify the user's identity",
+        "Temporarily disable or restrict the account",
+        "Review recent account activity",
+        "Reset credentials",
+        "Re-enable access if clean"
+      ],
+      "explanation": "Identity should be verified before changes, then access is contained, activity reviewed, credentials reset, and access restored when safe."
+    },
+    {
+      "id": "sec-096",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "security",
+      "subcategory": "data-protection",
+      "difficulty": "medium",
+      "question": "Order the steps for securely retiring a storage drive.",
+      "items": [
+        "Document disposal completion",
+        "Identify data classification",
+        "Remove the drive from service",
+        "Sanitize or destroy the drive",
+        "Verify sanitization if applicable"
+      ],
+      "answer": [
+        "Identify data classification",
+        "Remove the drive from service",
+        "Sanitize or destroy the drive",
+        "Verify sanitization if applicable",
+        "Document disposal completion"
+      ],
+      "explanation": "Secure disposal depends on data sensitivity, then removal, sanitization or destruction, verification, and documentation."
+    },
+    {
+      "id": "sec-097",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "security",
+      "subcategory": "malware",
+      "difficulty": "medium",
+      "question": "Order the response steps for a suspected malware infection on a workstation.",
+      "items": [
+        "Restore from a known-good backup if needed",
+        "Isolate the workstation",
+        "Update anti-malware tools",
+        "Scan and remove malware",
+        "Confirm normal operation"
+      ],
+      "answer": [
+        "Isolate the workstation",
+        "Update anti-malware tools",
+        "Scan and remove malware",
+        "Restore from a known-good backup if needed",
+        "Confirm normal operation"
+      ],
+      "explanation": "Containment comes first, followed by updated scanning, removal, restoration when needed, and validation."
+    },
+    {
+      "id": "sec-098",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "security",
+      "subcategory": "wireless-security",
+      "difficulty": "medium",
+      "question": "Order the steps for securely configuring a new small office wireless router.",
+      "items": [
+        "Change the default administrator password",
+        "Update router firmware",
+        "Enable WPA2 or WPA3 encryption",
+        "Set a strong Wi-Fi passphrase",
+        "Create a separate guest network if needed"
+      ],
+      "answer": [
+        "Update router firmware",
+        "Change the default administrator password",
+        "Enable WPA2 or WPA3 encryption",
+        "Set a strong Wi-Fi passphrase",
+        "Create a separate guest network if needed"
+      ],
+      "explanation": "Secure setup includes updating firmware, changing default admin access, enabling strong encryption, setting a strong passphrase, and segmenting guests."
+    },
+    {
+      "id": "sec-099",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "security",
+      "subcategory": "physical-security",
+      "difficulty": "easy",
+      "question": "Order the steps a receptionist should follow when an unknown visitor requests access to a secure area.",
+      "items": [
+        "Issue a visitor badge if approved",
+        "Verify the visitor's identity",
+        "Contact the employee being visited",
+        "Escort the visitor according to policy",
+        "Record the visit in the log"
+      ],
+      "answer": [
+        "Verify the visitor's identity",
+        "Contact the employee being visited",
+        "Record the visit in the log",
+        "Issue a visitor badge if approved",
+        "Escort the visitor according to policy"
+      ],
+      "explanation": "Visitor access should be verified, approved, logged, badged, and escorted according to policy."
+    },
+    {
+      "id": "sec-100",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "security",
+      "subcategory": "best-practices",
+      "difficulty": "medium",
+      "question": "Order the steps for responding to a suspicious email reported by a user.",
+      "items": [
+        "Block sender or indicators if malicious",
+        "Collect the email headers and details",
+        "Advise the user not to interact with it",
+        "Analyze links and attachments safely",
+        "Remove similar messages from mailboxes if needed"
+      ],
+      "answer": [
+        "Advise the user not to interact with it",
+        "Collect the email headers and details",
+        "Analyze links and attachments safely",
+        "Block sender or indicators if malicious",
+        "Remove similar messages from mailboxes if needed"
+      ],
+      "explanation": "A safe phishing response prevents interaction, gathers evidence, analyzes safely, blocks threats, and removes related messages when necessary."
+    }
+  ]
+}

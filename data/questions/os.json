@@ -1,0 +1,1934 @@
+{
+  "schema_version": 1,
+  "category": "os",
+  "questions": [
+    {
+      "id": "os-001",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "windows",
+      "difficulty": "easy",
+      "question": "Which Windows tool is used to view startup programs, running processes, and performance usage?",
+      "options": [
+        "Task Manager",
+        "Disk Cleanup",
+        "Device Manager",
+        "Event Viewer"
+      ],
+      "answer": "Task Manager",
+      "explanation": "Task Manager shows running processes, startup apps, performance graphs, and resource usage."
+    },
+    {
+      "id": "os-002",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "linux",
+      "difficulty": "easy",
+      "question": "Which Linux command lists files and directories in the current directory?",
+      "options": [
+        "ls",
+        "pwd",
+        "mkdir",
+        "grep"
+      ],
+      "answer": "ls",
+      "explanation": "The ls command displays the contents of a directory."
+    },
+    {
+      "id": "os-003",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "macos",
+      "difficulty": "easy",
+      "question": "Which macOS feature is used to create automatic backups to an external drive or network location?",
+      "options": [
+        "Time Machine",
+        "Mission Control",
+        "Keychain Access",
+        "FileVault"
+      ],
+      "answer": "Time Machine",
+      "explanation": "Time Machine is the built-in macOS backup utility for versioned file and system backups."
+    },
+    {
+      "id": "os-004",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "command-line",
+      "difficulty": "easy",
+      "question": "A technician wants to test basic network connectivity to a server from Windows, Linux, or macOS. Which command is most appropriate?",
+      "options": [
+        "ping",
+        "format",
+        "chmod",
+        "diskpart"
+      ],
+      "answer": "ping",
+      "explanation": "The ping command sends ICMP echo requests to test whether a host is reachable."
+    },
+    {
+      "id": "os-005",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "file-systems",
+      "difficulty": "easy",
+      "question": "Which file system is the default modern file system used by Windows system volumes?",
+      "options": [
+        "NTFS",
+        "ext4",
+        "APFS",
+        "HFS+"
+      ],
+      "answer": "NTFS",
+      "explanation": "NTFS is the standard Windows file system and supports permissions, compression, encryption, and journaling."
+    },
+    {
+      "id": "os-006",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "boot-process",
+      "difficulty": "medium",
+      "question": "A computer powers on but reports that no bootable device is found. Which setting should a technician check first in firmware setup?",
+      "options": [
+        "Boot order",
+        "Screen resolution",
+        "Time zone",
+        "User account picture"
+      ],
+      "answer": "Boot order",
+      "explanation": "The boot order determines which device firmware tries to start from first."
+    },
+    {
+      "id": "os-007",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "system-tools",
+      "difficulty": "easy",
+      "question": "Which Windows console is used to view system, security, and application logs?",
+      "options": [
+        "Event Viewer",
+        "Disk Management",
+        "Task Scheduler",
+        "Settings"
+      ],
+      "answer": "Event Viewer",
+      "explanation": "Event Viewer displays logs that help diagnose operating system, application, and security events."
+    },
+    {
+      "id": "os-008",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "updates",
+      "difficulty": "easy",
+      "question": "Which Windows feature downloads and installs operating system patches and driver updates?",
+      "options": [
+        "Windows Update",
+        "System Restore",
+        "Disk Cleanup",
+        "Remote Desktop"
+      ],
+      "answer": "Windows Update",
+      "explanation": "Windows Update provides Microsoft patches, security fixes, feature updates, and some driver updates."
+    },
+    {
+      "id": "os-009",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "permissions",
+      "difficulty": "medium",
+      "question": "A user can read a Windows file but cannot modify or delete it. Which NTFS permission most likely allows this access level?",
+      "options": [
+        "Read",
+        "Full control",
+        "Modify",
+        "Write"
+      ],
+      "answer": "Read",
+      "explanation": "Read permission allows opening and viewing a file but does not allow changing or deleting it."
+    },
+    {
+      "id": "os-010",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "users-groups",
+      "difficulty": "easy",
+      "question": "Which Windows account type is intended for daily use without full system-wide administrative rights?",
+      "options": [
+        "Standard user",
+        "Administrator",
+        "Guest with elevation",
+        "System"
+      ],
+      "answer": "Standard user",
+      "explanation": "A standard user can run applications and manage personal settings but cannot perform most administrative tasks without elevation."
+    },
+    {
+      "id": "os-011",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "virtualization",
+      "difficulty": "medium",
+      "question": "A technician needs to run Linux inside Windows for testing without replacing the host OS. Which solution is most appropriate?",
+      "options": [
+        "Virtual machine",
+        "Disk defragmentation",
+        "System Restore point",
+        "File compression"
+      ],
+      "answer": "Virtual machine",
+      "explanation": "A virtual machine runs a guest operating system in an isolated environment on a host system."
+    },
+    {
+      "id": "os-012",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "installation",
+      "difficulty": "medium",
+      "question": "During a clean OS installation, what usually happens to existing applications on the target system partition?",
+      "options": [
+        "They must be reinstalled",
+        "They are automatically migrated",
+        "They are converted to portable apps",
+        "They are moved to firmware"
+      ],
+      "answer": "They must be reinstalled",
+      "explanation": "A clean installation replaces the existing operating system environment, so applications generally need to be reinstalled."
+    },
+    {
+      "id": "os-013",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "recovery",
+      "difficulty": "medium",
+      "question": "A Windows update caused instability, but user files should remain intact. Which recovery option is most appropriate to revert system files and settings to an earlier state?",
+      "options": [
+        "System Restore",
+        "Disk Format",
+        "Clean Install",
+        "BitLocker"
+      ],
+      "answer": "System Restore",
+      "explanation": "System Restore rolls back system files, registry settings, and some configuration changes without targeting personal files."
+    },
+    {
+      "id": "os-014",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "services",
+      "difficulty": "medium",
+      "question": "Which Linux command is commonly used on systemd-based distributions to start, stop, or check services?",
+      "options": [
+        "systemctl",
+        "fdisk",
+        "tar",
+        "nano"
+      ],
+      "answer": "systemctl",
+      "explanation": "systemctl controls and inspects services and other units on systems that use systemd."
+    },
+    {
+      "id": "os-015",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "processes",
+      "difficulty": "medium",
+      "question": "A Linux application is frozen and its process ID is known. Which command can terminate it?",
+      "options": [
+        "kill",
+        "touch",
+        "lsblk",
+        "passwd"
+      ],
+      "answer": "kill",
+      "explanation": "The kill command sends a signal to a process, commonly to terminate it by process ID."
+    },
+    {
+      "id": "os-016",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "storage-management",
+      "difficulty": "easy",
+      "question": "Which Windows tool is used to initialize disks, create partitions, and assign drive letters?",
+      "options": [
+        "Disk Management",
+        "Device Manager",
+        "Registry Editor",
+        "Performance Monitor"
+      ],
+      "answer": "Disk Management",
+      "explanation": "Disk Management provides a graphical interface for managing disks, volumes, partitions, and drive letters."
+    },
+    {
+      "id": "os-017",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "network-configuration",
+      "difficulty": "medium",
+      "question": "A Windows workstation receives an APIPA address beginning with 169.254. What is the most likely issue?",
+      "options": [
+        "The DHCP server was not reached",
+        "The monitor refresh rate is incorrect",
+        "The file system is encrypted",
+        "The user account is locked"
+      ],
+      "answer": "The DHCP server was not reached",
+      "explanation": "Windows assigns an APIPA address when it is configured for DHCP but cannot obtain a lease."
+    },
+    {
+      "id": "os-018",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "security-settings",
+      "difficulty": "easy",
+      "question": "Which Windows feature encrypts an entire drive to help protect data if a device is lost or stolen?",
+      "options": [
+        "BitLocker",
+        "Task Scheduler",
+        "Credential Manager",
+        "Disk Cleanup"
+      ],
+      "answer": "BitLocker",
+      "explanation": "BitLocker provides full-volume encryption for supported Windows editions."
+    },
+    {
+      "id": "os-019",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "mobile-os",
+      "difficulty": "easy",
+      "question": "On iOS and Android, what is the common term for installing OS and app security fixes?",
+      "options": [
+        "Updating",
+        "Partitioning",
+        "Defragmenting",
+        "Rooting"
+      ],
+      "answer": "Updating",
+      "explanation": "Mobile devices receive OS and app updates to add features and patch security vulnerabilities."
+    },
+    {
+      "id": "os-020",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "question": "A Windows PC repeatedly crashes after a newly installed driver. Which startup option is useful for loading minimal drivers to troubleshoot?",
+      "options": [
+        "Safe Mode",
+        "Hibernate",
+        "Fast Startup",
+        "Tablet Mode"
+      ],
+      "answer": "Safe Mode",
+      "explanation": "Safe Mode starts Windows with a minimal set of drivers and services, making driver problems easier to isolate."
+    },
+    {
+      "id": "os-021",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "windows",
+      "difficulty": "medium",
+      "question": "Which Windows utility is used to check protected system files and replace corrupted copies?",
+      "options": [
+        "sfc",
+        "ipconfig",
+        "netstat",
+        "gpupdate"
+      ],
+      "answer": "sfc",
+      "explanation": "System File Checker, run with sfc, scans protected Windows system files and repairs detected corruption."
+    },
+    {
+      "id": "os-022",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "linux",
+      "difficulty": "medium",
+      "question": "Which directory commonly stores system-wide configuration files on Linux?",
+      "options": [
+        "/etc",
+        "/home",
+        "/tmp",
+        "/media"
+      ],
+      "answer": "/etc",
+      "explanation": "The /etc directory contains many system-wide configuration files."
+    },
+    {
+      "id": "os-023",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "macos",
+      "difficulty": "medium",
+      "question": "Which macOS security feature encrypts the startup disk?",
+      "options": [
+        "FileVault",
+        "Spotlight",
+        "AirDrop",
+        "Sidecar"
+      ],
+      "answer": "FileVault",
+      "explanation": "FileVault encrypts the Mac startup disk to protect data at rest."
+    },
+    {
+      "id": "os-024",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "command-line",
+      "difficulty": "medium",
+      "question": "A technician needs to display the current working directory in Linux or macOS Terminal. Which command should be used?",
+      "options": [
+        "pwd",
+        "dir",
+        "cls",
+        "mkfs"
+      ],
+      "answer": "pwd",
+      "explanation": "The pwd command prints the full path of the current working directory."
+    },
+    {
+      "id": "os-025",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "file-systems",
+      "difficulty": "medium",
+      "question": "Which file system is commonly used by modern macOS startup volumes?",
+      "options": [
+        "APFS",
+        "NTFS",
+        "ext3",
+        "FAT16"
+      ],
+      "answer": "APFS",
+      "explanation": "APFS is Apple's modern file system designed for flash storage and used by current macOS versions."
+    },
+    {
+      "id": "os-026",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "boot-process",
+      "difficulty": "hard",
+      "question": "A UEFI system fails to start after its EFI System Partition is deleted. What was most likely stored on that partition?",
+      "options": [
+        "Bootloaders and firmware-readable startup files",
+        "Only user documents",
+        "Only temporary browser files",
+        "Printer spool files"
+      ],
+      "answer": "Bootloaders and firmware-readable startup files",
+      "explanation": "UEFI firmware reads bootloaders and related startup files from the EFI System Partition."
+    },
+    {
+      "id": "os-027",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "system-tools",
+      "difficulty": "medium",
+      "question": "Which Windows tool lets an administrator create automated jobs that run at specific times or events?",
+      "options": [
+        "Task Scheduler",
+        "Device Manager",
+        "Character Map",
+        "Magnifier"
+      ],
+      "answer": "Task Scheduler",
+      "explanation": "Task Scheduler runs programs, scripts, and maintenance actions based on schedules or triggers."
+    },
+    {
+      "id": "os-028",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "updates",
+      "difficulty": "medium",
+      "question": "A Linux administrator on Ubuntu needs to install available package updates. Which command is commonly used after refreshing package lists?",
+      "options": [
+        "apt upgrade",
+        "chmod upgrade",
+        "tar update",
+        "mount update"
+      ],
+      "answer": "apt upgrade",
+      "explanation": "On Debian-based systems, apt upgrade installs newer versions of installed packages after apt update refreshes package lists."
+    },
+    {
+      "id": "os-029",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "permissions",
+      "difficulty": "medium",
+      "question": "In Linux permissions, what does the execute bit allow on a directory?",
+      "options": [
+        "Entering or traversing the directory",
+        "Encrypting every file automatically",
+        "Changing the owner without privileges",
+        "Formatting the disk"
+      ],
+      "answer": "Entering or traversing the directory",
+      "explanation": "Execute permission on a directory allows a user to access entries within it if they know the names."
+    },
+    {
+      "id": "os-030",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "users-groups",
+      "difficulty": "medium",
+      "question": "Which Linux file contains local user account information such as usernames and user IDs?",
+      "options": [
+        "/etc/passwd",
+        "/etc/hosts",
+        "/var/log/syslog",
+        "/boot/grub/grub.cfg"
+      ],
+      "answer": "/etc/passwd",
+      "explanation": "The /etc/passwd file stores user account entries, while password hashes are typically stored in /etc/shadow."
+    },
+    {
+      "id": "os-031",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "virtualization",
+      "difficulty": "medium",
+      "question": "Which hardware feature is commonly required or recommended for running 64-bit virtual machines efficiently?",
+      "options": [
+        "CPU virtualization support",
+        "Optical drive autoplay",
+        "Legacy printer port",
+        "Screen saver timeout"
+      ],
+      "answer": "CPU virtualization support",
+      "explanation": "CPU virtualization extensions such as Intel VT-x or AMD-V improve and often enable modern VM support."
+    },
+    {
+      "id": "os-032",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "installation",
+      "difficulty": "easy",
+      "question": "Which type of installation keeps user files, settings, and compatible applications when moving to a newer OS version?",
+      "options": [
+        "In-place upgrade",
+        "Low-level format",
+        "Factory reset with wipe",
+        "Secure erase"
+      ],
+      "answer": "In-place upgrade",
+      "explanation": "An in-place upgrade installs a newer OS while attempting to preserve existing files, settings, and supported apps."
+    },
+    {
+      "id": "os-033",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "recovery",
+      "difficulty": "medium",
+      "question": "A Mac will not boot normally. Which built-in environment can provide Disk Utility, reinstall options, and restore tools?",
+      "options": [
+        "macOS Recovery",
+        "Launchpad",
+        "Dock preferences",
+        "Control Center"
+      ],
+      "answer": "macOS Recovery",
+      "explanation": "macOS Recovery provides tools to repair disks, reinstall macOS, restore from backup, and access startup security options."
+    },
+    {
+      "id": "os-034",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "services",
+      "difficulty": "medium",
+      "question": "A Windows service should start automatically whenever the computer boots. Which startup type should be configured?",
+      "options": [
+        "Automatic",
+        "Manual",
+        "Disabled",
+        "Stopped"
+      ],
+      "answer": "Automatic",
+      "explanation": "The Automatic startup type starts the service during the normal Windows boot process."
+    },
+    {
+      "id": "os-035",
+      "type": "single_choice",
+      "category": "os",
+      "subcategory": "troubleshooting",
+      "difficulty": "hard",
+      "question": "A Windows computer shows frequent blue screen errors after memory was upgraded. Which initial action is most appropriate?",
+      "options": [
+        "Run a memory diagnostic test",
+        "Delete all user profiles",
+        "Disable Windows Update permanently",
+        "Convert NTFS to FAT32"
+      ],
+      "answer": "Run a memory diagnostic test",
+      "explanation": "New or faulty RAM can cause stop errors, so testing memory is a focused first diagnostic step."
+    },
+    {
+      "id": "os-036",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "linux",
+      "difficulty": "medium",
+      "question": "Which TWO Linux commands are commonly used to view or manage running processes? (Select all that apply)",
+      "options": [
+        "ps",
+        "top",
+        "mkdir",
+        "chmod",
+        "cp"
+      ],
+      "answer": [
+        "ps",
+        "top"
+      ],
+      "explanation": "ps lists processes, and top provides a live view of processes and resource usage."
+    },
+    {
+      "id": "os-037",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "windows",
+      "difficulty": "medium",
+      "question": "Which TWO Windows tools are commonly used to troubleshoot hardware driver problems? (Select all that apply)",
+      "options": [
+        "Device Manager",
+        "Event Viewer",
+        "Notepad",
+        "Paint",
+        "Character Map"
+      ],
+      "answer": [
+        "Device Manager",
+        "Event Viewer"
+      ],
+      "explanation": "Device Manager shows device and driver status, while Event Viewer can show related driver or hardware errors."
+    },
+    {
+      "id": "os-038",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "macos",
+      "difficulty": "medium",
+      "question": "Which TWO macOS tools or features are useful for disk repair and backup recovery? (Select all that apply)",
+      "options": [
+        "Disk Utility",
+        "Time Machine",
+        "Boot Camp Assistant",
+        "Font Book",
+        "QuickTime Player"
+      ],
+      "answer": [
+        "Disk Utility",
+        "Time Machine"
+      ],
+      "explanation": "Disk Utility can check and repair volumes, and Time Machine can restore files or systems from backups."
+    },
+    {
+      "id": "os-039",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "command-line",
+      "difficulty": "medium",
+      "question": "Which TWO Windows commands are used to troubleshoot IP configuration and name resolution? (Select all that apply)",
+      "options": [
+        "ipconfig",
+        "nslookup",
+        "chkdsk",
+        "format",
+        "assoc"
+      ],
+      "answer": [
+        "ipconfig",
+        "nslookup"
+      ],
+      "explanation": "ipconfig displays adapter configuration, and nslookup queries DNS name resolution."
+    },
+    {
+      "id": "os-040",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "file-systems",
+      "difficulty": "medium",
+      "question": "Which TWO file systems support journaling in typical desktop operating systems? (Select all that apply)",
+      "options": [
+        "NTFS",
+        "ext4",
+        "FAT16",
+        "ISO 9660",
+        "exFAT without journaling"
+      ],
+      "answer": [
+        "NTFS",
+        "ext4"
+      ],
+      "explanation": "NTFS and ext4 are journaling file systems that help recover consistency after crashes."
+    },
+    {
+      "id": "os-041",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "boot-process",
+      "difficulty": "hard",
+      "question": "A PC fails immediately after POST with a bootloader error. Which TWO areas should be checked first? (Select all that apply)",
+      "options": [
+        "Boot device order",
+        "EFI System Partition or boot files",
+        "Desktop wallpaper",
+        "Browser cache",
+        "Mouse pointer speed"
+      ],
+      "answer": [
+        "Boot device order",
+        "EFI System Partition or boot files"
+      ],
+      "explanation": "Bootloader errors often relate to the selected boot device or missing or damaged boot files."
+    },
+    {
+      "id": "os-042",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "system-tools",
+      "difficulty": "medium",
+      "question": "Which TWO Windows tools can show performance or resource utilization information? (Select all that apply)",
+      "options": [
+        "Task Manager",
+        "Performance Monitor",
+        "Snipping Tool",
+        "WordPad",
+        "Credential Manager"
+      ],
+      "answer": [
+        "Task Manager",
+        "Performance Monitor"
+      ],
+      "explanation": "Task Manager provides quick resource views, and Performance Monitor collects detailed performance counters."
+    },
+    {
+      "id": "os-043",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "updates",
+      "difficulty": "medium",
+      "question": "Which TWO actions are best practices before installing a major operating system update? (Select all that apply)",
+      "options": [
+        "Back up important data",
+        "Verify hardware and application compatibility",
+        "Disable all security patches forever",
+        "Delete recovery media",
+        "Remove all user accounts"
+      ],
+      "answer": [
+        "Back up important data",
+        "Verify hardware and application compatibility"
+      ],
+      "explanation": "Backups and compatibility checks reduce the risk of data loss and post-update failures."
+    },
+    {
+      "id": "os-044",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "permissions",
+      "difficulty": "medium",
+      "question": "Which TWO Linux commands are used to change file permissions and ownership? (Select all that apply)",
+      "options": [
+        "chmod",
+        "chown",
+        "ping",
+        "pwd",
+        "lsblk"
+      ],
+      "answer": [
+        "chmod",
+        "chown"
+      ],
+      "explanation": "chmod changes permission bits, and chown changes file or directory ownership."
+    },
+    {
+      "id": "os-045",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "users-groups",
+      "difficulty": "medium",
+      "question": "Which TWO tasks are typically performed when setting up a new local user account? (Select all that apply)",
+      "options": [
+        "Assign the account to appropriate groups",
+        "Set an initial password or sign-in method",
+        "Format the system partition",
+        "Disable all logging",
+        "Change the CPU socket"
+      ],
+      "answer": [
+        "Assign the account to appropriate groups",
+        "Set an initial password or sign-in method"
+      ],
+      "explanation": "User setup normally includes authentication and group membership so the account has the correct access."
+    },
+    {
+      "id": "os-046",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "virtualization",
+      "difficulty": "medium",
+      "question": "Which TWO resources must be allocated to most virtual machines? (Select all that apply)",
+      "options": [
+        "Memory",
+        "Virtual disk storage",
+        "Printer toner",
+        "Monitor brightness",
+        "BIOS password hint"
+      ],
+      "answer": [
+        "Memory",
+        "Virtual disk storage"
+      ],
+      "explanation": "VMs require RAM and virtual storage, along with CPU access and optional virtual hardware."
+    },
+    {
+      "id": "os-047",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "installation",
+      "difficulty": "medium",
+      "question": "Which TWO items should be verified before installing a 64-bit operating system? (Select all that apply)",
+      "options": [
+        "CPU supports 64-bit operation",
+        "Required drivers are available",
+        "The keyboard cable is blue",
+        "The recycle bin is empty",
+        "A screen saver is configured"
+      ],
+      "answer": [
+        "CPU supports 64-bit operation",
+        "Required drivers are available"
+      ],
+      "explanation": "A 64-bit OS requires compatible hardware, and driver availability is important for devices to work after installation."
+    },
+    {
+      "id": "os-048",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "recovery",
+      "difficulty": "medium",
+      "question": "Which TWO Windows recovery tools can help when Windows fails to boot correctly? (Select all that apply)",
+      "options": [
+        "Startup Repair",
+        "System Restore",
+        "Disk Cleanup",
+        "Paint",
+        "Volume Mixer"
+      ],
+      "answer": [
+        "Startup Repair",
+        "System Restore"
+      ],
+      "explanation": "Startup Repair targets boot problems, while System Restore can reverse problematic system changes."
+    },
+    {
+      "id": "os-049",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "services",
+      "difficulty": "medium",
+      "question": "A web service on Linux is not responding. Which TWO commands could help check service status and recent logs on a systemd system? (Select all that apply)",
+      "options": [
+        "systemctl status",
+        "journalctl",
+        "mkdir",
+        "whoami",
+        "cal"
+      ],
+      "answer": [
+        "systemctl status",
+        "journalctl"
+      ],
+      "explanation": "systemctl status shows unit state, and journalctl displays systemd journal logs for troubleshooting."
+    },
+    {
+      "id": "os-050",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "processes",
+      "difficulty": "medium",
+      "question": "Which TWO Windows options can be used to end an unresponsive application? (Select all that apply)",
+      "options": [
+        "End task in Task Manager",
+        "taskkill command",
+        "Disk Defragmenter",
+        "Windows Update history",
+        "Mouse settings"
+      ],
+      "answer": [
+        "End task in Task Manager",
+        "taskkill command"
+      ],
+      "explanation": "Task Manager can end processes graphically, and taskkill can terminate processes from the command line."
+    },
+    {
+      "id": "os-051",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "storage-management",
+      "difficulty": "medium",
+      "question": "Which TWO tasks are performed with Windows Disk Management? (Select all that apply)",
+      "options": [
+        "Shrink a volume",
+        "Assign a drive letter",
+        "Reset a domain password",
+        "Edit a spreadsheet",
+        "Scan for malware signatures"
+      ],
+      "answer": [
+        "Shrink a volume",
+        "Assign a drive letter"
+      ],
+      "explanation": "Disk Management can resize supported volumes and assign or change drive letters."
+    },
+    {
+      "id": "os-052",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "network-configuration",
+      "difficulty": "medium",
+      "question": "Which TWO settings are normally required for a static IPv4 configuration? (Select all that apply)",
+      "options": [
+        "IP address",
+        "Subnet mask",
+        "Wallpaper path",
+        "File extension association",
+        "Mouse double-click speed"
+      ],
+      "answer": [
+        "IP address",
+        "Subnet mask"
+      ],
+      "explanation": "A static IPv4 configuration requires at least an address and subnet mask, and usually gateway and DNS settings."
+    },
+    {
+      "id": "os-053",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "security-settings",
+      "difficulty": "medium",
+      "question": "Which TWO practices improve workstation OS security? (Select all that apply)",
+      "options": [
+        "Enable automatic security updates",
+        "Use least privilege for daily accounts",
+        "Share administrator passwords by email",
+        "Disable the firewall on public networks",
+        "Ignore disk encryption options"
+      ],
+      "answer": [
+        "Enable automatic security updates",
+        "Use least privilege for daily accounts"
+      ],
+      "explanation": "Timely updates and least-privilege accounts reduce exposure to vulnerabilities and accidental system changes."
+    },
+    {
+      "id": "os-054",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "mobile-os",
+      "difficulty": "medium",
+      "question": "Which TWO actions help secure a lost mobile device? (Select all that apply)",
+      "options": [
+        "Remote lock",
+        "Remote wipe",
+        "Increase screen brightness",
+        "Disable all backups before loss",
+        "Change the ringtone"
+      ],
+      "answer": [
+        "Remote lock",
+        "Remote wipe"
+      ],
+      "explanation": "Remote lock can prevent access, and remote wipe can remove data if the device cannot be recovered."
+    },
+    {
+      "id": "os-055",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "question": "A Windows application fails only for one user profile. Which TWO steps are reasonable troubleshooting actions? (Select all that apply)",
+      "options": [
+        "Test with a different user account",
+        "Check profile-specific application settings",
+        "Replace the motherboard immediately",
+        "Reformat every external drive",
+        "Disable all network adapters permanently"
+      ],
+      "answer": [
+        "Test with a different user account",
+        "Check profile-specific application settings"
+      ],
+      "explanation": "Testing another account helps isolate profile corruption or user-specific settings."
+    },
+    {
+      "id": "os-056",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "linux",
+      "difficulty": "medium",
+      "question": "Which TWO package managers are commonly associated with Linux distributions? (Select all that apply)",
+      "options": [
+        "apt",
+        "dnf",
+        "regedit",
+        "diskpart",
+        "launchctl"
+      ],
+      "answer": [
+        "apt",
+        "dnf"
+      ],
+      "explanation": "apt is common on Debian-based distributions, and dnf is common on Fedora and related distributions."
+    },
+    {
+      "id": "os-057",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "macos",
+      "difficulty": "hard",
+      "question": "Which TWO macOS components are related to application security controls? (Select all that apply)",
+      "options": [
+        "Gatekeeper",
+        "Notarization",
+        "Disk Defragmenter",
+        "Registry Editor",
+        "Device Manager"
+      ],
+      "answer": [
+        "Gatekeeper",
+        "Notarization"
+      ],
+      "explanation": "Gatekeeper enforces app launch policies, and notarization helps verify software checked by Apple."
+    },
+    {
+      "id": "os-058",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "command-line",
+      "difficulty": "medium",
+      "question": "Which TWO commands can display network path or route information? (Select all that apply)",
+      "options": [
+        "tracert",
+        "traceroute",
+        "mkdir",
+        "notepad",
+        "deluser"
+      ],
+      "answer": [
+        "tracert",
+        "traceroute"
+      ],
+      "explanation": "tracert on Windows and traceroute on Linux or macOS show hops along a network path."
+    },
+    {
+      "id": "os-059",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "windows",
+      "difficulty": "medium",
+      "question": "Which TWO Windows features can help protect credentials or access to sensitive data? (Select all that apply)",
+      "options": [
+        "Credential Manager",
+        "BitLocker",
+        "Calculator",
+        "Sticky Notes",
+        "Screen resolution"
+      ],
+      "answer": [
+        "Credential Manager",
+        "BitLocker"
+      ],
+      "explanation": "Credential Manager stores saved credentials, and BitLocker encrypts volumes containing sensitive data."
+    },
+    {
+      "id": "os-060",
+      "type": "multi_choice",
+      "category": "os",
+      "subcategory": "troubleshooting",
+      "difficulty": "hard",
+      "question": "A computer is slow immediately after sign-in. Which TWO areas should be reviewed first? (Select all that apply)",
+      "options": [
+        "Startup applications",
+        "Background processes consuming resources",
+        "Keyboard color",
+        "Desktop icon size only",
+        "Monitor serial number"
+      ],
+      "answer": [
+        "Startup applications",
+        "Background processes consuming resources"
+      ],
+      "explanation": "Excess startup apps and high-resource background processes commonly cause poor performance after sign-in."
+    },
+    {
+      "id": "os-061",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "os",
+      "subcategory": "file-systems",
+      "difficulty": "easy",
+      "question": "The default modern Windows file system is ___.",
+      "word_bank": [
+        "NTFS",
+        "ext4",
+        "APFS",
+        "FAT16"
+      ],
+      "answer": "NTFS",
+      "explanation": "NTFS is the standard Windows file system and supports permissions, encryption, compression, and journaling."
+    },
+    {
+      "id": "os-062",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "os",
+      "subcategory": "command-line",
+      "difficulty": "medium",
+      "question": "In Windows, the ___ command displays IP address, subnet mask, gateway, and DNS information.",
+      "word_bank": [
+        "ipconfig",
+        "ping",
+        "dir",
+        "sfc"
+      ],
+      "answer": "ipconfig",
+      "explanation": "The ipconfig command displays Windows network adapter configuration."
+    },
+    {
+      "id": "os-063",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "os",
+      "subcategory": "linux",
+      "difficulty": "easy",
+      "question": "The Linux command that prints the current working directory is ___.",
+      "word_bank": [
+        "pwd",
+        "ls",
+        "cd",
+        "rm"
+      ],
+      "answer": "pwd",
+      "explanation": "pwd stands for print working directory and displays the current directory path."
+    },
+    {
+      "id": "os-064",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "os",
+      "subcategory": "macos",
+      "difficulty": "easy",
+      "question": "The macOS backup feature named ___ creates versioned backups of files and system data.",
+      "word_bank": [
+        "Time Machine",
+        "Spotlight",
+        "AirPlay",
+        "Finder"
+      ],
+      "answer": "Time Machine",
+      "explanation": "Time Machine is the built-in macOS backup solution."
+    },
+    {
+      "id": "os-065",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "os",
+      "subcategory": "permissions",
+      "difficulty": "medium",
+      "question": "On Linux, the ___ command changes file or directory permission bits.",
+      "word_bank": [
+        "chmod",
+        "chown",
+        "chgrp",
+        "touch"
+      ],
+      "answer": "chmod",
+      "explanation": "chmod modifies read, write, and execute permissions."
+    },
+    {
+      "id": "os-066",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "os",
+      "subcategory": "users-groups",
+      "difficulty": "medium",
+      "question": "In Linux, the ___ account has the highest administrative privileges.",
+      "word_bank": [
+        "root",
+        "guest",
+        "nobody",
+        "daemon"
+      ],
+      "answer": "root",
+      "explanation": "The root account is the superuser account with broad administrative authority."
+    },
+    {
+      "id": "os-067",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "os",
+      "subcategory": "services",
+      "difficulty": "medium",
+      "question": "On many modern Linux distributions, ___ is used to manage services and systemd units.",
+      "word_bank": [
+        "systemctl",
+        "diskpart",
+        "regedit",
+        "launchpad"
+      ],
+      "answer": "systemctl",
+      "explanation": "systemctl is the primary command for controlling services on systemd-based systems."
+    },
+    {
+      "id": "os-068",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "os",
+      "subcategory": "security-settings",
+      "difficulty": "easy",
+      "question": "Windows full-volume encryption is provided by ___.",
+      "word_bank": [
+        "BitLocker",
+        "Disk Cleanup",
+        "Task View",
+        "Notepad"
+      ],
+      "answer": "BitLocker",
+      "explanation": "BitLocker encrypts Windows volumes to help protect data if hardware is lost or stolen."
+    },
+    {
+      "id": "os-069",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "os",
+      "subcategory": "recovery",
+      "difficulty": "medium",
+      "question": "The Windows feature that rolls back system files and settings to a restore point is ___.",
+      "word_bank": [
+        "System Restore",
+        "Disk Format",
+        "Task Manager",
+        "Clipboard History"
+      ],
+      "answer": "System Restore",
+      "explanation": "System Restore uses restore points to reverse certain system changes."
+    },
+    {
+      "id": "os-070",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "os",
+      "subcategory": "storage-management",
+      "difficulty": "medium",
+      "question": "The Windows command-line partitioning utility is ___.",
+      "word_bank": [
+        "diskpart",
+        "netstat",
+        "gpupdate",
+        "tasklist"
+      ],
+      "answer": "diskpart",
+      "explanation": "diskpart is used to manage disks, partitions, and volumes from the command line."
+    },
+    {
+      "id": "os-071",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "os",
+      "subcategory": "network-configuration",
+      "difficulty": "medium",
+      "question": "An automatically assigned Windows IPv4 address beginning with 169.254 is called an ___ address.",
+      "word_bank": [
+        "APIPA",
+        "DNS",
+        "NAT",
+        "SSID"
+      ],
+      "answer": "APIPA",
+      "explanation": "APIPA addresses are self-assigned when DHCP is unavailable."
+    },
+    {
+      "id": "os-072",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "os",
+      "subcategory": "mobile-os",
+      "difficulty": "easy",
+      "question": "The process of returning a mobile device to its original software state is commonly called a ___.",
+      "word_bank": [
+        "factory reset",
+        "defrag",
+        "domain join",
+        "partition shrink"
+      ],
+      "answer": "factory reset",
+      "explanation": "A factory reset erases user data and restores default device settings."
+    },
+    {
+      "id": "os-073",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "os",
+      "subcategory": "windows",
+      "difficulty": "medium",
+      "question": "The Windows tool used to edit local or domain policy settings is Group Policy ___.",
+      "word_bank": [
+        "Editor",
+        "Viewer",
+        "Cleaner",
+        "Formatter"
+      ],
+      "answer": "Editor",
+      "explanation": "Group Policy Editor is used to configure policy settings where supported."
+    },
+    {
+      "id": "os-074",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "os",
+      "subcategory": "linux",
+      "difficulty": "medium",
+      "question": "On Debian-based Linux systems, ___ refreshes package metadata before upgrades or installs.",
+      "word_bank": [
+        "apt update",
+        "apt erase-disk",
+        "chmod update",
+        "ping update"
+      ],
+      "answer": "apt update",
+      "explanation": "apt update downloads current package index information from configured repositories."
+    },
+    {
+      "id": "os-075",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "os",
+      "subcategory": "macos",
+      "difficulty": "medium",
+      "question": "The macOS command-line service management tool is ___.",
+      "word_bank": [
+        "launchctl",
+        "systemctl",
+        "services.msc",
+        "diskpart"
+      ],
+      "answer": "launchctl",
+      "explanation": "launchctl manages launchd services and agents on macOS."
+    },
+    {
+      "id": "os-076",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "os",
+      "subcategory": "processes",
+      "difficulty": "easy",
+      "question": "In Windows, the ___ command lists running processes from the command line.",
+      "word_bank": [
+        "tasklist",
+        "format",
+        "xcopy",
+        "gpedit"
+      ],
+      "answer": "tasklist",
+      "explanation": "tasklist displays currently running processes and their process IDs."
+    },
+    {
+      "id": "os-077",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "os",
+      "subcategory": "installation",
+      "difficulty": "medium",
+      "question": "An installation that replaces the existing OS and generally requires reinstalling applications is a ___ install.",
+      "word_bank": [
+        "clean",
+        "repair",
+        "differential",
+        "sleep"
+      ],
+      "answer": "clean",
+      "explanation": "A clean install starts with a fresh OS environment rather than preserving the old application setup."
+    },
+    {
+      "id": "os-078",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "os",
+      "subcategory": "boot-process",
+      "difficulty": "medium",
+      "question": "On many Linux systems, the common bootloader is ___.",
+      "word_bank": [
+        "GRUB",
+        "Finder",
+        "Explorer",
+        "WinSxS"
+      ],
+      "answer": "GRUB",
+      "explanation": "GRUB is a widely used bootloader for Linux systems."
+    },
+    {
+      "id": "os-079",
+      "type": "fill_blank",
+      "input_mode": "typed",
+      "category": "os",
+      "subcategory": "virtualization",
+      "difficulty": "medium",
+      "question": "A file that stores a virtual machine's emulated hard drive is commonly called a virtual ___.",
+      "word_bank": [
+        "disk",
+        "printer",
+        "router",
+        "monitor"
+      ],
+      "answer": "disk",
+      "explanation": "A virtual disk file provides storage for the guest operating system and its data."
+    },
+    {
+      "id": "os-080",
+      "type": "fill_blank",
+      "input_mode": "word_bank",
+      "category": "os",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "question": "The Windows startup mode that loads minimal drivers and services for troubleshooting is ___.",
+      "word_bank": [
+        "Safe Mode",
+        "Hibernate",
+        "Fast Startup",
+        "Tablet Mode"
+      ],
+      "answer": "Safe Mode",
+      "explanation": "Safe Mode reduces loaded components so technicians can isolate drivers, services, and startup issues."
+    },
+    {
+      "id": "os-081",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "system-tools",
+      "difficulty": "medium",
+      "question": "Match each Windows tool to its primary purpose.",
+      "items": [
+        "Device Manager",
+        "Event Viewer",
+        "Disk Management",
+        "Task Scheduler"
+      ],
+      "targets": [
+        "Manage hardware drivers",
+        "View system and application logs",
+        "Create and modify partitions",
+        "Run tasks automatically"
+      ],
+      "answer": {
+        "Device Manager": "Manage hardware drivers",
+        "Event Viewer": "View system and application logs",
+        "Disk Management": "Create and modify partitions",
+        "Task Scheduler": "Run tasks automatically"
+      },
+      "explanation": "Each tool handles a specific administrative function in Windows."
+    },
+    {
+      "id": "os-082",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "linux",
+      "difficulty": "medium",
+      "question": "Match each Linux directory to its common purpose.",
+      "items": [
+        "/etc",
+        "/home",
+        "/var/log",
+        "/tmp"
+      ],
+      "targets": [
+        "System configuration files",
+        "User home directories",
+        "Log files",
+        "Temporary files"
+      ],
+      "answer": {
+        "/etc": "System configuration files",
+        "/home": "User home directories",
+        "/var/log": "Log files",
+        "/tmp": "Temporary files"
+      },
+      "explanation": "Linux uses standard directories to organize configuration, user data, logs, and temporary data."
+    },
+    {
+      "id": "os-083",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "command-line",
+      "difficulty": "medium",
+      "question": "Match each command to its function.",
+      "items": [
+        "ping",
+        "tracert",
+        "ipconfig",
+        "nslookup"
+      ],
+      "targets": [
+        "Test host reachability",
+        "Show network path hops in Windows",
+        "Display Windows IP configuration",
+        "Query DNS records"
+      ],
+      "answer": {
+        "ping": "Test host reachability",
+        "tracert": "Show network path hops in Windows",
+        "ipconfig": "Display Windows IP configuration",
+        "nslookup": "Query DNS records"
+      },
+      "explanation": "These network commands help verify connectivity, routing paths, local addressing, and DNS resolution."
+    },
+    {
+      "id": "os-084",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "macos",
+      "difficulty": "medium",
+      "question": "Match each macOS feature or tool to its purpose.",
+      "items": [
+        "FileVault",
+        "Time Machine",
+        "Disk Utility",
+        "Keychain Access"
+      ],
+      "targets": [
+        "Encrypt the startup disk",
+        "Create and restore backups",
+        "Manage and repair disks",
+        "Store and manage passwords and certificates"
+      ],
+      "answer": {
+        "FileVault": "Encrypt the startup disk",
+        "Time Machine": "Create and restore backups",
+        "Disk Utility": "Manage and repair disks",
+        "Keychain Access": "Store and manage passwords and certificates"
+      },
+      "explanation": "These macOS tools support security, backup, storage repair, and credential management."
+    },
+    {
+      "id": "os-085",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "permissions",
+      "difficulty": "medium",
+      "question": "Match each permission concept to its meaning.",
+      "items": [
+        "Read",
+        "Write",
+        "Execute",
+        "Full control"
+      ],
+      "targets": [
+        "View file contents",
+        "Change file contents",
+        "Run a file or traverse a directory",
+        "Perform all standard actions and manage permissions"
+      ],
+      "answer": {
+        "Read": "View file contents",
+        "Write": "Change file contents",
+        "Execute": "Run a file or traverse a directory",
+        "Full control": "Perform all standard actions and manage permissions"
+      },
+      "explanation": "Permissions define which actions users or groups can perform on files and directories."
+    },
+    {
+      "id": "os-086",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "updates",
+      "difficulty": "medium",
+      "question": "Match each update-related term to its description.",
+      "items": [
+        "Feature update",
+        "Security patch",
+        "Driver update",
+        "Rollback"
+      ],
+      "targets": [
+        "Adds or changes OS capabilities",
+        "Fixes vulnerabilities",
+        "Updates hardware support software",
+        "Returns to a previous version or state"
+      ],
+      "answer": {
+        "Feature update": "Adds or changes OS capabilities",
+        "Security patch": "Fixes vulnerabilities",
+        "Driver update": "Updates hardware support software",
+        "Rollback": "Returns to a previous version or state"
+      },
+      "explanation": "Different update types address features, security, hardware compatibility, or recovery from problems."
+    },
+    {
+      "id": "os-087",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "storage-management",
+      "difficulty": "medium",
+      "question": "Match each storage term to its description.",
+      "items": [
+        "Partition",
+        "Volume",
+        "Drive letter",
+        "Mount point"
+      ],
+      "targets": [
+        "A defined section of a physical disk",
+        "A formatted storage area accessible to the OS",
+        "A Windows identifier such as C:",
+        "A directory path used to access a file system"
+      ],
+      "answer": {
+        "Partition": "A defined section of a physical disk",
+        "Volume": "A formatted storage area accessible to the OS",
+        "Drive letter": "A Windows identifier such as C:",
+        "Mount point": "A directory path used to access a file system"
+      },
+      "explanation": "Operating systems expose storage through partitions, volumes, drive letters, and mount points."
+    },
+    {
+      "id": "os-088",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "recovery",
+      "difficulty": "medium",
+      "question": "Match each recovery option to its likely use.",
+      "items": [
+        "Startup Repair",
+        "System Restore",
+        "Reset this PC",
+        "Time Machine restore"
+      ],
+      "targets": [
+        "Fix Windows boot problems",
+        "Revert Windows system settings to a restore point",
+        "Reinstall Windows with optional file preservation",
+        "Restore macOS files or system data from backup"
+      ],
+      "answer": {
+        "Startup Repair": "Fix Windows boot problems",
+        "System Restore": "Revert Windows system settings to a restore point",
+        "Reset this PC": "Reinstall Windows with optional file preservation",
+        "Time Machine restore": "Restore macOS files or system data from backup"
+      },
+      "explanation": "Recovery choices vary depending on whether the problem is boot-related, configuration-related, or requires reinstall or backup restore."
+    },
+    {
+      "id": "os-089",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "mobile-os",
+      "difficulty": "medium",
+      "question": "Match each mobile OS security feature to its purpose.",
+      "items": [
+        "Screen lock",
+        "Remote wipe",
+        "App permissions",
+        "Biometric unlock"
+      ],
+      "targets": [
+        "Require authentication before use",
+        "Erase data from a missing device",
+        "Control access to device resources",
+        "Use fingerprint or face authentication"
+      ],
+      "answer": {
+        "Screen lock": "Require authentication before use",
+        "Remote wipe": "Erase data from a missing device",
+        "App permissions": "Control access to device resources",
+        "Biometric unlock": "Use fingerprint or face authentication"
+      },
+      "explanation": "Mobile security combines authentication, remote management, and permission controls."
+    },
+    {
+      "id": "os-090",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "virtualization",
+      "difficulty": "medium",
+      "question": "Match each virtualization term to its meaning.",
+      "items": [
+        "Host OS",
+        "Guest OS",
+        "Snapshot",
+        "Hypervisor"
+      ],
+      "targets": [
+        "Operating system running on physical hardware",
+        "Operating system running inside a virtual machine",
+        "Saved VM state used for rollback",
+        "Software or firmware that runs virtual machines"
+      ],
+      "answer": {
+        "Host OS": "Operating system running on physical hardware",
+        "Guest OS": "Operating system running inside a virtual machine",
+        "Snapshot": "Saved VM state used for rollback",
+        "Hypervisor": "Software or firmware that runs virtual machines"
+      },
+      "explanation": "Virtualization separates the physical host, guest systems, rollback states, and the hypervisor layer."
+    },
+    {
+      "id": "os-091",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "network-configuration",
+      "difficulty": "medium",
+      "question": "Match each network setting to its purpose.",
+      "items": [
+        "IP address",
+        "Subnet mask",
+        "Default gateway",
+        "DNS server"
+      ],
+      "targets": [
+        "Identifies the host on a network",
+        "Defines local network boundaries",
+        "Routes traffic to other networks",
+        "Resolves names to addresses"
+      ],
+      "answer": {
+        "IP address": "Identifies the host on a network",
+        "Subnet mask": "Defines local network boundaries",
+        "Default gateway": "Routes traffic to other networks",
+        "DNS server": "Resolves names to addresses"
+      },
+      "explanation": "These settings allow a device to communicate locally, route externally, and resolve names."
+    },
+    {
+      "id": "os-092",
+      "type": "drag_drop",
+      "drag_type": "match",
+      "category": "os",
+      "subcategory": "troubleshooting",
+      "difficulty": "hard",
+      "question": "Match each symptom to a likely first diagnostic area.",
+      "items": [
+        "Slow sign-in",
+        "No boot device found",
+        "Cannot resolve websites by name",
+        "Application crashes for one user only"
+      ],
+      "targets": [
+        "Startup apps and background processes",
+        "Boot order and storage detection",
+        "DNS configuration",
+        "User profile or per-user settings"
+      ],
+      "answer": {
+        "Slow sign-in": "Startup apps and background processes",
+        "No boot device found": "Boot order and storage detection",
+        "Cannot resolve websites by name": "DNS configuration",
+        "Application crashes for one user only": "User profile or per-user settings"
+      },
+      "explanation": "Matching symptoms to likely causes helps narrow troubleshooting efficiently."
+    },
+    {
+      "id": "os-093",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "os",
+      "subcategory": "boot-process",
+      "difficulty": "medium",
+      "question": "Arrange the basic operating system boot process in the correct order.",
+      "items": [
+        "Operating system kernel loads",
+        "User logon screen appears",
+        "Firmware performs POST",
+        "Bootloader starts",
+        "System services initialize"
+      ],
+      "answer": [
+        "Firmware performs POST",
+        "Bootloader starts",
+        "Operating system kernel loads",
+        "System services initialize",
+        "User logon screen appears"
+      ],
+      "explanation": "Firmware runs first, then the bootloader starts the kernel, services initialize, and the logon screen becomes available."
+    },
+    {
+      "id": "os-094",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "os",
+      "subcategory": "installation",
+      "difficulty": "medium",
+      "question": "Arrange a typical clean operating system installation workflow in order.",
+      "items": [
+        "Install OS updates and drivers",
+        "Back up user data",
+        "Boot from installation media",
+        "Select target disk or partition",
+        "Create user account and initial settings"
+      ],
+      "answer": [
+        "Back up user data",
+        "Boot from installation media",
+        "Select target disk or partition",
+        "Create user account and initial settings",
+        "Install OS updates and drivers"
+      ],
+      "explanation": "Backups should happen before installation, then the technician boots media, selects storage, completes setup, and patches the system."
+    },
+    {
+      "id": "os-095",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "os",
+      "subcategory": "updates",
+      "difficulty": "medium",
+      "question": "Arrange a safe major OS update process in order.",
+      "items": [
+        "Install the update",
+        "Verify backups",
+        "Confirm application compatibility",
+        "Restart and test core functions",
+        "Review update notes and requirements"
+      ],
+      "answer": [
+        "Review update notes and requirements",
+        "Confirm application compatibility",
+        "Verify backups",
+        "Install the update",
+        "Restart and test core functions"
+      ],
+      "explanation": "Planning and backups should come before installation, followed by restart and validation."
+    },
+    {
+      "id": "os-096",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "os",
+      "subcategory": "troubleshooting",
+      "difficulty": "medium",
+      "question": "Arrange the general troubleshooting methodology in order.",
+      "items": [
+        "Establish a theory of probable cause",
+        "Verify full system functionality",
+        "Identify the problem",
+        "Test the theory",
+        "Document findings and actions"
+      ],
+      "answer": [
+        "Identify the problem",
+        "Establish a theory of probable cause",
+        "Test the theory",
+        "Verify full system functionality",
+        "Document findings and actions"
+      ],
+      "explanation": "Troubleshooting begins by identifying the problem, then testing causes, verifying the fix, and documenting the outcome."
+    },
+    {
+      "id": "os-097",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "os",
+      "subcategory": "recovery",
+      "difficulty": "hard",
+      "question": "Arrange a practical Windows boot recovery escalation path in order.",
+      "items": [
+        "Try Startup Repair",
+        "Confirm firmware detects the system drive",
+        "Attempt System Restore if restore points exist",
+        "Back up data from recovery media if needed",
+        "Reset or reinstall Windows as a last resort"
+      ],
+      "answer": [
+        "Confirm firmware detects the system drive",
+        "Try Startup Repair",
+        "Attempt System Restore if restore points exist",
+        "Back up data from recovery media if needed",
+        "Reset or reinstall Windows as a last resort"
+      ],
+      "explanation": "Recovery should start with basic detection and less destructive repairs before backup, reset, or reinstall."
+    },
+    {
+      "id": "os-098",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "os",
+      "subcategory": "users-groups",
+      "difficulty": "medium",
+      "question": "Arrange the steps to create a secure new user account in order.",
+      "items": [
+        "Assign only required group memberships",
+        "Create the account",
+        "Verify the user can access required resources",
+        "Set an initial password or sign-in method",
+        "Document the account request or approval"
+      ],
+      "answer": [
+        "Document the account request or approval",
+        "Create the account",
+        "Set an initial password or sign-in method",
+        "Assign only required group memberships",
+        "Verify the user can access required resources"
+      ],
+      "explanation": "Account creation should be authorized, secured, assigned least-privilege access, and verified."
+    },
+    {
+      "id": "os-099",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "os",
+      "subcategory": "storage-management",
+      "difficulty": "medium",
+      "question": "Arrange the steps to prepare a new internal disk for use in Windows.",
+      "items": [
+        "Create a new volume",
+        "Format the volume with a file system",
+        "Initialize the disk",
+        "Assign a drive letter or mount point",
+        "Open Disk Management"
+      ],
+      "answer": [
+        "Open Disk Management",
+        "Initialize the disk",
+        "Create a new volume",
+        "Format the volume with a file system",
+        "Assign a drive letter or mount point"
+      ],
+      "explanation": "A new disk must be opened in a management tool, initialized, partitioned as a volume, formatted, and made accessible."
+    },
+    {
+      "id": "os-100",
+      "type": "drag_drop",
+      "drag_type": "order",
+      "category": "os",
+      "subcategory": "security-settings",
+      "difficulty": "hard",
+      "question": "Arrange a workstation hardening workflow in a reasonable order.",
+      "items": [
+        "Apply OS and application updates",
+        "Enable firewall and disk encryption",
+        "Install or verify endpoint protection",
+        "Remove unnecessary local administrator rights",
+        "Confirm required applications still work"
+      ],
+      "answer": [
+        "Apply OS and application updates",
+        "Install or verify endpoint protection",
+        "Enable firewall and disk encryption",
+        "Remove unnecessary local administrator rights",
+        "Confirm required applications still work"
+      ],
+      "explanation": "Hardening commonly starts with patching, protection, security controls, least privilege, and validation that users can still work."
+    }
+  ]
+}
